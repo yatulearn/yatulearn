@@ -173,9 +173,10 @@ nav li a.Courses {
   align-items: center;
 }
 
-main {
+.imag img{
+  display: flex;
+  height: auto;
   width: 100%;
-  height: 600px;
 }
 
 /* .images {
