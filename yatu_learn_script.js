@@ -19,9 +19,8 @@ window.addEventListener("scroll",function() {
         btna.classList.remove("change_btn");
     }
 })
-// change
 btnq.addEventListener("click",function(){
-    btnqp.style.display="none";
+    btnqp.classList.add("check");
 })
 
 //  Roadmap
