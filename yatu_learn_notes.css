@@ -535,10 +535,18 @@ footer {
 }
 
 @media screen and (max-width: 660px){
-    .notes{
+   .notes{
       display: flex;
       flex-direction: column;
     }
+    .one{
+      margin: 30px;
+    }
+
+    .one h3{
+      font-size:small ;
+    }
+
     .layer1{
       display: flex;
       flex-direction: column;
@@ -571,7 +579,7 @@ footer {
     }
     .layer6{
       margin-top: 0;
-      width: 20%;
+      width: 33%;
       height: 50%;
       display: flex;
       flex-direction: column;
