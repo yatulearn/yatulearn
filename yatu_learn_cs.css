@@ -445,6 +445,9 @@ footer {
 }
 
 @media screen and (max-width: 730px) {
+ .dropdown1qp:hover .dropdown-content1qp {
+      display: none;
+  }
   .checkbtn {
     display: block;
     margin: 5px 0;
@@ -533,7 +536,9 @@ footer {
 }
 
 @media screen and (max-width: 660px){
-  
+  .dropdown1qp:hover .dropdown-content1qp {
+      display: none;
+  }
   .box1{
     display: flex;
     flex-direction: column;
@@ -584,7 +589,9 @@ footer {
   }
 }
 @media screen and (max-width: 580px) {
-
+.dropdown1qp:hover .dropdown-content1qp {
+      display: none;
+  }
   nav .btn {
     height: 30px;
     font-size: 10px;
