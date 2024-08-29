@@ -3,7 +3,6 @@ let btnh=document.querySelector(".btn-home");
 let btnq=document.querySelector(".qp");
 let btnn=document.querySelector(".btn-notes");
 let btna=document.querySelector(".btn-about");
-let btnqp=document.querySelector(".dropdown-content1qp");
 window.addEventListener("scroll",function() {
     if(window.scrollY>0){
     nav.classList.add("change");
@@ -18,9 +17,6 @@ window.addEventListener("scroll",function() {
         btnn.classList.remove("change_btn");
         btna.classList.remove("change_btn");
     }
-})
-btnq.addEventListener("click",function(){
-    btnqp.classList.add("check");
 })
 
 //  Roadmap
