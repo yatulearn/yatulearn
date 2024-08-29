@@ -540,11 +540,11 @@ footer {
       flex-direction: column;
     }
     .one{
-      margin: 30px;
+      margin: 20px;
     }
 
     .one h3{
-      font-size:small ;
+      font-size:medium ;
     }
 
     .layer1{
