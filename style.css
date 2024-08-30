@@ -177,6 +177,7 @@ nav li a.Courses {
   display: flex;
   height: auto;
   width: 100%;
+  cursor:default;
 }
 
 /* .images {
