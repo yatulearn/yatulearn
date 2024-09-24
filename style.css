@@ -77,8 +77,8 @@ nav ul {
 nav .btn {
   --hover-shadows: none;
   border: none;
-  font-weight: 100;
-  font-size: 10px;
+  font-weight: 600;
+  font-size: 14px;
   letter-spacing: normal;
   border-radius: 0.7em;
   background-color: rgb(234, 35, 74);
@@ -89,7 +89,7 @@ nav .btn {
 }
 
 nav .btn a {
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
