@@ -313,6 +313,7 @@ button:active {
 .roadmap-btn{
   display:flex;
   flex-direction:column;
+  justify-content:space-evenly;
 }
 
 .roadmap-button {
