@@ -308,16 +308,32 @@ button:active {
 
 .roadmap {
   margin-top: 100px;
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 
-.roadmap_btns {
-  display: flex;
-  flex-direction: column;
+.roadmap-button {
+  background-color: black; /* Default state */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add some padding */
+  margin: 5px; /* Space between buttons */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.roadmap_btns button {
+.roadmap-button.active {
+  background-color: white; /* Active state background */
+  color: black; /* Active state text color */
+}
+
+.roadmap-button:hover {
+  opacity: 0.8; /* Slightly fade on hover */
+}
+
+
+
+.roadmap_btns-button {
   margin: 20px;
   height: 60px;
   text-align: center;
@@ -328,7 +344,7 @@ button:active {
   flex-direction: column;
 }
 
-.roadmap_btns_right button {
+.roadmap_btns_right-button {
   margin: 20px;
   height: 60px;
   text-align: center;
@@ -345,7 +361,10 @@ button:active {
   background-color: #121212;
   box-shadow: none;
 }
-
+.roadmap_imgs{
+  display:flex;
+  justify-content:center;
+}
 .roadmap_imgs .img1 {
   border-radius: 20px;
   z-index: 1;
@@ -973,4 +992,8 @@ footer {
   .roadmap_btns_right button{
     font-size: 10px;
   }
+}
+.roadmap-btn{
+  display:flex;
+  justify-content:space-evenly;
 }
