@@ -997,5 +997,12 @@ footer {
   display:flex;
   justify-content:space-evenly;
 }
-
+.roadmap{
+  display:flex;
+  justify-content:space-evenly;
+}
+.roadmap-btn{
+  display:flex;
+  flex-direction:column;
+}
 
