@@ -978,14 +978,14 @@ footer {
     width: 90%;
     height: 200px;
   }
-  .roadmap_btns button{
+  .roadmap_btns:button{
     font-size: 10px;
     
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .roadmap_btns_right button{
+  .roadmap_btns_right:button{
     font-size: 10px;
   }
 }
