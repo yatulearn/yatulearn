@@ -449,53 +449,16 @@ button:active {
   z-index: 1;
 }
 
-footer {
-  margin-top: 50px;
-  width: 100%;
-  background-color: #121212;
-}
-
-.flex_align {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.box1 {
-  margin-top: 40px;
-  width: 100%;
-  letter-spacing: 0.01cm;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-.header {
-  display: flex;
-  flex-direction: column;
-}
-
 .policy {
   display: flex;
   flex-direction: column;
+  margin-top: 125px;
+  margin-left: 30px;
 }
 
 .policy a:hover {
   color: #ffffff;
 }
-
-.vertical_line {
-  border-left: none;
-  border: 0.5px solid #4b4a4a;
-  height: 180px;
-  width: 0.009px;
-
-}
-
-.same p {
-  color: #ffffff;
-}
-
 .same a {
   text-decoration: none;
   color: #d6d3d3d0;
@@ -505,99 +468,6 @@ footer {
   color: #ffffff;
 }
 
-.media {
-  margin-top: 60px;
-}
-
-.icon_flex {
-  height: 50px;
-  width: 120%;
-  font-size: 21px;
-  color: #d6d3d3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.icon_flex>a>i {
-  font-size: 21px;
-  color: #d6d3d3;
-}
-
-.icon_flex>a>i:hover {
-  font-size: 25px;
-  color: #ffffff;
-  transition: 0.2s;
-}
-
-.email_adress>span {
-  
-  color: #ffffff;
-  line-height: 23px;
-  letter-spacing: 0.01cm;
-
-}
-
-.num {
-  color: #ffffff;
-}
-
-.horizontal_line {
-  margin-top: 20px;
-  border: 0.1px solid #4b4a4a;
-  border-top: none;
-  height: 0.000009px;
-  width: 100%;
-}
-
-.course_flex {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.courses {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-.courses p {
-  margin: 5px;
-  color: #ffffff;
-}
-
-.courses_link {
-  margin: 5px;
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-}
-
-.courses_link a {
-  color: #d6d3d3d0;
-  text-decoration: none;
-}
-
-.courses_link a:hover {
-  color: #ffffff;
-}
-
-.copyright {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-
-}
-
-.copyright p{
-  font-size: medium;
-}
 
 
 /* responsive styles */
