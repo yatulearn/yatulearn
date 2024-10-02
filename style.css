@@ -316,6 +316,8 @@ button:active {
 .roadmap {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .roadmap-btn {
@@ -373,6 +375,7 @@ button:active {
 }
 
 .roadmap_imgs {
+
   display: flex;
   justify-content: center;
 }
