@@ -32,7 +32,7 @@ nav {
   width: 100%;
   background: transparent;
   padding: 10px;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 1;
   display: flex;
@@ -40,7 +40,7 @@ nav {
   /* background-color: transparent; */
 }
 nav ul a{
-  color: black;
+  color: rgb(56, 50, 50);
 }
 
 nav .main_logo {
@@ -124,12 +124,12 @@ nav .btn:hover {
 nav ul a {
   font-size: 20px;
   text-decoration: none;
-  color: rgb(0, 0, 0);  
+  color: grey;  
 }
 
 nav ul a:hover {
   text-decoration: none;
-  color: #3f3c3c;
+  color: #ffffff;
 }
 
 .change {
