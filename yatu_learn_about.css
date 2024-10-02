@@ -2,7 +2,7 @@
   -webkit-tap-highlight-color:transparent;
   margin: 0;
   padding: 0;
-  font-family: tahoma;
+  font-family: "DM Sans", sans-serif;
   box-sizing: border-box;
 }
 
@@ -32,11 +32,15 @@ nav {
   width: 100%;
   background: transparent;
   padding: 10px;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  /* background-color: transparent; */
+}
+nav ul a{
+  color: black;
 }
 
 nav .main_logo {
@@ -120,12 +124,12 @@ nav .btn:hover {
 nav ul a {
   font-size: 20px;
   text-decoration: none;
-  color: lightgrey;
+  color: rgb(0, 0, 0);  
 }
 
 nav ul a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #3f3c3c;
 }
 
 .change {
@@ -227,12 +231,14 @@ nav li a.Courses {
   width: 100%;
   text-align: center;
   margin-top: 50px;
+  font-size: 60px;
 }
 
 .card-client {
+  justify-content: space-evenly;
   margin-top: 50px;
   background: rgb(118, 189, 212);
-  width: 17rem;
+  width: 18.5rem;
   height: 24rem;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -249,6 +255,7 @@ nav li a.Courses {
 
 .card-client:hover {
   transform: translateY(-10px);
+  box-shadow: 4px 4px 20px rgb(37, 35, 35);
 }
 
 .user-picture {
@@ -308,6 +315,11 @@ nav li a.Courses {
   width: 1.1rem;
   fill: currentColor;
 }
+.social-media a svg:hover{
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: 0.3s;
+}
 
 /* /-- Tooltip Social Media --/ */
 .tooltip-social {
@@ -354,17 +366,28 @@ nav li a.Courses {
 }
 
 .border_address {
-  margin-top: 50px;
+  /* margin-top: 20px; */
   background-color: #ffffff;
 }
 
 .address {
   
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 }
+.address .contact_address h2{
+  font-size: 20px;
+}
+.address .phone h2{
+  font-size: 20px;
+}
+.address .mail h2{
+  font-size: 20px;
+}
+
 
 .add {
   line-height: 1.3em;
@@ -441,6 +464,11 @@ nav li a.Courses {
   font-weight: 300;
   font-size: 1em;
 }
+.mail h4 a {
+  /* text-decoration: none; */
+  color: black;
+  font-weight: 700;
+}
 
 .common>h4>a:hover {
   color: black;
@@ -455,6 +483,7 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: -20px;
 }
 
 .box1 {
