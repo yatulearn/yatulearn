@@ -198,6 +198,22 @@ span {
   line-height: 42px;
 }
 
+h2 {
+  margin-top: 40px; /* Space above the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center; /* Center the heading */
+}
+
+ol {
+  margin: 20px; /* Space around the ordered list */
+  padding-left: 20px; /* Indent the ordered list */
+}
+
+ul {
+  margin: 10px 0; /* Space around the unordered list */
+  padding-left: 20px; /* Indent the unordered list */
+}
+
 main {
   margin: 50px;
   text-align: center;
