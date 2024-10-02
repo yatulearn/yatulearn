@@ -373,19 +373,48 @@ button:active {
   background-color: var(--accent);
   transform: scale(0.95);
 }
+:root {
+  --btn-bg-color: black; /* Default button background */
+  --btn-text-color: white; /* Default button text color */
+  --active-bg-color: white; /* Active state background */
+  --active-text-color: black; /* Active state text color */
+  --hover-opacity: 0.8; /* Hover opacity */
+}
 
 .roadmap {
-  margin-top: 100px;
   display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.roadmap-btn {
+  display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
-.roadmap_btns {
-  display: flex;
-  flex-direction: column;
+.roadmap-button {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
-.roadmap_btns button {
+.roadmap-button.active {
+  background-color: var(--active-bg-color);
+  color: var(--active-text-color);
+}
+
+.roadmap-button:hover {
+  opacity: var(--hover-opacity);
+}
+
+.roadmap_btns-button,
+.roadmap_btns_right-button {
   margin: 20px;
   height: 60px;
   text-align: center;
@@ -396,16 +425,15 @@ button:active {
   flex-direction: column;
 }
 
-.roadmap_btns_right button {
-  margin: 20px;
-  height: 60px;
-  text-align: center;
-}
-
 .btn_web {
   background-color: #ffffff;
   color: #121212;
   box-shadow: var(--hover-shadows);
+  transition: opacity 0.3s ease; /* Added transition for consistency */
+}
+
+.btn_web:hover {
+  opacity: var(--hover-opacity); /* Add hover effect for .btn_web */
 }
 
 .occur {
@@ -414,40 +442,30 @@ button:active {
   box-shadow: none;
 }
 
+.roadmap_imgs {
+
+  display: flex;
+  justify-content: center;
+}
+
+.roadmap_imgs img {
+  border-radius: 20px;
+  z-index: 1;
+  display: none; /* Hide all images by default */
+}
+
 .roadmap_imgs .img1 {
-  border-radius: 20px;
-  z-index: 1;
+  display: block; /* Show the first image by default */
 }
 
-.roadmap_imgs .img2 {
-  display: none;
-  border-radius: 20px;
-  z-index: 1;
+/* Example of making images responsive */
+@media (max-width: 768px) {
+  .roadmap_imgs img {
+    width: 100%; /* Adjust width for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
 
-.roadmap_imgs .img3 {
-  display: none;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-.roadmap_imgs .img4 {
-  display: none;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-.roadmap_imgs .img5 {
-  display: none;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-.roadmap_imgs .img6 {
-  display: none;
-  border-radius: 20px;
-  z-index: 1;
-}
 
 footer {
   margin-top: 50px;
@@ -1031,14 +1049,15 @@ footer {
     width: 90%;
     height: 200px;
   }
-  .roadmap_btns button{
+  .roadmap_btns:button{
     font-size: 10px;
     
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .roadmap_btns_right button{
+  .roadmap_btns_right:button{
     font-size: 10px;
   }
 }
+
