@@ -235,7 +235,9 @@ nav li a.Courses {
 }
 
 .card-client {
+  display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
   margin-top: 50px;
   background: rgb(118, 189, 212);
   width: 18.5rem;
