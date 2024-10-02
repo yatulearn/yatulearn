@@ -243,9 +243,11 @@ nav li a.Courses {
 }
 
 .imag img{
-  display: flex;
+  display: block;
   height: auto;
   width: 100%;
+  max-width:100%;
+  object-fit:cover;
   cursor:default;
 }
 
