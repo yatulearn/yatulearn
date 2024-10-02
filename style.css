@@ -348,13 +348,13 @@ nav li a.Courses {
 
 /* From Uiverse.io by TimTrayler */
 button {
-  --hover-shadows: 8px 8px 16px #121212, -8px -8px 16px #303030;
-  --accent: #ffffff;
+  --hover-shadows:0px 0px 0px 2px black, 0px 0px 10px 3px #dad3d3;
+  --accent: #000000;
   font-weight: bold;
   letter-spacing: 0.1em;
   border: none;
   border-radius: 1.1em;
-  background-color: #212121;
+  background-color: #000000;
   cursor: pointer;
   color: #ffffff;
   padding: 1em 2em;
