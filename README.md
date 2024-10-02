@@ -1,6 +1,6 @@
 [Visit YATU Learn](https://yatulearn-i5od1dgx4-saurabhsithkars-projects.vercel.app/)
 
-![YATU Learn Homepage]()
+![YATU Learn Homepage](https://github.com/Saurabh-Sithkar/yatulearn/blob/addDescription/YatuLearn.png)
 
 
 # YATU Learn
