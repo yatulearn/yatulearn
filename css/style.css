@@ -80,6 +80,8 @@ body {
 
 
 
+
+
 /* //// */
 @keyframes fadeInAnimation {
   0% {
@@ -2088,3 +2090,28 @@ footer {
     font-size: 10px;
   }
 }
+
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: none; /* Hidden by default */
+  border: none;
+  outline: none;
+  background-color: #007BFF; /* Button color */
+  color: white; /* Text color */
+  font-size: 24px; /* Increased font size */
+  border-radius: 8px; /* Slightly larger radius for rounded corners */
+  padding: 15px; /* Increased padding for a larger button */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it appears above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+}
+
+.scrollToTopBtn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Optional: Slightly enlarge on hover */
+}
+
+
+
