@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -11,9 +11,39 @@
       referrerpolicy="no-referrer"
     />
     <title>YATU Learn</title>
-  </head>
+    <style>
+      /* Scroll to Top Button Styles */
+      #scrollTopBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        bottom: 30px; /* 30px from the bottom */
+        right: 30px; /* 30px from the right */
+        z-index: 99; /* Sit on top */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #ff5722; /* Bright orange color */
+        color: white; /* Text color */
+        font-weight: bold; /* Bold text */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px 20px; /* Some padding */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+      }
 
-  <body>
+      #scrollTopBtn:hover {
+        background-color: #e64a19; /* Darker shade on hover */
+        transform: scale(1.1); /* Slightly enlarge on hover */
+      }
+
+      /* Ensure smooth scrolling for the page */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+
+<body>
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
@@ -186,7 +216,33 @@
         <button class="btn_cn">Computer Network</button>
       </div>
     </div>
+
+    <button id="scrollTopBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-up"></i> <!-- Font Awesome icon -->
+    </button>
+
     <script src="js/yatu_learn_script.js" crossorigin=""></script>
+    <script>
+      // Get the button
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+      // Show the button when scrolling down
+      window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopBtn.style.display = "block";
+        } else {
+          scrollTopBtn.style.display = "none";
+        }
+      };
+
+      // Scroll to the top when the button is clicked
+      scrollTopBtn.onclick = function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Smooth scroll effect
+        });
+      };
+    </script>
   </body>
   <footer>
     <div class="flex_align">
@@ -216,18 +272,10 @@
           <div class="media">
             <p>Social:</p>
             <div class="icon_flex">
-              <a href="https://www.linkedin.com/company/yatulearn/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/yatulearn/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://www.youtube.com/@YATU_Store"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-              <a href="https://x.com/yatulearn"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+              <a href="https://www.linkedin.com/company/yatulearn/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/yatulearn/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@YATU_Store"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://x.com/yatulearn"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
           </div>
         </div>
@@ -238,13 +286,10 @@
             Near Panjab University<br />
             SSGRC, Bajwara, Una<br />
             road, Hoishiarpur, 146021,<br />
-            Punjab, India</span
-          ><br />
-          <br />
+            Punjab, India
+          </span><br /><br />
           <div class="num">Ph No. : 7068247779</div>
-          <a href="https://mail.google.com/mail/u/0/#inbox"
-            >E-mail : yatulearn@gmail.com</a
-          >
+          <a href="https://mail.google.com/mail/u/0/#inbox">E-mail : yatulearn@gmail.com</a>
         </div>
       </div>
     </div>
