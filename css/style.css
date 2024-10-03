@@ -294,7 +294,8 @@ nav li a.Courses {
 
 .block1 {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .block2 {
   display: flex;
@@ -306,8 +307,8 @@ nav li a.Courses {
 }
 .common {
   position: relative;
-  margin: 20px 5%;
-  width: 499px;
+  margin: 60px 1%;
+  width: 450px;
   height: 241px;
   display: flex;
   justify-content: center;
@@ -326,12 +327,39 @@ nav li a.Courses {
   text-rendering: geometricPrecision;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-box-align: center;
+  background-size: cover;
+  background-position: center; /* Center the image */
+  background-size: 100%;
+  transition: all 0.5s ease; /* Smooth transition for the zoom effect */
+}
+.common .btn {
+  position: absolute;
+  bottom: 20px;
+}
+
+.gradient-bg {
+  background-image: linear-gradient(#000000, #ffffff00);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+
+.common:hover {
+  /* transform: scale(1.2); */
+  background-size: 120%; /* Increase the background size */
+}
+.block1,
+.block2 {
+  margin: 40px 0;
 }
 
 .heading {
-  font-size: 20px;
+  font-size: 23px;
   text-transform: capitalize;
   font-weight: 700;
+  text-align: center;
 }
 
 /* From Uiverse.io by TimTrayler */
@@ -1276,10 +1304,10 @@ nav li a.Courses {
 
 /* From Uiverse.io by Pravins01 */
 
-.card {
+/* .card {
   background-color: lightcoral;
-  background: linear-gradient(180deg, #4caf97 0%, #51c6ab 100%);
-}
+  background: linear-gradient(180deg, #4CAF97 0%, #51C6AB 100%);
+} */
 
 .btn {
   width: 100%;
@@ -1299,19 +1327,19 @@ nav li a.Courses {
   background-color: lightslategray;
 }
 
-.card1 {
+/* .card1 {
   background-color: lightcoral;
-  background: linear-gradient(180deg, #4caf97 0%, #51c6ab 100%);
-}
+  background: linear-gradient(180deg, #4CAF97 0%, #51C6AB 100%);
+} */
 
 .card2 {
   background-color: lightgreen;
 }
 
-.block1 {
+/* .block1{
   display: flex;
   justify-content: space-evenly;
-}
+} */
 .block2 {
   display: flex;
   justify-content: space-evenly;
@@ -1320,7 +1348,7 @@ nav li a.Courses {
   display: flex;
   justify-content: space-evenly;
 }
-.common {
+/* .common {
   position: relative;
   margin: 20px 5%;
   width: 499px;
@@ -1348,7 +1376,7 @@ nav li a.Courses {
   font-size: 20px;
   text-transform: capitalize;
   font-weight: 700;
-}
+} */
 
 /* From Uiverse.io by TimTrayler */
 button {
