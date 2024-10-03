@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Video Playlists</title>
+    <style>
+        /* Main body and layout */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff6b6b, #ffcc33, #4ecdc4, #1a535c);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            color: #fff;
+        }
+
+        /* Animated gradient background */
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Navbar */
+        nav {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        nav h1 {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #fff, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGlow 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Glowing text effect */
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+            }
+        }
+
+        /* Playlist section styling */
+        #playlist-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+            gap: 20px;
+        }
+
+        .subject {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .subject:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .subject h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            background: linear-gradient(to right, #fff, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Playlist links */
+        .subject ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .subject ul li {
+            margin: 25px 0;
+        }
+
+        .subject ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            background-color: #1a535c;
+            padding: 10px 15px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .subject ul li a:hover {
+            background-color: #ff6b6b;
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(255, 102, 102, 0.6);
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 768px) {
+            .subject {
+                width: 90%;
+            }
+
+            nav h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>IT Subject Playlists</h1>
+    </nav>
+
+    <section id="playlist-section">
+        <div class="subject" id="dbms">
+            <h2>DBMS</h2>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y&si=HKeBIdmmz8CQJ0FH" target="_blank">DBMS Basics</a></li>
+                <li><a href="https://youtu.be/dl00fOOYLOM?si=F3uK8vDfoIMRNCpU" target="_blank">DBMS for Interview</a></li>
+            </ul>
+        </div>
+
+        <div class="subject" id="oops">
+            <h2>OOPS</h2>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLQEaRBV9gAFujcBWJhBT2XXsuMlIfETBy&si=rJdWjWRbzQZZwGWE" target="_blank">OOPS in C++</a></li>
+                <li><a href="https://youtube.com/playlist?list=PL9gnSGHSqcno1G3XjUbwzXHL8_EttOuKk&si=A2PvdhTxPGh9Pgq1" target="_blank">OOPS in Java</a></li>
+            </ul>
+        </div>
+
+        <div class="subject" id="networking">
+            <h2>Computer Networks</h2>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&si=kfWQMcj1r4B_xI1a" target="_blank">Network Basics</a></li>
+                <li><a href="https://youtube.com/playlist?list=PLC36xJgs4dxHT-TxTy3U1slr5RaBJGaLd&si=vlp_86NYjL_EAt6_" target="_blank">Advanced Networking</a></li>
+            </ul>
+        </div>
+
+        <div class="subject" id="toc">
+            <h2>Operating System(OS)</h2>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p&si=73TLtEGxRH3bcTlW" target="_blank">Operating System</a></li>
+                <li><a href="https://youtu.be/3obEP8eLsCw?si=Wmja0wV6yS_S4syY" target="_blank">OS for Interview</a></li>
+            </ul>
+        </div>
+
+        <div class="subject" id="webdev">
+            <h2>Web Development</h2>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLfEr2kn3s-br9ZFmejfLhAgMbGgbpdof8&si=HCKZ3aOJjXo5UYgQ" target="_blank">Frontend Development</a></li>
+                <li><a href="https://youtu.be/ChVE-JbtYbM?si=EGpAldNWeGLwF4Mr" target="_blank">Backend Development</a></li>
+            </ul>
+        </div>
+
+        <div class="subject" id="dsa">
+            <h2>Data Structures and Algorithms (DSA)</h2>
+            <ul>
+                <li><a href="https://youtube.com/playlist?list=PLQEaRBV9gAFu4ovJ41PywklqI7IyXwr01&si=dTCcMCg5yGdMv5At" target="_blank">DSA Basics</a></li>
+                <li><a href="https://takeuforward.org/" target="_blank">Advanced DSA</a></li>
+            </ul>
+        </div>
+
+        <div class="subject" id="cprog">
+            <h2>Fundamentals of C/C++</h2>
+            <ul>
+                <li><a href="https://youtu.be/YlW2X5obUW8?si=Dcds7olSHQ2JqQNj" target="_blank">C Programming</a></li>
+                <li><a href="https://youtu.be/FpfHmAkRVK4?si=T_Lk9EssTrxaFj9W" target="_blank">C++</a></li>
+            </ul>
+        </div>
+
+        <div class="subject" id="cprog">
+            <h2>App Devlopment</h2>
+            <ul>
+                <li><a href="https://youtu.be/BiOSCpV-lts?si=ZwJV4CFL1A1u9LOB" target="_blank">Dart/Flutter</a></li>
+                <li><a href="https://youtu.be/KBWWxJdsFlY?si=fFFybwtupxMbEbiB" target="_blank">React Native</a></li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
