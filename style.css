@@ -289,9 +289,10 @@ nav li a.Courses {
   display: flex;
   justify-content: space-evenly;
 }
-.common .btn{
+
+.common .btn {
   position: absolute;
-    bottom: 20px;
+  bottom: 20px;
 }
 
 .cardqp {
@@ -318,9 +319,11 @@ nav li a.Courses {
 
 .block1 {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+/* 
 .block2 {
   display: flex;
   justify-content: space-evenly;
@@ -329,12 +332,14 @@ nav li a.Courses {
 .block3 {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
 .common {
   position: relative;
-  margin: 20px 3%;
-  width: 499px;
+  /* margin: 20px 3%;
+  width: 499px; */
+  margin: 60px 1%;
+  width: 450px;
   height: 241px;
   display: flex;
   justify-content: center;
@@ -354,16 +359,21 @@ nav li a.Courses {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-box-align: center;
   background-size: cover;
-  background-position: center; /* Center the image */
+  background-position: center;
+  /* Center the image */
   background-size: 100%;
-  transition: all 0.5s ease; /* Smooth transition for the zoom effect */
+  transition: all 0.5s ease;
+  /* Smooth transition for the zoom effect */
 }
 
-.common:hover{
+.common:hover {
   /* transform: scale(1.2); */
-  background-size: 120%; /* Increase the background size */
+  background-size: 120%;
+  /* Increase the background size */
 }
-.block1,.block2{
+
+.block1,
+.block2 {
   margin: 40px 0;
 }
 
