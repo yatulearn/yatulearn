@@ -201,9 +201,12 @@ nav li a.Courses {
   display: inline-block;
 }
 
+.question_paper:hover{
+  color: #ffffff !important;
+}
 @media screen and (max-width: 730px) {
   .dropdown1qp{
-    width: 100%;
+    border-radius: 7px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -212,20 +215,24 @@ nav li a.Courses {
     background-color: white;
     color: black;
   }
+  .dropdown1qp a:hover
+  {
+    background-color: white;
+
+  }
   .nav-links
   {
     color: white;
     background-color: black;
     padding: 30px;
     display: flex;
-
   }
 
   .nav-links a
   {
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 100%;
+    padding-right: 15px;
     color: white;
     padding-left: 10px;
   }
