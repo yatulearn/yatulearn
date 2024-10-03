@@ -384,20 +384,6 @@ button:active {
   display: flex;
   flex-direction: column;
 }
-.roadmap_btns button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.roadmap_btns button.active {
-  background-color: #fff;
-  color: #000;
-}
-
 
 .roadmap_btns button {
   margin: 20px;
