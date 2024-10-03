@@ -96,15 +96,22 @@ p {
 }
 
 
+/* Navigation Styling */
 nav {
   width: 100%;
-  background: transparent;
-  padding: 10px;
+  padding: 10px 30px;
   position: fixed;
   top: 0;
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+/* Transparent Background */
+nav.transparent {
+  background: rgba(0, 0, 0, 0.7); /* Transparent background when scrolled */
 }
 
 nav .main_logo {
@@ -113,22 +120,17 @@ nav .main_logo {
 }
 
 nav .main_logo .logo a img {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .checkbtn {
   font-size: 30px;
   color: gray;
-  line-height: 80px;
   display: none;
   cursor: pointer;
 }
 
-.checkbtn:hover {
-  font-size: 35px;
-  transition: 0.2s;
-}
-
+/* Display the hamburger menu for small screens */
 #check {
   display: none;
 }
@@ -138,115 +140,107 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  white-space: nowrap;
+}
 
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f8b400;
 }
 
 nav .btn {
-  --hover-shadows: none;
-  border: none;
   font-weight: 600;
   font-size: 14px;
-  letter-spacing: normal;
   border-radius: 0.7em;
-  background-color: rgb(234, 35, 74);
+  background-color: #ea234a;
   cursor: pointer;
-  width: 8%;
-  padding: 1em 2em;
-  margin-right: 50px;
+  padding: 10px 20px;
+  border: none;
+  margin-right: 30px;
 }
 
 nav .btn a {
-  font-size: 14px;
   color: #ffffff;
   text-decoration: none;
-  text-align: center;
 }
 
 nav .btn:hover {
-  color: rgb(234, 35, 74);
-  background-color: #4B4B4B;
+  background-color: #4b4b4b;
 }
 
-nav ul a {
-  font-size: 20px;
-  text-decoration: none;
-  color: lightgrey;
-}
-
-nav ul a:hover {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.change {
-  background-color: #ffffff;
-  transition: 0.5s;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.347);
-}
-
-.change_btn {
-  color: #4B4B4B;
-}
-
-.change_btn:hover {
-  color: #121212;
-}
-
-nav li a.Courses {
-  color: #F63232;
-}
-
+/* Dropdown Styling */
 .dropdown1qp {
+  position: relative;
   display: inline-block;
-}
-
-.qp:hover {
-  color: #121212;
 }
 
 .dropdown-content1qp {
   display: none;
   position: absolute;
   background-color: white;
-  width: 430px;
-  height: 350px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
 }
 
-.dropdown1qp:hover .dropdown-content1qp {
-  display: block;
-}
-
 .dropdown-content1qp h2 {
-  margin: 15px;
-}
-
-.dropdown-content1qp .links {
-  margin-left: 10px;
+  color: #4b4b4b;
+  margin-bottom: 10px;
 }
 
 .dropdown-content1qp .links a {
-  font-size: 1em;
   color: blue;
-  margin: 5px;
+  margin-right: 10px;
+  text-decoration: none;
 }
 
 .dropdown-content1qp .links a:hover {
   color: darkblue;
 }
 
-.cyber {
-  display: flex;
-  align-items: center;
+.dropdown1qp:hover .dropdown-content1qp {
+  display: block;
 }
 
-.imag img{
-  display: flex;
-  height: auto;
-  width: 100%;
-  cursor:default;
+/* Add Responsive Behavior */
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 80px;
+    right: -100%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.3s;
+  }
+
+  nav ul li {
+    margin: 20px 0;
+  }
+
+  #check:checked ~ ul {
+    right: 0;
+  }
+
+  nav .btn {
+    margin: 20px 0;
+  }
 }
 
 /* .images {
@@ -270,51 +264,78 @@ nav li a.Courses {
 
 /* From Uiverse.io by Pravins01 */
 
+/* Card Styling */
 .card {
   background-color: lightcoral;
   background: linear-gradient(180deg, #4CAF97 0%, #51C6AB 100%);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.btn {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+/* Shadow and Zoom Hover Effect for Cards */
+.card:hover {
+  transform: scale(1.05); /* Zoom Effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Shadow Effect */
 }
 
+/* Specific Background Colors for Each Card */
 .cardqp {
   background-color: lightgreen;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cardqp:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .cardwd {
   background-color: lightskyblue;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
+.cardwd:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .cardp {
   background-color: lightslategray;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cardp:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .card1 {
   background-color: lightcoral;
   background: linear-gradient(180deg, #4CAF97 0%, #51C6AB 100%);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .card2 {
   background-color: lightgreen;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.block1{
+.card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Block Flexbox Layout */
+.block1, .block2, .block3 {
   display: flex;
   justify-content: space-evenly;
 }
-.block2{
-  display: flex;
-  justify-content: space-evenly;
-}
-.block3{
-  display: flex;
-  justify-content: space-evenly;
-}
+
+/* Common Card Styling */
 .common {
   position: relative;
   margin: 20px 5%;
@@ -336,17 +357,56 @@ nav li a.Courses {
   box-sizing: border-box;
   text-rendering: geometricPrecision;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-box-align: center;
 }
 
+/* Card Title Styling */
+/* Card Text Heading Styling */
 .heading {
-  font-size: 20px;
-  text-transform: capitalize;
-  font-weight: 700;
+  font-size: 24px; /* Slightly larger font size */
+  text-transform: uppercase; /* Change text to uppercase */
+  font-weight: 700; /* Semi-bold text */
+  text-align: center;
+  letter-spacing: 1px; /* Add slight letter spacing */
+  color: #FFFFFF; /* White color to contrast with card background */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+  margin: 10px 0; /* Add some spacing around text */
+}
+
+/* Modify the Card Hover Effect */
+.card, .cardqp, .cardwd, .cardp, .card1, .card2 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.card:hover, .cardqp:hover, .cardwd:hover, .cardp:hover, .card1:hover, .card2:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow around the card */
+}
+
+/* Keep the existing card backgrounds to maintain theme colors */
+.card, .card1 {
+  background: linear-gradient(180deg, #4CAF97 0%, #51C6AB 100%);
+}
+
+.cardqp, .card2 {
+  background: linear-gradient(180deg, #4CAF97 100%, #228B22 0%); /* Slight adjustment to blend better */
+}
+
+.cardwd {
+  background: linear-gradient(180deg, #87CEFA 0%, #4682B4 100%);
+}
+
+.cardp {
+  background: linear-gradient(180deg, #708090 0%, #2F4F4F 100%);
+}
+
+/* Optional: Add subtle border to make each card more defined */
+.card, .cardqp, .cardwd, .cardp, .card1, .card2 {
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light semi-transparent border */
+  border-radius: 10px; /* Rounded corners */
 }
 
 
-/* From Uiverse.io by TimTrayler */
+/* Button Styling */
 button {
   --hover-shadows: 8px 8px 16px #121212, -8px -8px 16px #303030;
   --accent: #ffffff;
@@ -373,6 +433,7 @@ button:active {
   background-color: var(--accent);
   transform: scale(0.95);
 }
+
 
 .roadmap {
   margin-top: 100px;
