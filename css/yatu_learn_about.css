@@ -194,27 +194,72 @@ nav li a.Courses {
 .banner_vdo video {
   border: none;
 }
-
-.about_learn {
-  margin-top: 50px;
+.about_learn_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f7f9;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1600px;
 }
 
-.about_learn h1 {
-  font-size: 2em;
-  width: 100%;
-  letter-spacing: 0.04em;
+.about_learn_container h1 {
+  font-size: 2.8em; 
+  color: #2c3e50;
   text-align: center;
+  margin-bottom: 20px; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about_learn {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.about_learn .section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.3s; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.about_learn .section:hover {
+  transform: translateY(-5px); 
 }
 
 .about_learn h6 {
-  color: transparent;
+  font-weight: bold; 
+  font-size: 1.6em;
+  color: #3498db; 
+  margin-bottom: 10px; 
+  border-bottom: 2px solid #3498db; 
+  padding-bottom: 5px; 
 }
 
 .about_learn p {
-  margin-left: 43px;
-  letter-spacing: 0.05em;
-  line-height: 1.4em;
+  margin: 0; 
+  letter-spacing: 0.02em;
+  line-height: 1.6em; 
+  color: #555; 
 }
+
+.about_learn em {
+  font-style: italic; 
+  color: #e67e22;
+}
+
+
+
 
 /* From Uiverse.io by abrahamcalsin */
 .card-client-flex {
@@ -227,6 +272,12 @@ nav li a.Courses {
   width: 100%;
   text-align: center;
   margin-top: 50px;
+    font-size: 2.8em; 
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .card-client {
@@ -355,6 +406,7 @@ nav li a.Courses {
 
 .border_address {
   margin-top: 50px;
+  margin-bottom: 50px;
   background-color: #ffffff;
 }
 
@@ -469,11 +521,13 @@ footer {
 .header {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .policy {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .policy a:hover {
@@ -570,7 +624,7 @@ footer {
   margin: 5px;
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 65%;
 }
 
 .courses_link a {
