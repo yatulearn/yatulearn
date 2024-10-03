@@ -201,6 +201,47 @@ nav li a.Courses {
   display: inline-block;
 }
 
+@media screen and (max-width: 730px) {
+  .dropdown1qp{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .dropdown1qp:hover
+  {
+    background-color: white;
+    color: black;
+  }
+  .nav-links
+  {
+    color: white;
+    background-color: black;
+    padding: 30px;
+    display: flex;
+
+  }
+
+  .nav-links a
+  {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .nav-links a:hover
+  {
+    border-radius: 7px;
+    background-color: white;
+    color:black;
+  }
+}
+
+.nav-element{
+  margin-left: 40px;
+}
+
 .qp:hover {
   color: #121212;
 }
