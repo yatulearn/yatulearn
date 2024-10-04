@@ -84,6 +84,12 @@ We are committed to fostering an inclusive and respectful community. Please read
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## Our Valuable Contributors ❤️✨
+
+[![Contributors](https://contrib.rocks/image?repo=yatulearn/yatulearn)](https://github.com/yatulearn/yatulearn/graphs/contributors)
+## 📜 License
+
+
 ## 🙏 Acknowledgments
 
 - Heartfelt thanks to all contributors who have helped shape YATU Learn
