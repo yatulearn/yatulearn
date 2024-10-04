@@ -893,3 +893,116 @@ footer {
     left: 10px;
   }
 }
+
+.border_address {
+  padding: 20px;
+}
+
+.address {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f8f9fa; 
+  width: 300px; 
+  padding: 20px;
+  border: 2px solid #007bff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  margin: 15px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.common > i {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.common > h1 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #007bff; 
+}
+
+.common > h2 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.common > p,
+.common > h3 {
+  font-size: 14px;
+  color: #333;
+}
+
+.common a {
+  color: #007bff; 
+  text-decoration: none; 
+}
+
+.common a:hover {
+  text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .common > h1 {
+    font-size: 20px;
+  }
+
+  .common > h2 {
+    font-size: 14px;
+  }
+
+  .common > p,
+  .common > h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .address {
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 100%; 
+  }
+
+  .common > h1 {
+    font-size: 18px;
+  }
+
+  .common > h2 {
+    font-size: 12px;
+  }
+
+  .common > p,
+  .common > h3 {
+    font-size: 10px;
+  }
+}
