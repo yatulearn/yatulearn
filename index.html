@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +10,35 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>YATU Learn</title>
+    <style>
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #0073b1;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: none; /* Hidden by default */
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #005580;
+            transform: scale(1.1);
+        }
+
+        .scroll-to-top i {
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -73,9 +101,6 @@
         </button>
     </nav>
 
-    <!-- <main>
-    <a href="yatu_learn_notes.html"><div class="imag"><img src="home banner.png" alt="banner"></div></a>
-    </main> -->
     <main>
         <a href="pages/yatu_learn_notes.html">
             <div class="imag"><img src="assets/images/home banner.png" alt="banner" /></div>
@@ -85,7 +110,7 @@
         <div class="block1">
             <div class="card common" style="background-image: url(./assets/application-smartphone-business.png);">
                 <div class="gradient-bg">
-                    <p class="heading">Web Devlopment</p>
+                    <p class="heading">Web Development</p>
                 </div>
                 <div class="btn">
                     <a href="pages/yatu_learn_wd.html"><button>Explore</button></a>
@@ -95,7 +120,6 @@
                 <div class="gradient-bg">
                     <p class="heading">Data Structure <br>& Algorithm</p>
                 </div>
-
                 <div class="btn">
                     <a href="pages/yatu_learn_dsa.html"><button>Explore</button></a>
                 </div>
@@ -108,8 +132,6 @@
                     <a href="pages/yatu_learn_aiml.html"><button>Explore</button></a>
                 </div>
             </div>
-            <!-- </div> -->
-            <!-- <div class="block2"> -->
             <div class="cardp common" style="background-image: url(./assets/lock-network-technology-concept.png);">
                 <div class="gradient-bg">
                     <p class="heading">Cyber Security</p>
@@ -137,11 +159,11 @@
                 </div>
             </div>
         </div>
-
     </section>
+    
     <div class="roadmap">
         <div class="roadmap_btns">
-            <button class="btn_web" onclick="setActive(this)">Web Devlopment</button>
+            <button class="btn_web" onclick="setActive(this)">Web Development</button>
             <button class="btn_dsa" onclick="setActive(this)">DSA</button>
             <button class="btn_cs" onclick="setActive(this)">Cyber Security</button>
         </div>
@@ -160,8 +182,31 @@
             <button class="btn_cn" onclick="setActive(this)">Computer Network</button>
         </div>
     </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" title="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <script src="js/yatu_learn_script.js" crossorigin=""></script>
+    <script>
+        // Scroll to Top Button Functionality
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = 'flex'; // Show button
+            } else {
+                scrollToTopBtn.style.display = 'none'; // Hide button
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+        };
+    </script>
 </body>
+
 <footer>
     <div class="flex_align">
         <div class="box1">

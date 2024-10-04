@@ -12,6 +12,32 @@
       referrerpolicy="no-referrer"
     />
     <title>About</title>
+    <style>
+      .scroll-to-top {
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          background-color: #0073b1;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: none; /* Hidden by default */
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+          transition: background-color 0.3s, transform 0.3s;
+      }
+      .scroll-to-top:hover {
+          background-color: #005580;
+          transform: scale(1.1);
+      }
+      .scroll-to-top i {
+          font-size: 20px;
+      }
+    </style>
   </head>
 
   <body>
@@ -250,6 +276,30 @@
         </div>
       </div>
     </div>
+    <button class="scroll-to-top" id="scrollToTopBtn">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <script>
+      // Get the button
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Show the button when the user scrolls down 200px from the top of the document
+      window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollToTopBtn.style.display = "flex"; // Show the button
+        } else {
+          scrollToTopBtn.style.display = "none"; // Hide the button
+        }
+      };
+
+      // Scroll to the top when the button is clicked
+      scrollToTopBtn.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Smooth scrolling effect
+        });
+      };
+    </script>
     <script src="../js/yatu_learn_script.js" crossorigin=""></script>
   </body>
   <div class="border_address">
