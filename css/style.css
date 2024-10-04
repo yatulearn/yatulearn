@@ -36,25 +36,7 @@ body {
 }
 
 /* Explore button styles */
-.explore-button {
-  display: inline-block;
-  padding: 22px 50px;
 
-  background-color: #fff;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 70px;
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 30px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.explore-button:hover {
-  background-color: #000;
-  color: #fff;
-}
 
 /* Optional hero text styling */
 .hero-container h1 {
@@ -88,20 +70,45 @@ body {
   object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
 }
 
+.explore-btn {
+  /* Change from absolute to relative */
+ margin-top: 40px; /* Adds space below the text */
+ background-color: #ff9800;
+ color: white;
+ padding: 15px 30px;
+ font-size: 18px;
+ border: none;
+ cursor: pointer;
+ border-radius: 50px;
+ transition: background-color 0.3s ease;
+ float: left;
+ margin-right: 20px;
+
+}
+
+.explore-button:hover {
+ background-color: #000;
+ color: #fff;
+}
+
+
 /* Centering the explore button */
 .imag .explore-btn {
+  
+
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%; /* Vertically centers the button */
+  left: 25%; /* Move the button 40% from the left edge, adjust as needed */
+  transform: translateY(-50%);
   padding: 15px 30px;
   background-color: #ff6600;
   color: #fff;
   border: none;
-  border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
+   
 }
 
 .imag .explore-btn:hover {
@@ -130,25 +137,6 @@ body {
     padding: 10px 20px;
   }
 }
-.explore-btn {
-  position: relative; /* Change from absolute to relative */
-  margin-top: 40px; /* Adds space below the text */
-  background-color: #ff9800;
-  color: white;
-  padding: 15px 30px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-
-
-
-
-
-
 
 /* //// */
 @keyframes fadeInAnimation {
@@ -1151,26 +1139,10 @@ body {
   z-index: 0; /* Bring the content above the background image */
 }
 
-/* Explore button styles */
-.explore-button {
-  display: inline-block;
-  padding: 22px 50px;
 
-  background-color: #fff;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 70px;
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 30px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-.explore-button:hover {
-  background-color: #000;
-  color: #fff;
-}
+
+
 
 /* Optional hero text styling */
 .hero-container h1 {
