@@ -1,5 +1,5 @@
 * {
-  -webkit-tap-highlight-color:transparent;
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   font-family: tahoma;
@@ -18,8 +18,8 @@ body {
   /* position: relative; */
   width: 100%;
   height: 745px; /* Adjust height to fit your needs */
-  background-image: url('home banner.png'); /* Replace with the actual path to your image */
-  background-size:cover; /* Make sure the background covers the entire section */
+  background-image: url("home banner.png"); /* Replace with the actual path to your image */
+  background-size: cover; /* Make sure the background covers the entire section */
   background-position: center; /* Center the background image */
   display: flex;
   align-items: center;
@@ -73,13 +73,6 @@ body {
   }
 }
 
-
-
-
-
-
-
-
 /* //// */
 @keyframes fadeInAnimation {
   0% {
@@ -94,7 +87,6 @@ body {
 p {
   font-size: 18px;
 }
-
 
 nav {
 
@@ -141,7 +133,9 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
+
   cursor: pointer;
+
 
 }
 
@@ -173,12 +167,16 @@ nav .btn a {
 
 nav .btn:hover {
   color: rgb(234, 35, 74);
+
   background-color: #4B4B4B;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* add a border box with transparency */
   border-radius: 5px;
   padding: 5px;
   background: rgba(0, 0, 0, 0.2);
-  * add a slight background transparency */
+ 
+
+  background-color: #4b4b4b;
+
 }
 
 nav ul a {
@@ -205,7 +203,7 @@ nav ul a:hover {
 }
 
 .change_btn {
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 
 .change_btn:hover {
@@ -217,7 +215,7 @@ nav ul a:hover {
 }
 
 nav li a.Courses {
-  color: #F63232;
+  color: #f63232;
 }
 
 .dropdown1qp {
@@ -265,21 +263,20 @@ nav li a.Courses {
   align-items: center;
 }
 
-.imag img{
+.imag img {
   display: flex;
   height: auto;
   width: 100%;
-  cursor:default;
+  cursor: default;
 }
 
 /* .images {
   /* width: 100%;
   height: 600px; */
-  /* background-image: url(main\ banner\ front.png);
+/* background-image: url(main\ banner\ front.png);
   background-size: auto;
   background-repeat: no-repeat;
 } */
-
 
 /* .images a button {
   font-weight: 600;
@@ -295,7 +292,7 @@ nav li a.Courses {
 
 .card {
   background-color: lightcoral;
-  background: linear-gradient(180deg, #4CAF97 0%, #51C6AB 100%);
+  background: linear-gradient(180deg, #4caf97 0%, #51c6ab 100%);
 }
 
 .btn {
@@ -310,7 +307,6 @@ nav li a.Courses {
 
 .cardwd {
   background-color: lightskyblue;
-
 }
 
 .cardp {
@@ -319,7 +315,7 @@ nav li a.Courses {
 
 .card1 {
   background-color: lightcoral;
-  background: linear-gradient(180deg, #4CAF97 0%, #51C6AB 100%);
+  background: linear-gradient(180deg, #4caf97 0%, #51c6ab 100%);
 }
 
 .card2 {
@@ -331,11 +327,11 @@ nav li a.Courses {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.block2{
+.block2 {
   display: flex;
   justify-content: space-evenly;
 }
-.block3{
+.block3 {
   display: flex;
   justify-content: space-evenly;
 }
@@ -366,9 +362,9 @@ nav li a.Courses {
   background-size: 100%;
   transition: all 0.5s ease; /* Smooth transition for the zoom effect */
 }
-.common .btn{
+.common .btn {
   position: absolute;
-    bottom: 20px;
+  bottom: 20px;
 }
 
 .gradient-bg {
@@ -380,11 +376,12 @@ nav li a.Courses {
   border-radius: 20px;
 }
 
-.common:hover{
+.common:hover {
   /* transform: scale(1.2); */
   background-size: 120%; /* Increase the background size */
 }
-.block1,.block2{
+.block1,
+.block2 {
   margin: 40px 0;
 }
 
@@ -394,7 +391,6 @@ nav li a.Courses {
   font-weight: 700;
   text-align: center;
 }
-
 
 /* From Uiverse.io by TimTrayler */
 button {
@@ -519,7 +515,6 @@ footer {
   justify-content: space-evenly;
 }
 
-
 .header {
   display: flex;
   flex-direction: column;
@@ -539,7 +534,6 @@ footer {
   border: 0.5px solid #4b4a4a;
   height: 180px;
   width: 0.009px;
-
 }
 
 .same p {
@@ -551,7 +545,7 @@ footer {
   color: #d6d3d3d0;
 }
 
-.same>a:hover {
+.same > a:hover {
   color: #ffffff;
 }
 
@@ -569,23 +563,21 @@ footer {
   align-items: center;
 }
 
-.icon_flex>a>i {
+.icon_flex > a > i {
   font-size: 21px;
   color: #d6d3d3;
 }
 
-.icon_flex>a>i:hover {
+.icon_flex > a > i:hover {
   font-size: 25px;
   color: #ffffff;
   transition: 0.2s;
 }
 
-.email_adress>span {
-  
+.email_adress > span {
   color: #ffffff;
   line-height: 23px;
   letter-spacing: 0.01cm;
-
 }
 
 .num {
@@ -612,7 +604,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .courses p {
@@ -642,31 +633,27 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
-
 }
 
-.copyright p{
+.copyright p {
   font-size: medium;
 }
-
 
 /* responsive styles */
 
 @media screen and (max-width: 1400px) {
-
   nav .btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media screen and (max-width: 960px) {
   nav ul a {
     font-size: 16px;
   }
-  
+
   nav ul {
     width: 40%;
     font-size: large;
@@ -680,7 +667,6 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media screen and (max-width: 730px) {
@@ -709,7 +695,7 @@ footer {
     color: #121212;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
@@ -740,7 +726,6 @@ footer {
 }
 
 @media screen and (max-width: 580px) {
-
   nav .btn {
     height: 30px;
     font-size: 10px;
@@ -758,17 +743,14 @@ footer {
 }
 
 @media screen and (max-width: 1400px) {
-
   nav .btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media screen and (max-width: 960px) {
-
   nav ul a {
     font-size: 16px;
   }
@@ -786,11 +768,9 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
-
 }
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 880px) {
   /* .card-client{
     width: 14rem;
     height: 20rem;
@@ -806,100 +786,100 @@ footer {
     font-size: 15px;
   } */
 
-  .courses_link{
-   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  }
-
-  .same p{
-    font-size: 15px;
-  }
-
-  .same a{
-    font-size: 13.5px;
-  }
-
-  .email_adress>span{
-    font-size: 13.5px;
-  }
-
-  .num{
-    font-size: 15px;
-  }
-  .icon_flex{
+  .courses_link {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
   }
-  .icon_flex>a>i{
+
+  .same p {
+    font-size: 15px;
+  }
+
+  .same a {
+    font-size: 13.5px;
+  }
+
+  .email_adress > span {
+    font-size: 13.5px;
+  }
+
+  .num {
+    font-size: 15px;
+  }
+  .icon_flex {
+    width: 100%;
+  }
+  .icon_flex > a > i {
     font-size: 17px;
   }
-  .icon_flex>a>i:hover{
+  .icon_flex > a > i:hover {
     font-size: 21px;
   }
 }
 
 @media screen and (max-width: 810px) {
- .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
-  }
-  .roadmap{
+  /* .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
+  } */
+  .roadmap {
     display: flex;
     flex-direction: column;
   }
 
-  .roadmap_btns{
+  .roadmap_btns {
     width: 100%;
     display: flex;
     flex-direction: row;
   }
-  .roadmap_btns button{
+  .roadmap_btns button {
     width: 33%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  .roadmap_btns_right button{
+  .roadmap_btns_right button {
     width: 33%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  .roadmap_btns_right{
+  .roadmap_btns_right {
     width: 100%;
     display: flex;
     flex-direction: row;
   }
-  
-  .img1{
+
+  .img1 {
     margin-left: 20px;
     width: 90%;
   }
-  .img2{
+  .img2 {
     margin-left: 20px;
     width: 90%;
   }
-  .img3{
+  .img3 {
     margin-left: 20px;
     width: 90%;
   }
-  .img4{
+  .img4 {
     margin-left: 20px;
     width: 90%;
   }
-  .img5{
+  .img5 {
     margin-left: 20px;
     width: 90%;
   }
-  .img6{
+  .img6 {
     margin-left: 20px;
     width: 90%;
   }
 }
 
 @media screen and (max-width: 730px) {
-  .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
-  }
+  /* .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
+  } */
   .checkbtn {
     display: block;
     margin: 5px 0;
@@ -925,7 +905,7 @@ footer {
     color: #121212;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
@@ -966,42 +946,42 @@ footer {
     flex-direction: column;
   } */
 
-  .address{
+  .address {
     display: flex;
     flex-direction: column;
   }
-  .common{
+  .common {
     margin: 20px;
   }
-  .common>h2{
+  .common > h2 {
     text-align: center;
     margin-top: 7px;
   }
-  .common h3{
+  .common h3 {
     text-align: center;
   }
-  .common>p{
+  .common > p {
     text-align: center;
   }
-  .common .span{
+  .common .span {
     text-align: center;
   }
-  .common>h4{
+  .common > h4 {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 660px){
-  .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
-  }
-  .box1{
+@media screen and (max-width: 660px) {
+  /* .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
+  } */
+  .box1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .header{
+  .header {
     text-align: center;
   }
   .policy {
@@ -1009,45 +989,45 @@ footer {
     margin-top: 20px;
   }
 
-  .media{
+  .media {
     text-align: center;
     margin-top: 20px;
     text-align: center;
   }
-  .icon_flex{
+  .icon_flex {
     width: 130%;
   }
-  .icon_flex>a>i{
+  .icon_flex > a > i {
     font-size: 17px;
   }
-  .icon_flex>a>i:hover{
+  .icon_flex > a > i:hover {
     font-size: 21px;
   }
 
-  .vertical_line{
+  .vertical_line {
     display: none;
   }
 
-  .email_adress{
+  .email_adress {
     text-align: center;
   }
 
-  .course_flex{
+  .course_flex {
     margin-top: 20px;
   }
-  .courses p{
+  .courses p {
     text-align: center;
   }
-  .courses_link{
+  .courses_link {
     text-align: center;
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 580px) {
-.dropdown1qp:hover .dropdown-content1qp {
-      display: none;
-  }
+  /* .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
+  } */
   nav .btn {
     height: 30px;
     font-size: 10px;
@@ -1064,36 +1044,36 @@ footer {
   }
 }
 
-@media screen and (max-width: 470px){
-  .block1{
+@media screen and (max-width: 470px) {
+  .block1 {
     display: flex;
     flex-direction: column;
   }
-  .block2{
+  .block2 {
     display: flex;
     flex-direction: column;
   }
-  .block3{
+  .block3 {
     display: flex;
     flex-direction: column;
   }
-  .common{
+  .common {
     width: 90%;
     height: 200px;
   }
-  .roadmap_btns button{
+  .roadmap_btns button {
     font-size: 10px;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .roadmap_btns_right button{
+  .roadmap_btns_right button {
     font-size: 10px;
   }
 }
 * {
-  -webkit-tap-highlight-color:transparent;
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   font-family: tahoma;
@@ -1112,8 +1092,8 @@ body {
   /* position: relative; */
   width: 100%;
   height: 745px; /* Adjust height to fit your needs */
-  background-image: url('home banner.png'); /* Replace with the actual path to your image */
-  background-size:cover; /* Make sure the background covers the entire section */
+  background-image: url("home banner.png"); /* Replace with the actual path to your image */
+  background-size: cover; /* Make sure the background covers the entire section */
   background-position: center; /* Center the background image */
   display: flex;
   align-items: center;
@@ -1167,13 +1147,6 @@ body {
   }
 }
 
-
-
-
-
-
-
-
 /* //// */
 @keyframes fadeInAnimation {
   0% {
@@ -1191,6 +1164,7 @@ p {
 
 
 
+
   nav {
     width: 100%;
     background: linear-gradient(to bottom, #8f8d8d, #ffffff00);
@@ -1201,6 +1175,18 @@ p {
     display: flex;
     justify-content: space-between;
   }
+
+nav {
+  width: 100%;
+  background: transparent;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 nav .main_logo {
   display: flex;
@@ -1234,7 +1220,6 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
-
 }
 
 nav .btn {
@@ -1260,7 +1245,7 @@ nav .btn a {
 
 nav .btn:hover {
   color: rgb(234, 35, 74);
-  background-color: #4B4B4B;
+  background-color: #4b4b4b;
 }
 
 nav ul a {
@@ -1281,7 +1266,7 @@ nav ul a:hover {
 }
 
 .change_btn {
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 
 .change_btn:hover {
@@ -1289,7 +1274,7 @@ nav ul a:hover {
 }
 
 nav li a.Courses {
-  color: #F63232;
+  color: #f63232;
 }
 
 .dropdown1qp {
@@ -1337,21 +1322,20 @@ nav li a.Courses {
   align-items: center;
 }
 
-.imag img{
+.imag img {
   display: flex;
   height: auto;
   width: 100%;
-  cursor:default;
+  cursor: default;
 }
 
 /* .images {
   /* width: 100%;
   height: 600px; */
-  /* background-image: url(main\ banner\ front.png);
+/* background-image: url(main\ banner\ front.png);
   background-size: auto;
   background-repeat: no-repeat;
 } */
-
 
 /* .images a button {
   font-weight: 600;
@@ -1382,7 +1366,6 @@ nav li a.Courses {
 
 .cardwd {
   background-color: lightskyblue;
-
 }
 
 .cardp {
@@ -1402,11 +1385,11 @@ nav li a.Courses {
   display: flex;
   justify-content: space-evenly;
 } */
-.block2{
+.block2 {
   display: flex;
   justify-content: space-evenly;
 }
-.block3{
+.block3 {
   display: flex;
   justify-content: space-evenly;
 }
@@ -1439,7 +1422,6 @@ nav li a.Courses {
   text-transform: capitalize;
   font-weight: 700;
 } */
-
 
 /* From Uiverse.io by TimTrayler */
 button {
@@ -1564,7 +1546,6 @@ footer {
   justify-content: space-evenly;
 }
 
-
 .header {
   display: flex;
   flex-direction: column;
@@ -1584,7 +1565,6 @@ footer {
   border: 0.5px solid #4b4a4a;
   height: 180px;
   width: 0.009px;
-
 }
 
 .same p {
@@ -1596,7 +1576,7 @@ footer {
   color: #d6d3d3d0;
 }
 
-.same>a:hover {
+.same > a:hover {
   color: #ffffff;
 }
 
@@ -1614,23 +1594,21 @@ footer {
   align-items: center;
 }
 
-.icon_flex>a>i {
+.icon_flex > a > i {
   font-size: 21px;
   color: #d6d3d3;
 }
 
-.icon_flex>a>i:hover {
+.icon_flex > a > i:hover {
   font-size: 25px;
   color: #ffffff;
   transition: 0.2s;
 }
 
-.email_adress>span {
-  
+.email_adress > span {
   color: #ffffff;
   line-height: 23px;
   letter-spacing: 0.01cm;
-
 }
 
 .num {
@@ -1657,7 +1635,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .courses p {
@@ -1687,31 +1664,27 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
-
 }
 
-.copyright p{
+.copyright p {
   font-size: medium;
 }
-
 
 /* responsive styles */
 
 @media screen and (max-width: 1400px) {
-
   nav .btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media screen and (max-width: 960px) {
   nav ul a {
     font-size: 16px;
   }
-  
+
   nav ul {
     width: 40%;
     font-size: large;
@@ -1725,7 +1698,6 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media screen and (max-width: 730px) {
@@ -1754,7 +1726,7 @@ footer {
     color: #121212;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
@@ -1785,7 +1757,6 @@ footer {
 }
 
 @media screen and (max-width: 580px) {
-
   nav .btn {
     height: 30px;
     font-size: 10px;
@@ -1803,17 +1774,14 @@ footer {
 }
 
 @media screen and (max-width: 1400px) {
-
   nav .btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media screen and (max-width: 960px) {
-
   nav ul a {
     font-size: 16px;
   }
@@ -1831,11 +1799,9 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
-
 }
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 880px) {
   /* .card-client{
     width: 14rem;
     height: 20rem;
@@ -1851,100 +1817,100 @@ footer {
     font-size: 15px;
   } */
 
-  .courses_link{
-   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  }
-
-  .same p{
-    font-size: 15px;
-  }
-
-  .same a{
-    font-size: 13.5px;
-  }
-
-  .email_adress>span{
-    font-size: 13.5px;
-  }
-
-  .num{
-    font-size: 15px;
-  }
-  .icon_flex{
+  .courses_link {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
   }
-  .icon_flex>a>i{
+
+  .same p {
+    font-size: 15px;
+  }
+
+  .same a {
+    font-size: 13.5px;
+  }
+
+  .email_adress > span {
+    font-size: 13.5px;
+  }
+
+  .num {
+    font-size: 15px;
+  }
+  .icon_flex {
+    width: 100%;
+  }
+  .icon_flex > a > i {
     font-size: 17px;
   }
-  .icon_flex>a>i:hover{
+  .icon_flex > a > i:hover {
     font-size: 21px;
   }
 }
 
 @media screen and (max-width: 810px) {
- .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
-  }
-  .roadmap{
+  /* .dropdown1qp:hover .dropdown-content1qp {
+    display: none; 
+  }*/
+  .roadmap {
     display: flex;
     flex-direction: column;
   }
 
-  .roadmap_btns{
+  .roadmap_btns {
     width: 100%;
     display: flex;
     flex-direction: row;
   }
-  .roadmap_btns button{
+  .roadmap_btns button {
     width: 33%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  .roadmap_btns_right button{
+  .roadmap_btns_right button {
     width: 33%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  .roadmap_btns_right{
+  .roadmap_btns_right {
     width: 100%;
     display: flex;
     flex-direction: row;
   }
-  
-  .img1{
+
+  .img1 {
     margin-left: 20px;
     width: 90%;
   }
-  .img2{
+  .img2 {
     margin-left: 20px;
     width: 90%;
   }
-  .img3{
+  .img3 {
     margin-left: 20px;
     width: 90%;
   }
-  .img4{
+  .img4 {
     margin-left: 20px;
     width: 90%;
   }
-  .img5{
+  .img5 {
     margin-left: 20px;
     width: 90%;
   }
-  .img6{
+  .img6 {
     margin-left: 20px;
     width: 90%;
   }
 }
 
 @media screen and (max-width: 730px) {
-  .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
-  }
+  /* .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
+  } */
   .checkbtn {
     display: block;
     margin: 5px 0;
@@ -1970,7 +1936,7 @@ footer {
     color: #121212;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
@@ -2011,42 +1977,42 @@ footer {
     flex-direction: column;
   } */
 
-  .address{
+  .address {
     display: flex;
     flex-direction: column;
   }
-  .common{
+  .common {
     margin: 20px;
   }
-  .common>h2{
+  .common > h2 {
     text-align: center;
     margin-top: 7px;
   }
-  .common h3{
+  .common h3 {
     text-align: center;
   }
-  .common>p{
+  .common > p {
     text-align: center;
   }
-  .common .span{
+  .common .span {
     text-align: center;
   }
-  .common>h4{
+  .common > h4 {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 660px){
-  .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
-  }
-  .box1{
+@media screen and (max-width: 660px) {
+  /* .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
+  } */
+  .box1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .header{
+  .header {
     text-align: center;
   }
   .policy {
@@ -2054,45 +2020,45 @@ footer {
     margin-top: 20px;
   }
 
-  .media{
+  .media {
     text-align: center;
     margin-top: 20px;
     text-align: center;
   }
-  .icon_flex{
+  .icon_flex {
     width: 130%;
   }
-  .icon_flex>a>i{
+  .icon_flex > a > i {
     font-size: 17px;
   }
-  .icon_flex>a>i:hover{
+  .icon_flex > a > i:hover {
     font-size: 21px;
   }
 
-  .vertical_line{
+  .vertical_line {
     display: none;
   }
 
-  .email_adress{
+  .email_adress {
     text-align: center;
   }
 
-  .course_flex{
+  .course_flex {
     margin-top: 20px;
   }
-  .courses p{
+  .courses p {
     text-align: center;
   }
-  .courses_link{
+  .courses_link {
     text-align: center;
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 580px) {
-.dropdown1qp:hover .dropdown-content1qp {
-      display: none;
-  }
+  /* .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
+  } */
   nav .btn {
     height: 30px;
     font-size: 10px;
@@ -2109,31 +2075,116 @@ footer {
   }
 }
 
-@media screen and (max-width: 470px){
-  .block1{
+@media screen and (max-width: 470px) {
+  .block1 {
     display: flex;
     flex-direction: column;
   }
-  .block2{
+  .block2 {
     display: flex;
     flex-direction: column;
   }
-  .block3{
+  .block3 {
     display: flex;
     flex-direction: column;
   }
-  .common{
+  .common {
     width: 90%;
     height: 200px;
   }
-  .roadmap_btns button{
+  .roadmap_btns button {
     font-size: 10px;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .roadmap_btns_right button{
+  .roadmap_btns_right button {
     font-size: 10px;
+  }
+}
+
+/* Style for the dropdown content container */
+.dropdown-content1qp {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.dropdown-content1qp h2 {
+  font-size: 22px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.dropdown-content1qp .links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.dropdown-content1qp h2:hover {
+  color: #77b9ff;
+  cursor: pointer;
+}
+
+.dropdown-content1qp .links a {
+  display: block;
+  text-align: left;
+  padding: 2px;
+  border-radius: 5px;
+  color: #004fa3;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content1qp .links a:hover {
+  background-color: #77b9ff;
+  color: white;
+}
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .dropdown-content1qp {
+    padding: 15px;
+  }
+
+  .dropdown-content1qp .links {
+    gap: 4px;
+  }
+
+  .dropdown-content1qp h2 {
+    font-size: 18px;
+  }
+}
+
+/* For screens smaller than 480px (small phones) */
+@media (max-width: 480px) {
+  .dropdown-content1qp {
+    padding: 4px;
+    max-width: 400px;
+  }
+
+  .dropdown-content1qp h2 {
+    margin-top: 2px;
+    font-size: 16px;
+  }
+
+  .dropdown-content1qp .links {
+    gap: 1px;
+  }
+
+  .dropdown-content1qp .links a {
+    padding: 2px;
   }
 }
