@@ -63,11 +63,14 @@ body {
   height: auto;
 }
 
-.imag img {
-  width: 100%;
+
+.imag img{
+  display: block;
   height: auto;
-  max-height: 80vh; /* Adjust the height as needed */
-  object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+  width: 100%;
+  max-width:100%;
+  object-fit:cover;
+  cursor:default;
 }
 
 .explore-btn {
@@ -300,14 +303,7 @@ nav li a.Courses {
   align-items: center;
 }
 
-.imag img{
-  display: block;
-  height: auto;
-  width: 100%;
-  max-width:100%;
-  object-fit:cover;
-  cursor:default;
-}
+
 
 /* .images {
   /* width: 100%;
@@ -1330,12 +1326,9 @@ nav li a.Courses {
   align-items: center;
 }
 
-.imag img{
-  display: flex;
-  height: auto;
-  width: 100%;
-  cursor:default;
-}
+
+
+
 
 /* .images {
   /* width: 100%;
