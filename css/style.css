@@ -97,14 +97,16 @@ p {
 
 
 nav {
-  width: 100%;
-  background: transparent;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
+
+    width: 100%;
+    background: rgba(243, 239, 239, 0.3); /* slightly transparent */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 nav .main_logo {
@@ -139,6 +141,7 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
+  cursor: pointer;
 
 }
 
@@ -154,6 +157,11 @@ nav .btn {
   width: 8%;
   padding: 1em 2em;
   margin-right: 50px;
+
+}
+.button:hover {
+  background-color: #002ead;
+  transition: 0.7s;
 }
 
 nav .btn a {
@@ -166,17 +174,28 @@ nav .btn a {
 nav .btn:hover {
   color: rgb(234, 35, 74);
   background-color: #4B4B4B;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* add a border box with transparency */
+  border-radius: 5px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  * add a slight background transparency */
 }
 
 nav ul a {
   font-size: 20px;
   text-decoration: none;
   color: lightgrey;
+
 }
 
 nav ul a:hover {
   text-decoration: none;
   color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* add a border box with transparency */
+  border-radius: 5px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.2); /* add a slight background transparency */
+
 }
 
 .change {
@@ -191,6 +210,10 @@ nav ul a:hover {
 
 .change_btn:hover {
   color: #121212;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* add a border box with transparency */
+  border-radius: 5px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.2); /* add a slight background transparency */
 }
 
 nav li a.Courses {
@@ -1167,16 +1190,17 @@ p {
 }
 
 
-nav {
-  width: 100%;
-  background: transparent;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-}
+
+  nav {
+    width: 100%;
+    background: linear-gradient(to bottom, #8f8d8d, #ffffff00);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
 
 nav .main_logo {
   display: flex;
