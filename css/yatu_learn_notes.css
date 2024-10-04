@@ -339,7 +339,41 @@ ul li a {
 ul li a:hover {
   text-decoration: underline;
 }
+.course_flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.courses {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.courses p {
+  margin: 5px;
+  color: #ffffff;
+}
+
+.courses_link {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.courses_link a {
+  color: #d6d3d3d0;
+  text-decoration: none;
+}
+
+.courses_link a:hover {
+  color: #ffffff;
+}
 .copyright {
   height: 50px;
   display: flex;
@@ -401,6 +435,12 @@ ul li a:hover {
     font-size: 15px;
   } */
 
+  .courses_link{
+    display: flex;
+   justify-content: space-between;
+   width: 100%;
+   }
+   
   .body-container {
     margin: 20px 5%;
   }
