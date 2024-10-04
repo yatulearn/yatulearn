@@ -2113,3 +2113,138 @@ footer {
     font-size: 10px;
   }
 }
+/* Media query for screens with a maximum width of 660px */
+@media screen and (max-width: 660px) {
+  /* Hide dropdown content on hover for small screens */
+  .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
+  }
+
+  /* Make the box a column on small screens */
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Center the header on small screens */
+  .header {
+    text-align: center;
+  }
+
+  /* Center the policy and media sections on small screens */
+  .policy, .media {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Make the icon flex container wider on small screens */
+  .icon_flex {
+    width: 130%;
+  }
+
+  /* Increase the font size of the icons on small screens */
+  .icon_flex > a > i {
+    font-size: 17px;
+  }
+
+  /* Increase the font size of the icons on hover on small screens */
+  .icon_flex > a > i:hover {
+    font-size: 21px;
+  }
+
+  /* Hide the vertical line on small screens */
+  .vertical_line {
+    display: none;
+  }
+
+  /* Center the email address on small screens */
+  .email_adress {
+    text-align: center;
+  }
+
+  /* Add margin to the course flex container on small screens */
+  .course_flex {
+    margin-top: 20px;
+  }
+
+  /* Center the courses paragraph on small screens */
+  .courses p {
+    text-align: center;
+  }
+
+  /* Make the courses link a column on small screens */
+  .courses_link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Add animation to the footer section on small screens */
+  footer {
+    animation: fadeIn 2s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+/* Media query for screens with a maximum width of 580px */
+@media screen and (max-width: 580px) {
+  /* Hide dropdown content on hover for small screens */
+  .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
+  }
+
+  /* Reduce the size of the nav button on small screens */
+  nav .btn {
+    height: 30px;
+    font-size: 10px;
+    width: 8%;
+  }
+
+  /* Reduce the font size of the nav button link on small screens */
+  nav .btn a {
+    font-size: 10px;
+  }
+
+  /* Adjust the position of the dropdown content on small screens */
+  .dropdown-content1qp {
+    position: absolute;
+    left: 10px;
+  }
+
+  /* Add animation to the footer section on small screens */
+  footer {
+    animation: fadeIn 2s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+/* Add animation to the footer section on large screens */
+footer {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
