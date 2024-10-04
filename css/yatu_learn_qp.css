@@ -244,6 +244,15 @@ nav li a.Courses {
     width: 10%;
     text-align: center;
 }
+#sem1 button,#sem2 button,#sem3 button,#sem4 button,#sem5 button{
+  width: max-content;
+  font-weight: 200;
+}
+
+.dark-semester{
+  color: #4b4b4b;
+  border: 2px solid white;
+}
 
 .dots {
     color: transparent;
@@ -401,6 +410,30 @@ footer {
 .copyright p{
   font-size: medium;
 }
+
+
+#dark-mode:hover {
+  color: white;
+  background-color: #4B4B4B;
+}
+#dark-mode{
+  color: white;
+  background-color: rgb(234, 35, 74);
+}
+
+#doubts-btn{
+  margin-left: 15vw;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+.dark-mode-bttns {
+  color: #eeeeee;
+  border: 2px solid #4b4a4a;
+}
+
 
   @media screen and (max-width:810px){
     .branches{
