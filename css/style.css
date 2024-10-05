@@ -2,7 +2,7 @@
   -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
-  font-family: tahoma;
+  font-family: poppins, sans-serif;
   box-sizing: border-box;
 }
 
@@ -354,6 +354,16 @@ nav li a.Courses {
 .block2 {
   margin: 40px 0;
 }
+@media screen and (max-width: 600px) {
+  .container h1{
+    padding-bottom: 5vh;
+  }
+  .block1,
+ .block2{
+    margin: 0px 0;
+    padding-top: 2vh;
+  }
+}
 
 .heading {
   font-size: 23px;
@@ -468,7 +478,7 @@ button:active {
 footer {
   margin-top: 50px;
   width: 100%;
-  background-color: #121212;
+  background-color:rgb(6,6,106);
 }
 
 .flex_align {
@@ -603,6 +613,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
+  background-color: #000;
 }
 
 .copyright p {
@@ -1482,9 +1493,10 @@ button:active {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 10vh;
   width: 100%;
-  background-color: #121212;
+  background-color: rgb(6,6,106);
+  font-family: poppins;
 }
 
 .flex_align {
@@ -1619,11 +1631,13 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
+  background-color: #000;
 }
 
 .copyright p {
   font-size: medium;
 }
+*/
 
 /* responsive styles */
 

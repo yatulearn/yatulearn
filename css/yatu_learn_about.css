@@ -199,7 +199,7 @@ nav li a.Courses {
 }
 
 .about_learn h1 {
-  font-size: 2em;
+  
   width: 100%;
   letter-spacing: 0.04em;
   text-align: center;
@@ -210,12 +210,33 @@ nav li a.Courses {
 }
 
 .about_learn p {
-  margin-left: 43px;
+  margin-left: 40px;
+  margin-right: 40px;
   letter-spacing: 0.05em;
+  font-size: 20px;
   line-height: 1.4em;
 }
 
+@media screen and (max-width: 500px) {
+  .about_learn p {
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 0.02em;
+    line-height: 1.4em;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+
 /* From Uiverse.io by abrahamcalsin */
+
+.team h1 {
+  
+  width: 100%;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
 .card-client-flex {
   width: 100%;
   display: flex;
@@ -347,13 +368,14 @@ nav li a.Courses {
   transform: translate(-50%, -130%);
 }
 
+
 .border {
-  margin-top: 100px;
-  border: 1px solid black;
+  margin-top: 15vh;
+  
 }
 
 .border_address {
-  margin-top: 50px;
+  margin-top: 5vh;
   background-color: #ffffff;
 }
 
@@ -368,6 +390,7 @@ nav li a.Courses {
 .add {
   line-height: 1.3em;
   font-size: 1em;
+  text-align:justify
 }
 
 .common>i {
@@ -388,7 +411,7 @@ nav li a.Courses {
   margin-top: 10px;
   text-align: center;
   font-size: 20px;
-  letter-spacing: -0.01cm;
+  letter-spacing: -0.019cm;
 }
 
 .common>h2 {
@@ -447,7 +470,8 @@ nav li a.Courses {
 
 footer {
   width: 100%;
-  background-color: #121212;
+  background-color: rgb(6,6,106);
+  margin-top: 10vh;
 }
 
 .flex_align {
@@ -587,6 +611,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
+  background-color: #121212;
 
 }
 

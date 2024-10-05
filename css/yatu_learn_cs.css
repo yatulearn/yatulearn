@@ -214,7 +214,7 @@ main {
 
 footer {
   width: 100%;
-  background-color: #121212;
+  background-color: rgb(6,6,106);
 }
 
 .flex_align {
@@ -354,6 +354,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
+  background-color: #121212;
 
 }
 
