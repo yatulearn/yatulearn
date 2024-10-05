@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Share your feedback!</h1>
+    <form action="/feedback" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <div class="rating" id="rating">
+            <i class="fas fa-star" data-value="1"></i>
+            <i class="fas fa-star" data-value="2"></i>
+            <i class="fas fa-star" data-value="3"></i>
+            <i class="fas fa-star" data-value="4"></i>
+            <i class="fas fa-star" data-value="5"></i>
+            <input type="hidden" name="rating" id="rating-input" required>
+        </div>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>All Feedbacks</h2>
+    <div class="feedback-container">
+        <% feedbackList.forEach(feedback => { %>
+            <div class="feedback-card">
+                <p><strong>Name:</strong> <%= feedback.name %></p>
+                <p><strong>Feedback:</strong> <%= feedback.message %></p>
+                <p><strong>Rating:</strong> 
+                    <% for (let i = 0; i < feedback.rating; i++) { %>
+                        <i class="fas fa-star golden"></i>
+                    <% } %>
+                </p>
+                
+            </div>
+        <% }) %>
+    </div>
+
+    <script>
+        const stars = document.querySelectorAll('.rating i');
+const ratingInput = document.getElementById('rating-input');
+
+stars.forEach(star => {
+    star.addEventListener('click', function() {
+        const value = this.getAttribute('data-value');
+        ratingInput.value = value; // Set the hidden input value
+
+        // Remove 'selected' class from all stars
+        stars.forEach(s => s.classList.remove('selected'));
+
+        // Add 'selected' class to all stars up to the clicked star
+        for (let i = 0; i < value; i++) {
+            stars[i].classList.add('selected');
+        }
+    });
+
+    // Add hover effect
+    star.addEventListener('mouseover', function() {
+        const value = this.getAttribute('data-value');
+
+        // Remove 'selected' class from all stars
+        stars.forEach(s => s.classList.remove('selected'));
+
+        // Highlight all stars up to and including the hovered star
+        for (let i = 0; i < value; i++) {
+            stars[i].classList.add('selected');
+        }
+    });
+
+    // Reset the stars when not hovering
+    star.addEventListener('mouseout', function() {
+        const value = ratingInput.value; // Get the selected rating value
+
+        // Remove 'selected' class from all stars
+        stars.forEach(s => s.classList.remove('selected'));
+
+        // Add 'selected' class to the previously selected stars
+        if (value) {
+            for (let i = 0; i < value; i++) {
+                stars[i].classList.add('selected');
+            }
+        }
+    });
+});
+
+    </script>
+    
+    
+</body>
+</html>
+
