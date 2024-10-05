@@ -23,8 +23,45 @@ body {
   }
 }
 
-p {
-  font-size: 18px;
+.content-box {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  padding-left: 10px;
+  margin: 20px auto; /* Centered with margin */
+  margin-top: 80px;
+  max-width: 1300px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.content-box p{
+  padding-left: 50px;
+  justify-content: center;
+}
+.dsa-heading {
+    position: relative;
+    padding-left: 50px; /* Space for the triangular bullet */
+}
+
+.dsa-heading::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Positioning the bullet */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%) rotate(90deg); /* Adjust for vertical alignment and rotate */
+    
+    /* Create a triangular bullet */
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent; /* Left side of triangle */
+    border-right: 15px solid transparent; /* Right side of triangle */
+    border-bottom: 20px solid #3498db; /* Color of the triangle */
+}
+
+.p {
+  line-height: 1.6; /* Improved line spacing */
+  margin: 10px 0; /* Space between paragraphs */
 }
 
 nav {
