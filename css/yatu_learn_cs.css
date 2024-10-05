@@ -23,10 +23,20 @@ body {
   }
 }
 
-p {
-  font-size: 18px;
+.content-box {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  margin: 20px auto; /* Centered with margin */
+  max-width: 1300px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
+.p {
+  line-height: 1.6; /* Improved line spacing */
+  margin: 10px 0; /* Space between paragraphs */
+}
 nav {
   width: 100%;
   background: transparent;
@@ -63,6 +73,7 @@ nav .main_logo .logo a img {
 #check {
   display: none;
 }
+
 nav ul {
   width: 36%;
   display: flex;
@@ -179,10 +190,6 @@ h2 {
   color: blue;
 }
 
-.What {
-  margin-top: 40px;
-}
-
 .p {
   margin-left: 50px;
   margin-right: 50px;
@@ -198,22 +205,6 @@ span {
   line-height: 42px;
 }
 
-h2 {
-  margin-top: 40px; /* Space above the heading */
-  margin-bottom: 20px; /* Space below the heading */
-  text-align: center; /* Center the heading */
-}
-
-ol {
-  margin: 20px; /* Space around the ordered list */
-  padding-left: 20px; /* Indent the ordered list */
-}
-
-ul {
-  margin: 10px 0; /* Space around the unordered list */
-  padding-left: 20px; /* Indent the unordered list */
-}
-
 main {
   margin: 50px;
   text-align: center;
@@ -221,17 +212,7 @@ main {
   margin-right: auto;
 }
 
-h3 {
-  margin-left: 50px;
-}
-
-h4 {
-  margin: 30px;
-  margin-left: 50px;
-}
-
 footer {
-  margin-top:40px;
   width: 100%;
   background-color: #121212;
 }
@@ -640,4 +621,19 @@ footer {
     width: 90%;
     height: auto;
   }
+}
+
+.content-box {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  margin: 20px auto; /* Centered with margin */
+  max-width: 1300px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.p {
+  line-height: 1.6; /* Improved line spacing */
+  margin: 10px 0; /* Space between paragraphs */
 }

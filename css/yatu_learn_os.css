@@ -23,8 +23,19 @@ body {
   }
 }
 
+.content-box {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  margin: 20px auto; /* Centered with margin */
+  max-width: 1300px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
 .p {
-  font-size: 18px;
+  line-height: 1.6; /* Improved line spacing */
+  margin: 10px 0; /* Space between paragraphs */
 }
 
 nav {
@@ -169,13 +180,13 @@ nav li a.Courses {
   align-items: center;
 }
 
-h1 {
+.h1 {
   margin-top: 100px;
   text-align: center;
 
 }
 
-h2 {
+body h2 {
   margin-left: 50px;
   color: blue;
 }
@@ -191,7 +202,7 @@ b {
   color: green;
 }
 
-span {
+body span {
   line-height: 42px;
 }
 
@@ -446,9 +457,10 @@ footer {
 }
 
 @media screen and (max-width: 730px) {
- .dropdown1qp:hover .dropdown-content1qp {
+  .dropdown1qp:hover .dropdown-content1qp {
       display: none;
   }
+
   .checkbtn {
     display: block;
     margin: 5px 0;
@@ -540,6 +552,7 @@ footer {
   .dropdown1qp:hover .dropdown-content1qp {
       display: none;
   }
+
   .box1{
     display: flex;
     flex-direction: column;
@@ -593,6 +606,7 @@ footer {
 .dropdown1qp:hover .dropdown-content1qp {
       display: none;
   }
+
   nav .btn {
     height: 30px;
     font-size: 10px;
@@ -611,4 +625,19 @@ footer {
     width: 90%;
     height: auto;
   }
+}
+
+.content-box {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  margin: 20px auto; /* Centered with margin */
+  max-width: 1300px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.p {
+  line-height: 1.6; /* Improved line spacing */
+  margin: 10px 0; /* Space between paragraphs */
 }

@@ -1,5 +1,4 @@
 * {
-  -webkit-tap-highlight-color:transparent;
   margin: 0;
   padding: 0;
   font-family: tahoma;
@@ -23,8 +22,19 @@ body {
   }
 }
 
-p {
-  font-size: 18px;
+.content-box {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  margin: 20px auto; /* Centered with margin */
+  max-width: 1300px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.p {
+  line-height: 1.6; /* Improved line spacing */
+  margin: 10px 0; /* Space between paragraphs */
 }
 
 nav {
@@ -169,15 +179,20 @@ nav li a.Courses {
   align-items: center;
 }
 
-.h1 {
+h1 {
   margin-top: 100px;
   text-align: center;
 
 }
 
-body h2 {
+h2 {
   margin-left: 50px;
   color: blue;
+  margin-top: 50px;
+}
+
+.What {
+  margin-top: 40px;
 }
 
 .p {
@@ -189,9 +204,12 @@ body h2 {
 
 b {
   color: green;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
-body span {
+span {
   line-height: 42px;
 }
 
@@ -200,6 +218,15 @@ main {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+h3 {
+  margin-left: 50px;
+}
+
+h4 {
+  margin: 30px;
+  margin-left: 50px;
 }
 
 footer {
@@ -446,7 +473,7 @@ footer {
 }
 
 @media screen and (max-width: 730px) {
-  .dropdown1qp:hover .dropdown-content1qp {
+ .dropdown1qp:hover .dropdown-content1qp {
       display: none;
   }
 
@@ -614,4 +641,19 @@ footer {
     width: 90%;
     height: auto;
   }
+}
+
+.content-box {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  margin: 20px auto; /* Centered with margin */
+  max-width: 1300px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.p {
+  line-height: 1.6; /* Improved line spacing */
+  margin: 10px 0; /* Space between paragraphs */
 }
