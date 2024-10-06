@@ -1,0 +1,36 @@
+:root {
+    --background-color: #d6c2c2;
+    --text-color: #160202;
+    --nav-background: #f8f8f8;
+    --card-background: #ffffff;
+  }
+  
+  .dark-theme {
+    --background-color: #1a1a1a;
+    --text-color: rgba(27, 7, 7, 0.849);
+    --nav-background: #2a2a2a;
+    --card-background: #2a2a2a;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+ 
+  
+  .common {
+    background-color: var(--card-background);
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    position: absolute;
+    top: 10px;
+    right: 300px;
+  }
