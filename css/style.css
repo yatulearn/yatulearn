@@ -1224,7 +1224,7 @@ nav ul a:hover {
   color: #4b4b4b;
 }
 
-.change_btn:hover {
+.change_btn:hover  {
   color: #121212;
 }
 
@@ -1237,7 +1237,8 @@ nav li a.Courses {
 }
 
 .qp:hover {
-  color: #ffffff;
+  /* color: #ffffff;  */
+  color: #121212;
 }
 
 .dropdown-content1qp {
