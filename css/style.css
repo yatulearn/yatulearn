@@ -805,13 +805,15 @@ footer {
   } */
   .roadmap {
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
 
   .roadmap_btns {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    /* flex-direction: row; */
   }
   .roadmap_btns button {
     width: 33%;
@@ -828,7 +830,8 @@ footer {
   .roadmap_btns_right {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    /* flex-direction: row; */
   }
 
   .img1 {
@@ -1248,7 +1251,7 @@ nav li a.Courses {
 }
 
 .qp:hover {
-  color: #121212;
+  color: #ffffff;
 }
 
 .dropdown-content1qp {
