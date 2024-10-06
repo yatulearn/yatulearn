@@ -6,6 +6,34 @@
   box-sizing: border-box;
 }
 
+.dust-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Allow clicking through the dust */
+}
+
+.dust {
+  position: absolute;
+  width: 12px;
+  height:12px;
+  border-radius: 50%;
+  background: rgba(146, 222, 16, 0.8); /* Fairy dust color */
+  pointer-events: none; /* Prevent interference with mouse events */
+  animation: twinkle 1s forwards;
+}
+
+@keyframes twinkle {
+  0% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(2);
+  }
+}
+
 body {
   background-image: url(skyblue_theme.jpeg.jpg);
   animation: fadeInAnimation ease 3s;
