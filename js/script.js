@@ -1,3 +1,24 @@
+const themeIcon = document.getElementById('theme-icon');
+
+// Check the current mode in local storage, if any
+let isDarkMode = localStorage.getItem('dark-mode') === 'true';
+
+// Apply the initial mode
+document.body.classList.toggle('dark-mode', isDarkMode);
+themeIcon.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
+
+themeIcon.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+    document.body.classList.toggle('dark-mode', isDarkMode);
+
+    // Update the icon
+    themeIcon.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
+
+    // Save the current mode in local storage
+    localStorage.setItem('dark-mode', isDarkMode);
+});
+
+
 // Function to set the active button
 function setActive(button) {
     // Get all buttons inside '.roadmap_btns' and '.roadmap_btns_right'
@@ -36,4 +57,4 @@ document.getElementById('scrollUpLink').addEventListener('click', function(event
       top: 0, 
       behavior: 'smooth' 
     });
-  });
+  });  
