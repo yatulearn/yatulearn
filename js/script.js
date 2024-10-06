@@ -19,10 +19,13 @@ function setActive(button) {
 
     // Change the displayed image based on the clicked button
     const imageElement = document.querySelector('.roadmap_imgs img'); // Assuming only one image is shown at a time
-    
+
+    // Log the button class to debug
+    console.log("Clicked button:", button.classList);
+
     // Match based on class names
     if (button.classList.contains('btn_web')) {
-        imageElement.src = 'assets/images/Ms roadmap.png';
+        imageElement.src = 'assets/images/Ms roadmap.png'; 
     } else if (button.classList.contains('btn_dsa')) {
         imageElement.src = 'assets/images/DSA.png';
     } else if (button.classList.contains('btn_cs')) {
@@ -34,14 +37,18 @@ function setActive(button) {
     } else if (button.classList.contains('btn_cn')) {
         imageElement.src = 'assets/images/cn roadmap.png';
     } else {
-        imageElement.src = ''; // Default image if needed
+        imageElement.src = 'assets/images/Ms roadmap.png'; // Default image if needed
     }
 }
 
 // Set 'Web Development' button active by default on page load
 window.onload = function() {
     const defaultButton = document.querySelector('.roadmap_btns .btn_web'); // Select 'Web Development' button
-    setActive(defaultButton); // Make it active
+    if (defaultButton) {
+        setActive(defaultButton); // Make it active
+    } else {
+        console.error("Web Development button not found");
+    }
 };
 
 // Function to handle scroll up action
