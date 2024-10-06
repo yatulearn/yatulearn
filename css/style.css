@@ -794,13 +794,15 @@ footer {
   } */
   .roadmap {
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
 
   .roadmap_btns {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    /* flex-direction: row; */
   }
   .roadmap_btns button {
     width: 33%;
@@ -817,7 +819,8 @@ footer {
   .roadmap_btns_right {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    /* flex-direction: row; */
   }
 
   .img1 {
@@ -1237,7 +1240,7 @@ nav li a.Courses {
 }
 
 .qp:hover {
-  color: #121212;
+  color: #ffffff;
 }
 
 .dropdown-content1qp {
@@ -1989,6 +1992,9 @@ footer {
   .icon_flex > a > i:hover {
     font-size: 21px;
   }
+  
+  
+  
 
   .vertical_line {
     display: none;
@@ -2143,3 +2149,50 @@ footer {
     padding: 2px;
   }
 }
+
+for linkedin
+.media .icon_flex .fa-linkedin{
+  /* Add the transition effect */
+  transition: transform 0.3s ease!important;
+}
+
+.media .icon_flex .fa-linkedin:hover {
+  color: #0072b1!important;
+  transform: scale(1.1) !important;;
+} 
+
+/* for instagram */
+
+.media .icon_flex .fa-instagram{
+  /* Add the transition effect */
+  transition: transform 0.3s ease!important;
+}
+
+.media .icon_flex .fa-instagram:hover {
+  color: #E1306C!important;
+  transform: scale(1.1) !important;;
+}
+
+/* for youtube */
+.media .icon_flex .fa-youtube{
+  /* Add the transition effect */
+  transition: transform 0.3s ease!important;
+}
+
+.media .icon_flex .fa-youtube:hover {
+  color: #FF0000!important;
+  transform: scale(1.1) !important;;
+}
+
+/* for twitter */
+.media .icon_flex .fa-x-twitter-{
+  /* Add the transition effect */
+  transition: transform 0.3s ease!important;
+}
+
+.media .icon_flex .fa-x-twittere:hover {
+  color: #FF0000!important;
+  transform: scale(1.1) !important;;
+}
+
+

@@ -23,3 +23,17 @@ window.onload = function() {
     var defaultButton = document.querySelector('.roadmap_btns .btn_web'); // Select 'Web Development' button
     setActive(defaultButton); // Make it active
 };
+document.getElementById('scrollUpLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth' 
+    });
+  });
+  document.getElementById('scrollUpLin').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth' 
+    });
+  });
