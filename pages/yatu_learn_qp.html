@@ -12,7 +12,36 @@
       referrerpolicy="no-referrer"
     />
     <title>Question Paper</title>
-    <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
+    <style>
+      /* Scroll to Top Button Styles */
+      #scrollTopBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        bottom: 30px; /* 30px from the bottom */
+        right: 30px; /* 30px from the right */
+        z-index: 99; /* Sit on top */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #ff5722; /* Bright orange color */
+        color: white; /* Text color */
+        font-weight: bold; /* Bold text */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px 20px; /* Some padding */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+      }
+
+      #scrollTopBtn:hover {
+        background-color: #e64a19; /* Darker shade on hover */
+        transform: scale(1.1); /* Slightly enlarge on hover */
+      }
+
+      /* Ensure smooth scrolling for the page */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
 
   <body>
@@ -419,7 +448,31 @@
         </div>
       </div>
     </div>
+    <button id="scrollTopBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-up"></i> <!-- Font Awesome icon -->
+    </button>
     <script src="../js/yatu_learn_script.js" crossorigin=""></script>
+    <script>
+      // Get the button
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+      // Show the button when scrolling down
+      window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopBtn.style.display = "block";
+        } else {
+          scrollTopBtn.style.display = "none";
+        }
+      };
+
+      // Scroll to the top when the button is clicked
+      scrollTopBtn.onclick = function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Smooth scroll effect
+        });
+      };
+    </script>
   </body>
 
   <footer>
