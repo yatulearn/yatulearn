@@ -29,8 +29,8 @@ p {
 
 nav {
   width: 100%;
-  background: transparent;
-  padding: 10px;
+  background: white;
+  padding: 5px;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -45,6 +45,10 @@ nav .main_logo {
 
 nav .main_logo .logo a img {
   margin-left: 30px;
+  border-color: #000000;
+  border-radius: 12px;
+  width: 70px;
+  height: 60px;
 }
 
 .checkbtn {
@@ -66,7 +70,7 @@ nav .main_logo .logo a img {
 
 .checkbtn {
   font-size: 30px;
-  color: gray;
+  color: rgb(0, 0, 0);
   line-height: 80px;
   display: none;
   cursor: pointer;
@@ -75,6 +79,7 @@ nav .main_logo .logo a img {
 .checkbtn:hover {
   font-size: 35px;
   transition: 0.2s;
+  color: black;
 }
 
 #check {
@@ -92,39 +97,39 @@ nav ul {
 
 nav .btn {
   --hover-shadows: none;
-  border: none;
+  border: 2px solid #ffffff;
   font-weight: 100;
   font-size: 10px;
   letter-spacing: normal;
   border-radius: 0.7em;
-  background-color: rgb(234, 35, 74);
+  background-color: rgb(0, 0, 0);
+  color: #d6d3d3;
   cursor: pointer;
   width: 8%;
-  padding: 1em 2em;
   margin-right: 50px;
 }
 
 nav .btn a {
-  font-size: 12px;
+  font-size: 20px;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
 }
 
 nav .btn:hover {
-  color: rgb(234, 35, 74);
+  color: rgb(0, 0, 0);
   background-color: #4B4B4B;
 }
 
 nav ul a {
   font-size: 20px;
   text-decoration: none;
-  color: lightgrey;
+  color: rgb(1, 1, 1);
 }
 
 nav ul a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 .change {
@@ -150,17 +155,18 @@ nav li a.Courses {
 }
 
 .qp:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 .dropdown-content1qp {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: rgb(183, 177, 177);
   width: 430px;
   height: 350px;
   padding: 12px 16px;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .dropdown1qp:hover .dropdown-content1qp {
@@ -210,9 +216,10 @@ nav li a.Courses {
 }
 
 .about_learn p {
-  margin-left: 43px;
-  letter-spacing: 0.05em;
-  line-height: 1.4em;
+  margin-left: 30px;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
+  text-align: center;
 }
 
 /* From Uiverse.io by abrahamcalsin */
@@ -355,6 +362,7 @@ nav li a.Courses {
 .border_address {
   margin-top: 50px;
   background-color: #ffffff;
+  margin-bottom: 50px;
 }
 
 .address {

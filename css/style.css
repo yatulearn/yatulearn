@@ -106,6 +106,10 @@ nav .main_logo {
 
 nav .main_logo .logo a img {
   margin-left: 30px;
+  border-color: #000000;
+  border-radius: 12px;
+  width: 70px;
+  height: 60px;
 }
 
 .checkbtn {
@@ -140,7 +144,7 @@ nav .btn {
   font-size: 14px;
   letter-spacing: normal;
   border-radius: 0.7em;
-  background-color: rgb(234, 35, 74);
+  background-color: rgb(4, 3, 4);
   cursor: pointer;
   width: 8%;
   padding: 1em 2em;
@@ -155,7 +159,7 @@ nav .btn a {
 }
 
 nav .btn:hover {
-  color: rgb(234, 35, 74);
+  color: rgb(3, 2, 2);
   background-color: #4b4b4b;
 }
 
@@ -185,7 +189,7 @@ nav ul a:hover {
 }
 
 nav li a.Courses {
-  color: #f63232;
+  color: #070606;
 }
 
 .dropdown1qp {
@@ -366,7 +370,7 @@ nav li a.Courses {
 button {
   --hover-shadows: 8px 8px 16px #121212, -8px -8px 16px #303030;
   --accent: #ffffff;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 0.1em;
   border: none;
   border-radius: 1.1em;
@@ -378,6 +382,9 @@ button {
     letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
 }
 
+.btn{
+  background-color: #000;
+}
 button:hover {
   box-shadow: var(--hover-shadows);
   color: #121212;
