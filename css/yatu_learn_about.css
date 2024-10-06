@@ -1,32 +1,27 @@
 * {
+  -webkit-tap-highlight-color:transparent;
   margin: 0;
   padding: 0;
   font-family: tahoma;
   box-sizing: border-box;
 }
-
 body {
   background-image: url(skyblue_theme.jpeg.jpg);
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 p {
   font-size: 18px;
 }
-
-
 nav {
   width: 100%;
   background: white;
@@ -37,12 +32,10 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-
 nav .main_logo {
   display: flex;
   align-items: center;
 }
-
 nav .main_logo .logo a img {
   margin-left: 30px;
   border-color: #000000;
@@ -50,7 +43,6 @@ nav .main_logo .logo a img {
   width: 70px;
   height: 60px;
 }
-
 .checkbtn {
   font-size: 30px;
   color: gray;
@@ -58,16 +50,13 @@ nav .main_logo .logo a img {
   display: none;
   cursor: pointer;
 }
-
 .checkbtn:hover {
   font-size: 35px;
   transition: 0.2s;
 }
-
 #check {
   display: none;
 }
-
 .checkbtn {
   font-size: 30px;
   color: rgb(0, 0, 0);
@@ -75,31 +64,26 @@ nav .main_logo .logo a img {
   display: none;
   cursor: pointer;
 }
-
 .checkbtn:hover {
   font-size: 35px;
   transition: 0.2s;
   color: black;
 }
-
 #check {
   display: none;
 }
-
 nav ul {
   width: 36%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
-
 }
-
 nav .btn {
   --hover-shadows: none;
-  border: 2px solid #ffffff;
-  font-weight: 100;
-  font-size: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
   letter-spacing: normal;
   border-radius: 0.7em;
   background-color: rgb(0, 0, 0);
@@ -108,56 +92,45 @@ nav .btn {
   width: 8%;
   margin-right: 50px;
 }
-
 nav .btn a {
   font-size: 20px;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
 }
-
 nav .btn:hover {
   color: rgb(0, 0, 0);
   background-color: #4B4B4B;
 }
-
 nav ul a {
   font-size: 20px;
   text-decoration: none;
   color: rgb(1, 1, 1);
 }
-
 nav ul a:hover {
   text-decoration: none;
   color: #000000;
 }
-
 .change {
   background-color: #ffffff;
   transition: 0.5s;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.347);
 }
-
 .change_btn {
   color: #4B4B4B;
 }
-
 .change_btn:hover {
   color: #121212;
 }
-
 nav li a.Courses {
   color: #F63232;
 }
-
 .dropdown1qp {
   display: inline-block;
 }
-
 .qp:hover {
   color: #000000;
 }
-
 .dropdown-content1qp {
   display: none;
   position: absolute;
@@ -168,73 +141,107 @@ nav li a.Courses {
   z-index: 1;
   border-radius: 5px;
 }
-
 .dropdown1qp:hover .dropdown-content1qp {
   display: block;
 }
-
 .dropdown-content1qp h2 {
   margin: 15px;
 }
-
 .dropdown-content1qp .links {
   margin-left: 10px;
 }
-
 .dropdown-content1qp .links a {
   font-size: 1em;
   color: blue;
   margin: 5px;
 }
-
 .dropdown-content1qp .links a:hover {
   color: darkblue;
 }
-
 .cyber {
   display: flex;
   align-items: center;
 }
-
 .banner_vdo video {
   border: none;
 }
-
-.about_learn {
-  margin-top: 50px;
+.about_learn_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f7f9;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1600px;
 }
-
-.about_learn h1 {
-  font-size: 2em;
-  width: 100%;
-  letter-spacing: 0.04em;
+.about_learn_container h1 {
+  font-size: 2.8em; 
+  color: #2c3e50;
   text-align: center;
+  margin-bottom: 20px; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-
+.about_learn {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+.about_learn .section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.3s; 
+  display: flex; 
+  flex-direction: column;
+}
+.about_learn .section:hover {
+  transform: translateY(-5px); 
+}
 .about_learn h6 {
-  color: transparent;
+  font-weight: bold; 
+  font-size: 1.6em;
+  color: #3498db; 
+  margin-bottom: 10px; 
+  border-bottom: 2px solid #3498db; 
+  padding-bottom: 5px; 
 }
-
 .about_learn p {
   margin-left: 30px;
   letter-spacing: 0.05rem;
   line-height: 1.4rem;
   text-align: center;
+  margin: 0; 
+  letter-spacing: 0.02em;
+  line-height: 1.6em; 
+  color: #555; 
 }
-
+.about_learn em {
+  font-style: italic; 
+  color: #e67e22;
+}
 /* From Uiverse.io by abrahamcalsin */
 .card-client-flex {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-
 .founder {
   width: 100%;
   text-align: center;
   margin-top: 50px;
+    font-size: 2.8em; 
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-
 .card-client {
   margin-top: 50px;
   background: rgb(118, 189, 212);
@@ -252,11 +259,9 @@ nav li a.Courses {
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
-
 .card-client:hover {
   transform: translateY(-10px);
 }
-
 .user-picture {
   overflow: hidden;
   object-fit: cover;
@@ -269,25 +274,21 @@ nav li a.Courses {
   align-items: center;
   margin: auto;
 }
-
 .user-picture svg {
   width: 2.5rem;
   fill: currentColor;
 }
-
 .name-client {
   margin: 0;
   margin-top: 20px;
   font-weight: 600;
   font-size: 18px;
 }
-
 .name-client span {
   display: block;
   font-weight: 200;
   font-size: 16px;
 }
-
 .social-media:before {
   content: " ";
   display: block;
@@ -298,23 +299,19 @@ nav li a.Courses {
   margin-bottom: 15px;
   background: darkblue;
 }
-
 .social-media a {
   position: relative;
   margin-right: 15px;
   text-decoration: none;
   color: inherit;
 }
-
 .social-media a:last-child {
   margin-right: 0;
 }
-
 .social-media a svg {
   width: 1.1rem;
   fill: currentColor;
 }
-
 /* /-- Tooltip Social Media --/ */
 .tooltip-social {
   background: #262626;
@@ -333,7 +330,6 @@ nav li a.Courses {
   z-index: 1;
   color: #ffffff;
 }
-
 .tooltip-social:after {
   content: " ";
   position: absolute;
@@ -344,27 +340,23 @@ nav li a.Courses {
   border-color: transparent;
   transform: translate(-50%, 100%);
 }
-
 .social-media a .tooltip-social:after {
   border-top-color: #262626;
 }
-
 .social-media a:hover .tooltip-social {
   opacity: 1;
   transform: translate(-50%, -130%);
 }
-
 .border {
   margin-top: 100px;
   border: 1px solid black;
 }
-
 .border_address {
   margin-top: 50px;
+  margin-bottom: 50px;
   background-color: #ffffff;
   margin-bottom: 50px;
 }
-
 .address {
   
   margin-top: 30px;
@@ -372,12 +364,10 @@ nav li a.Courses {
   display: flex;
   justify-content: space-evenly;
 }
-
 .add {
   line-height: 1.3em;
   font-size: 1em;
 }
-
 .common>i {
   width: 40px;
   height: 40px;
@@ -391,79 +381,65 @@ nav li a.Courses {
   justify-content: center;
   align-items: center;
 }
-
 .common>h1 {
   margin-top: 10px;
   text-align: center;
   font-size: 20px;
   letter-spacing: -0.01cm;
 }
-
 .common>h2 {
   margin-top: 20px;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.019cm;
 }
-
 .common>span {
   width: 100%;
   font-weight: 600;
 }
-
 .common>p>a {
   color: rgba(14, 14, 14, 0.852);
   text-decoration: none;
   font-size: 0.9em;
 }
-
 .common>p>a:hover {
   color: black;
 }
-
 .common>h3 {
   font-weight: 300;
   font-size: 17px;
 }
-
 .common>h3>a {
   text-decoration: none;
   color: rgba(14, 14, 14, 0.87);
   font-weight: 300;
   font-size: 0.9em;
 }
-
 .common>h3>a:hover {
   color: black;
 }
-
 .common>h4 {
   font-weight: 300;
   font-size: 1em;
   color: black;
 }
-
 .common>h4>a {
   color: blue;
   font-weight: 300;
   font-size: 1em;
 }
-
 .common>h4>a:hover {
   color: black;
 }
-
 footer {
   width: 100%;
   background-color: #121212;
 }
-
 .flex_align {
   width: 100%;
   display: flex;
   align-items: center;
 }
-
 .box1 {
   margin-top: 40px;
   width: 100%;
@@ -471,47 +447,38 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
-
-
 .header {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
-
 .policy {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
-
 .policy a:hover {
   color: #ffffff;
 }
-
 .vertical_line {
   border-left: none;
   border: 0.5px solid #4b4a4a;
   height: 180px;
   width: 0.009px;
-
 }
-
 .same p {
   color: #ffffff;
 }
-
 .same a {
   text-decoration: none;
   color: #d6d3d3d0;
 }
-
 .same>a:hover {
   color: #ffffff;
 }
-
 .media {
   margin-top: 60px;
 }
-
 .icon_flex {
   height: 50px;
   width: 120%;
@@ -521,30 +488,24 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
 .icon_flex>a>i {
   font-size: 21px;
   color: #d6d3d3;
 }
-
 .icon_flex>a>i:hover {
   font-size: 25px;
   color: #ffffff;
   transition: 0.2s;
 }
-
 .email_adress>span {
   
   color: #ffffff;
   line-height: 23px;
   letter-spacing: 0.01cm;
-
 }
-
 .num {
   color: #ffffff;
 }
-
 .horizontal_line {
   margin-top: 20px;
   border: 0.1px solid #4b4a4a;
@@ -552,123 +513,96 @@ footer {
   height: 0.000009px;
   width: 100%;
 }
-
 .course_flex {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .courses {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
-
 .courses p {
   margin: 5px;
   color: #ffffff;
 }
-
 .courses_link {
   margin: 5px;
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 65%;
 }
-
 .courses_link a {
   color: #d6d3d3d0;
   text-decoration: none;
 }
-
 .courses_link a:hover {
   color: #ffffff;
 }
-
 .copyright {
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-
 }
-
 .copyright p{
   font-size: medium;
 }
-
 @media screen and (max-width: 1400px) {
-
   nav .btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
-
 @media screen and (max-width: 960px) {
-
   nav ul a {
     font-size: 16px;
   }
-
   nav ul {
     width: 40%;
     font-size: large;
     display: flex;
     justify-content: space-between;
   }
-
   nav .btn {
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-
 }
-
 @media screen and (max-width: 880px){
   .card-client{
     width: 14rem;
     height: 20rem;
   }
-
   .user-picture{
     width: 12rem;
     height: 12rem;
   }
-
   .name-client{
     margin-top: 10px;
     font-size: 15px;
   }
-
   .courses_link{
    display: flex;
   justify-content: space-between;
   width: 100%;
   }
-
   .same p{
     font-size: 15px;
   }
-
   .same a{
     font-size: 13.5px;
   }
-
   .email_adress>span{
     font-size: 13.5px;
   }
-
   .num{
     font-size: 15px;
   }
@@ -682,7 +616,6 @@ footer {
     font-size: 21px;
   }
 }
-
 @media screen and (max-width: 730px) {
  .dropdown1qp:hover .dropdown-content1qp {
       display: none;
@@ -692,7 +625,6 @@ footer {
     margin: 5px 0;
     line-height: 30px;
   }
-
   nav ul {
     position: fixed;
     width: 100%;
@@ -703,19 +635,15 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
   nav ul a {
     color: #201f1f93;
   }
-
   nav ul a:hover {
     color: #121212;
   }
-
   #check:checked~ul {
     left: 0;
   }
-
   .dropdown-content1qp {
     position: absolute;
     right: 50px;
@@ -723,15 +651,12 @@ footer {
     width: 350px;
     padding: 0 0;
   }
-
   .dropdown-content1qp h2 {
     margin: 1px;
   }
-
   .dropdown-content1qp .links a {
     font-size: 0.8em;
   }
-
   nav .btn {
     margin-top: 3px;
     height: 35px;
@@ -740,15 +665,12 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
   .card-client-flex {
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-
   .address{
     display: flex;
     flex-direction: column;
@@ -773,7 +695,6 @@ footer {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 660px){
   .dropdown1qp:hover .dropdown-content1qp {
       display: none;
@@ -783,7 +704,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
   .header{
     text-align: center;
   }
@@ -791,7 +711,6 @@ footer {
     text-align: center;
     margin-top: 20px;
   }
-
   .media{
     text-align: center;
     margin-top: 20px;
@@ -806,15 +725,12 @@ footer {
   .icon_flex>a>i:hover{
     font-size: 21px;
   }
-
   .vertical_line{
     display: none;
   }
-
   .email_adress{
     text-align: center;
   }
-
   .course_flex{
     margin-top: 20px;
   }
@@ -836,13 +752,124 @@ footer {
     font-size: 10px;
     width: 8%;
   }
-
   nav .btn a {
     font-size: 10px;
   }
-
   .dropdown-content1qp {
     position: absolute;
     left: 10px;
+  }
+}
+
+.border_address {
+  padding: 20px;
+}
+
+.address {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f8f9fa; 
+  width: 300px; 
+  padding: 20px;
+  border: 2px solid #007bff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  margin: 15px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.common > i {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.common > h1 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #007bff; 
+}
+
+.common > h2 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.common > p,
+.common > h3 {
+  font-size: 14px;
+  color: #333;
+}
+
+.common a {
+  color: #007bff; 
+  text-decoration: none; 
+}
+
+.common a:hover {
+  text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .common > h1 {
+    font-size: 20px;
+  }
+
+  .common > h2 {
+    font-size: 14px;
+  }
+
+  .common > p,
+  .common > h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .address {
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 100%; 
+  }
+
+  .common > h1 {
+    font-size: 18px;
+  }
+
+  .common > h2 {
+    font-size: 12px;
+  }
+
+  .common > p,
+  .common > h3 {
+    font-size: 10px;
   }
 }
