@@ -22,10 +22,10 @@ themeIcon.addEventListener('click', () => {
 // Function to set the active button
 function setActive(button) {
     // Get all buttons inside '.roadmap_btns' and '.roadmap_btns_right'
-    var buttons = document.querySelectorAll('.roadmap_btns button, .roadmap_btns_right button');
+    const buttons = document.querySelectorAll('.roadmap_btns button, .roadmap_btns_right button');
 
     // Remove 'active' class and reset styles from all buttons
-    buttons.forEach(function(btn) {
+    buttons.forEach(btn => {
         btn.classList.remove('active');
         btn.style.backgroundColor = ''; // Reset background
         btn.style.color = ''; // Reset text color
@@ -41,7 +41,7 @@ function setActive(button) {
 
 // Set 'Web Development' button active by default on page load
 window.onload = function() {
-    var defaultButton = document.querySelector('.roadmap_btns .btn_web'); // Select 'Web Development' button
+    const defaultButton = document.querySelector('.roadmap_btns .btn_web'); // Select 'Web Development' button
     setActive(defaultButton); // Make it active
 };
 document.getElementById('scrollUpLink').addEventListener('click', function(event) {
@@ -58,3 +58,17 @@ document.getElementById('scrollUpLink').addEventListener('click', function(event
       behavior: 'smooth' 
     });
   });  
+function scrollToTop(event) {
+  event.preventDefault();
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+}
+const scrollUpLinks = ['scrollUpLink', 'scrollUpLin'];
+scrollUpLinks.forEach(id => {
+  const link = document.getElementById(id);
+  if (link) {
+      link.addEventListener('click', scrollToTop);
+  }
+});
