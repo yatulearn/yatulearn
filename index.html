@@ -13,51 +13,51 @@
         <link rel="icon" href="./assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
     <title>YATU Learn</title>
     <style>
-        #windy {
-            width: 100%;
-            height: 350px;
-        }
+      #windy {
+          width: 100%;
+          height: 350px;
+      }
 
-        .chatbot-container {
-            position: fixed;
-            bottom: 20px; /* Adjust as needed */
-            right: 20px; /* Adjust as needed */
-            z-index: 1000; /* Ensure it appears above other elements */
-        }
+      .chatbot-container {
+          position: fixed;
+          bottom: 20px; /* Adjust as needed */
+          right: 20px; /* Adjust as needed */
+          z-index: 1000; /* Ensure it appears above other elements */
+      }
 
-        .chatbot-button {
-            background-color: #007bff; /* Change to your preferred color */
-            border: none;
-            border-radius: 50%;
-            padding: 5px; /* Smaller padding */
-            cursor: pointer;
-            position: relative;
-            width: 50px; /* Adjusted size */
-            height: 50px; /* Adjusted size */
-        }
+      .chatbot-button {
+          background-color: #007bff; /* Change to your preferred color */
+          border: none;
+          border-radius: 50%;
+          padding: 5px; /* Smaller padding */
+          cursor: pointer;
+          position: relative;
+          width: 50px; /* Adjusted size */
+          height: 50px; /* Adjusted size */
+      }
 
-        .chatbot-button img {
-            width: 30px; /* Adjusted image size */
-            height: 30px; /* Adjusted image size */
-        }
+      .chatbot-button img {
+          width: 30px; /* Adjusted image size */
+          height: 30px; /* Adjusted image size */
+      }
 
-        .tooltip-text {
-            display: none; /* Hide by default */
-            position: absolute;
-            bottom: 100%; /* Position above the button */
-            right: 50%;
-            transform: translateX(50%);
-            background-color: #333; /* Background color for tooltip */
-            color: #fff; /* Tooltip text color */
-            padding: 5px;
-            border-radius: 5px;
-            white-space: nowrap; /* Prevent text from wrapping */
-        }
+      .tooltip-text {
+          display: none; /* Hide by default */
+          position: absolute;
+          bottom: 100%; /* Position above the button */
+          right: 50%;
+          transform: translateX(50%);
+          background-color: #333; /* Background color for tooltip */
+          color: #fff; /* Tooltip text color */
+          padding: 5px;
+          border-radius: 5px;
+          white-space: nowrap; /* Prevent text from wrapping */
+      }
 
-        .chatbot-button:hover .tooltip-text {
-            display: block; /* Show on hover */
-        }
-    </style>
+      .chatbot-button:hover .tooltip-text {
+          display: block; /* Show on hover */
+      }
+  </style>
 </head>
 <body>
     <nav class="main-nav">
@@ -73,7 +73,7 @@
             <a href="index.html" class="Courses btn-home">Home<i class="gfg-icon gfg-icon-black-up-carrot"
                     style="float: right; margin-right: -12px; line-height: 1.5"></i></a>
             <div class="dropdown1qp">
-                <a href="pages/yatu_learn_qp.html" class="qp">
+                <a href="yatu_learn_qp.html" class="qp">
                     <span>Question Papers<i class="fa-solid fa-angle-down"></i></span></a>
                 <div class="dropdown-content1qp">
                     <h2>CSE</h2>
@@ -110,8 +110,8 @@
                     </div>
                 </div>
             </div>
-            <a href="pages/yatu_learn_notes.html" class="btn-notes">Notes</a>
-            <a href="pages/yatu_learn_about.html" class="About btn-about">About</a>
+            <a href="yatu_learn_notes.html" class="btn-notes">Notes</a>
+            <a href="yatu_learn_about.html" class="About btn-about">About</a>
         </ul>
 
         <button class="btn">
@@ -187,7 +187,7 @@
     </section>
     <div class="roadmap">
         <div class="roadmap_btns">
-            <button class="btn_dsa" onclick="setActive(this)">Web Devlopment</button>
+            <button class="btn_web" onclick="setActive(this)">Web Devlopment</button>
             <button class="btn_dsa" onclick="setActive(this)">DSA</button>
             <button class="btn_cs"  onclick="setActive(this)">Cyber Security</button>
         </div>
@@ -207,16 +207,17 @@
         </div>
     </div>
     <script src="js/yatu_learn_script.js" crossorigin=""></script>
-    <a href="chatbot.html">
-        <div class="chatbot-container">
-            <button class="chatbot-button group">
-                <img class="h-20" src="chatbot.gif" alt="chatbot">
-                <span class="tooltip-text">
-                    Welcome to Weather App! <br>
-                    How can I help You? ^_^ 
-                </span>
-            </button>
-        </div>
+</body>
+<a href="chatbot.html">
+    <div class="chatbot-container">
+        <button class="chatbot-button group">
+            <img class="h-20" src="chatbot.gif" alt="chatbot">
+            <span class="tooltip-text">
+                Welcome to Yatulearn! <br>
+                How can I help You? ^_^ 
+            </span>
+        </button>
+    </div>
 </body>
 <footer>
     <div class="flex_align">
@@ -279,7 +280,6 @@
     <div class="copyright">
         <p>© 2024 YATU Learn. All Rights Reserved.</p>
     </div>
-</footer>
-<script src="js/script.js"></script>
+</footer><script src="js/script.js"></script>
 
 </html>
