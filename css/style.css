@@ -108,6 +108,10 @@ nav .main_logo .logo a img {
   margin-left: 30px;
 }
 
+nav .main_logo .logo a img:hover {
+  transform: scale(1.2);
+}
+
 .checkbtn {
   font-size: 30px;
   color: gray;
@@ -157,12 +161,17 @@ nav .btn a {
 nav .btn:hover {
   color: rgb(234, 35, 74);
   background-color: #4b4b4b;
+  transform: scale(1.2);
 }
 
 nav ul a {
   font-size: 20px;
   text-decoration: none;
   color: lightgrey;
+}
+
+nav ul a:hover {
+  transform: scale(1.2);
 }
 
 nav ul a:hover {
@@ -1992,9 +2001,6 @@ footer {
   .icon_flex > a > i:hover {
     font-size: 21px;
   }
-  
-  
-  
 
   .vertical_line {
     display: none;
@@ -2150,49 +2156,46 @@ footer {
   }
 }
 
-for linkedin
-.media .icon_flex .fa-linkedin{
+for linkedin .media .icon_flex .fa-linkedin {
   /* Add the transition effect */
-  transition: transform 0.3s ease!important;
+  transition: transform 0.3s ease !important;
 }
 
 .media .icon_flex .fa-linkedin:hover {
-  color: #0072b1!important;
-  transform: scale(1.1) !important;;
-} 
+  color: #0072b1 !important;
+  transform: scale(1.1) !important;
+}
 
 /* for instagram */
 
-.media .icon_flex .fa-instagram{
+.media .icon_flex .fa-instagram {
   /* Add the transition effect */
-  transition: transform 0.3s ease!important;
+  transition: transform 0.3s ease !important;
 }
 
 .media .icon_flex .fa-instagram:hover {
-  color: #E1306C!important;
-  transform: scale(1.1) !important;;
+  color: #e1306c !important;
+  transform: scale(1.1) !important;
 }
 
 /* for youtube */
-.media .icon_flex .fa-youtube{
+.media .icon_flex .fa-youtube {
   /* Add the transition effect */
-  transition: transform 0.3s ease!important;
+  transition: transform 0.3s ease !important;
 }
 
 .media .icon_flex .fa-youtube:hover {
-  color: #FF0000!important;
-  transform: scale(1.1) !important;;
+  color: #ff0000 !important;
+  transform: scale(1.1) !important;
 }
 
 /* for twitter */
-.media .icon_flex .fa-x-twitter-{
+.media .icon_flex .fa-x-twitter- {
   /* Add the transition effect */
-  transition: transform 0.3s ease!important;
+  transition: transform 0.3s ease !important;
 }
 
 .media .icon_flex .fa-x-twittere:hover {
-  color: #FF0000!important;
-  transform: scale(1.1) !important;;
+  color: #ff0000 !important;
+  transform: scale(1.1) !important;
 }
-
-
