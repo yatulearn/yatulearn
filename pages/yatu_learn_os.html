@@ -86,6 +86,72 @@
         <a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a>
       </button>
     </nav>
+        <!-- Circular Progress Bar -->
+        <div class="progress-circle-container">
+          <div class="progress-circle">
+            <span id="progressValue">0%</span>
+          </div>
+        </div>
+    
+        <script>
+          window.addEventListener('scroll', function () {
+            var scrollTop = window.scrollY;
+            var docHeight =
+              document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolledPercentage = Math.round((scrollTop / docHeight) * 100);
+    
+            var progressCircle = document.querySelector('.progress-circle');
+            progressCircle.style.background = `conic-gradient(#4caf50 ${scrolledPercentage}%, #ddd ${scrolledPercentage}%)`;
+    
+            var progressValue = document.getElementById('progressValue');
+            if (scrolledPercentage === 100) {
+              progressValue.innerHTML = '<a href="../index.html" style="color: #000; text-decoration: none;">DONE</a>';
+            } else {
+              progressValue.textContent = scrolledPercentage + '%';
+            }
+          });
+        </script>
+        <style>
+        
+        .progress-circle-container {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            z-index: 999;
+          }
+    
+          .progress-circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: conic-gradient(#000000 0%, #020101 0%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 12px rgba(255, 248, 248, 0.1);
+            transition: all 0.4s ease;
+          }
+    
+          .progress-circle:hover {
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+          }
+    
+          #progressValue {
+            font-size: 20px;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+          }
+    
+          /* Link Styling */
+          #progressValue a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+          }
+        </style>
+    
 
     <h1 class="h1">What is an Operating System (OS)?</h1>
     <br />
