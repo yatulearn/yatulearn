@@ -2195,4 +2195,27 @@ for linkedin
   transform: scale(1.1) !important;;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Initially hidden */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #29ABCA; /* Adjust color to match theme */
+  color: #fff; /* White text */
+  text-align: center;
+  line-height: 40px; /* Center icon vertically */
+  font-size: 1.5rem; /* Adjust font size for icon */
+  transition: all 0.3s ease-in-out;
+}
 
+.back-to-top.show { /* Style for visible state */
+  display: block;
+  opacity: 1;
+}
+
+.back-to-top:hover { /* Hover effect */
+  background-color: #1F8BBB; /* Darker shade on hover */
+}

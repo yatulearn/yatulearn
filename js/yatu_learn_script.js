@@ -135,3 +135,19 @@ btncn.addEventListener("click", function(){
     btnos.classList.add("occur");
     btncn.classList.add("btn_web");
 })
+
+
+const backToTopBtn = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+  if (scrollPosition > 100) { // Show button after scrolling 100px
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
+});
+
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
