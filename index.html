@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" href="./assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
     <title>YATU Learn</title>
+    <link rel="stylesheet" href="./css/darkmode.css">
 </head>
 <body>
     <nav class="main-nav">
@@ -68,9 +69,15 @@
             <a href="pages/yatu_learn_about.html" class="About btn-about">About</a>
         </ul>
 
-        <button class="btn">
-            <a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a>
-        </button>
+        <div class="rightSideNav">
+            <button id="theme-toggle">
+              <ion-icon id="theme-icon" name="sunny-outline"></ion-icon>
+            </button>
+            <button class="btn btn-doubt">
+                <a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a>
+            </button>
+          </div>
+        
     </nav>
 
     <!-- <main>
@@ -226,4 +233,10 @@
 </footer>
 <script src="js/script.js"></script>
 <script src="js/scrollToTopButton.js"></script>
+<script src="js/themeToggle.js"></script>
+ <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
