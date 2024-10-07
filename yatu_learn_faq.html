@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Yatu Learn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0; /* Reset margin to allow banner to span full width */
+            padding: 0;
+            background-color: #000; /* Change background to black */
+            color: #fff; /* Default text color to white for readability */
+        }
+        /* Banner Styles */
+        .banner {
+            width: 100%;
+            height: 300px; /* Adjust height as needed */
+            background-image: url('/assets/images/image.png'); /* Path to your image.png */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .banner-text {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+        h1 {
+            text-align: center;
+            color: skyblue; /* Change text color to sky blue */
+            margin: 20px 0; /* Adjusted margin for spacing below banner */
+        }
+        .faq-section {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px; /* Added padding for spacing */
+        }
+        .faq {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff; /* Keep FAQ background white for contrast */
+            transition: background-color 0.3s ease;
+        }
+        .faq:hover {
+            background-color: #f1f1f1;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #007BFF; /* Keep question color for visibility */
+            position: relative;
+            padding-right: 20px;
+        }
+        .question::after {
+            content: '\25BC'; /* Down arrow */
+            position: absolute;
+            right: 0;
+            transition: transform 0.3s ease;
+        }
+        .question.active::after {
+            transform: rotate(180deg); /* Up arrow */
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555; /* Color for answer text */
+        }
+        .answer.active {
+            display: block;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .banner {
+                height: 200px; /* Adjust height for smaller screens */
+            }
+            .banner-text {
+                font-size: 18px;
+                padding: 8px 16px;
+            }
+            .question {
+                font-size: 16px;
+            }
+            .answer {
+                font-size: 14px;
+            }
+        }
+        /* Additional Styles for FAQ Image */
+        .faq-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="faq-section">
+        <h1>Frequently Asked Questions</h1>
+
+        
+        <img src="/assets/images/image.png" alt="FAQ Image" class="faq-image">
+
+        <div class="faq">
+            <div class="question">1. What is Web Development?</div>
+            <div class="answer">Web development refers to the tasks associated with developing websites for hosting via intranet or internet. It can range from developing a simple single static page of plain text to complex web-based applications, social network services, and electronic businesses.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question">2. What are the main components of a Database Management System (DBMS)?</div>
+            <div class="answer">A DBMS consists of several key components including a database engine, a database schema, a query processor, and a transaction management system. It allows for data storage, manipulation, and retrieval.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question">3. How does an Operating System (OS) work?</div>
+            <div class="answer">An OS manages computer hardware and software resources and provides common services for computer programs. It acts as an intermediary between users and the computer hardware, managing resources like the CPU, memory, and storage.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question">4. What is Cyber Security?</div>
+            <div class="answer">Cyber security involves protecting computer systems, networks, and data from digital attacks, theft, or damage. It encompasses various practices, technologies, and processes designed to secure networks, devices, and data from cyber threats.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question">5. What are the common types of databases?</div>
+            <div class="answer">Common types of databases include relational databases (like MySQL, PostgreSQL), NoSQL databases (like MongoDB, Cassandra), and cloud databases (like Amazon RDS, Google Cloud Spanner), each serving different data storage and management needs.</div>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle the display of the answer
+        function toggleAnswer(questionElement) {
+            const answerElement = questionElement.nextElementSibling;
+            answerElement.classList.toggle('active');
+            questionElement.classList.toggle('active');
+        }
+
+        // Attach click event listeners to all questions
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', function() {
+                toggleAnswer(this);
+            });
+        });
+    </script>
+
+</body>
+</html>
