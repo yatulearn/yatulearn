@@ -135,46 +135,66 @@ nav li a.Courses {
   color: #F63232;
 }
 
-.dropdown1qp {
-  display: inline-block;
-}
 
 .qp:hover {
-  color: #121212;
+  color: #ffffff;
 }
 
+/* dropdown links styles */
 .dropdown-content1qp {
-  display: none;
   position: absolute;
-  background-color: white;
-  width: 430px;
-  height: 350px;
-  padding: 12px 16px;
-  z-index: 1;
+  display: none; /* Initially hidden */
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+  max-width: 100%; /* You can adjust this if needed */
+  margin: 0 auto;
+  gap: 20px; /* Adds spacing between the dropdown items */
+  flex-direction: row; /* Will be applied when displayed */
 }
 
-.dropdown1qp:hover .dropdown-content1qp {
-  display: block;
+.dropdown-item {
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Keeps dropdown items in a column inside each section */
 }
 
 .dropdown-content1qp h2 {
-  margin: 15px;
+  padding: 10px;
+  color: #202020;
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.dropdown1qp:hover .dropdown-content1qp {
+  display: flex; /* Show dropdown on hover */
 }
 
 .dropdown-content1qp .links {
-  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column; /* Ensures the links stack vertically */
+  gap: 10px; /* Optional: Adds spacing between links */
 }
 
 .dropdown-content1qp .links a {
-  font-size: 1em;
-  color: blue;
-  margin: 5px;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #3b3b3b;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown-content1qp .links a:hover {
-  color: darkblue;
+  background-color: #77b9ff;
+  color: white;
 }
-
 .cyber {
   display: flex;
   align-items: center;
