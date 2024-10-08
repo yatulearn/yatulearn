@@ -1,0 +1,103 @@
+@media only screen and (max-width: 768px) {
+    .main-nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s ease;
+        z-index: 1;
+    }
+
+    /* When checkbox is checked (menu open) */
+    #check:checked ~ ul {
+        right: 0;
+        animation: slideIn 0.5s ease forwards;
+    }
+
+    /* Sliding animation */
+    @keyframes slideIn {
+        from {
+            right: -100%;
+        }
+        to {
+            right: 0;
+        }
+    }
+
+    /* Close the menu */
+    @keyframes slideOut {
+        from {
+            right: 0;
+        }
+        to {
+            right: -100%;
+        }
+    }
+
+    /* Style for menu items */
+    .main-nav ul a {
+        display: block;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+
+    
+    /* Hides the button by default */
+    .checkbtn {
+        display: block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+.close-btn {
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+}
+
+/* Show the close button when the checkbox is checked */
+#check:checked ~ .close-btn {
+    display: block;
+}
+
+#check:not(:checked) ~ .close-btn {
+    display: none;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .close-btn {
+        display: block; /* Display close button only on mobile */
+    }
+    .hover-effect:hover{
+        background-color: aliceblue;
+        color: black;
+    }
+    
+    .change .checkbtn
+    {
+        color: #333;
+    }
+}
