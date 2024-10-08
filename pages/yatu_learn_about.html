@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>About</title>
     <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
@@ -213,7 +214,12 @@
       </div>
       <div class="card-client card-client3">
         <div class="user-picture">
-          <img src="../assets/images/tariqdp1.jpg" alt="img" height="150%" width="150%" />
+          <img
+            src="../assets/images/tariqdp1.jpg"
+            alt="img"
+            height="150%"
+            width="150%"
+          />
         </div>
         <p class="name-client">
           Tariq Nabeel
@@ -324,6 +330,41 @@
           <a href="https://mail.google.com/mail/u/0/#inbox"
             >E-mail : yatulearn@gmail.com</a
           >
+
+    <div class="border_address">
+      <div class="border" id="contact"></div>
+      <div class="address">
+        <div class="contact_address common">
+          <i class="fa-solid fa-location-dot"></i>
+          <h1>Address</h1>
+          <h2>Get in touch with us</h2>
+          <p class="add">
+            Panjab University SSGRC,<br />
+            Bajwara, Una road,<br />
+            Hoishiarpur, 146021, <br />Punjab, India.
+          </p>
+        </div>
+        <div class="phone common">
+          <i class="fa-solid fa-phone"></i>
+          <h1>Phone</h1>
+          <h2>24/7 help Support</h2>
+          <h3><a href="https://web.whatsapp.com/">+91 991 854 0896</a></h3>
+          <h2>For Whatsapp</h2>
+          <p><a href="tel:+917068247779">+91 706 824 7779</a></p>
+        </div>
+        <div class="mail common">
+          <i class="fa-solid fa-envelope"></i>
+          <h1>E-mail</h1>
+          <h2>Doubts or request</h2>
+          <p>
+            <a href="https://mail.google.com/mail/u/0/#inbox"
+              >yatulearn@gmail.com</a
+            >
+          </p>
+          <h2>For Inqueries & Help</h2>
+          <h3>
+            Fill the <a href="https://forms.gle/81vXwYuUdPwe3Z639">form</a>
+          </h3>
         </div>
       </div>
     </div>
@@ -345,5 +386,15 @@
       <p>© 2024 YATU Learn. All Rights Reserved.</p>
     </div>
   </footer>
+  </body>
+    <div id="footer"></div>
+    <script>
+      // Load footer dynamically
+      fetch("../components/main_footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
