@@ -66,7 +66,7 @@
             </div>
             <a href="pages/yatu_learn_notes.html" class="btn-notes">Notes</a>
             <a href="pages/yatu_learn_about.html" class="About btn-about">About</a>
-            <a href="pages/yatu_learn_faq.html" class="btn-notes">FAQ'S</a>
+            
         </ul>
        
         <button class="btn">
@@ -222,6 +222,122 @@
     </div>
     <div class="horizontal_line"></div>
 
+    <footer>
+        <style>
+            footer {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #000;
+                color: #fff;
+                padding: 20px;
+                margin-top: 20px; 
+            }
+            h1 {
+                text-align: center;
+                color: skyblue;
+                margin-bottom: 20px; 
+            }
+            .faq-section {
+                max-width: 600px; 
+                margin: auto;
+            }
+            .faq {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin: 10px 0;
+                padding: 10px;
+                background: #fff; 
+                color: #000; 
+                transition: background-color 0.3s ease;
+            }
+            .faq:hover {
+                background-color: #f1f1f1;
+            }
+            .question {
+                font-weight: bold;
+                cursor: pointer;
+                color: #007BFF;
+                position: relative;
+                padding-right: 20px;
+            }
+            .question::after {
+                content: '\25BC'; 
+                position: absolute;
+                right: 0;
+                transition: transform 0.3s ease;
+            }
+            .question.active::after {
+                transform: rotate(180deg); 
+            }
+            .answer {
+                display: none;
+                margin-top: 10px;
+                color: #555;
+            }
+            .answer.active {
+                display: block;
+            }
+            
+            @media (max-width: 600px) {
+                h1 {
+                    font-size: 18px;
+                }
+                .question {
+                    font-size: 14px;
+                }
+                .answer {
+                    font-size: 12px;
+                }
+            }
+        </style>
+    
+        <div class="faq-section">
+            <h1>Frequently Asked Questions</h1>
+    
+            <div class="faq">
+                <div class="question">1. What is Web Development?</div>
+                <div class="answer">Web development refers to the tasks associated with developing websites for hosting via intranet or internet. It can range from developing a simple single static page of plain text to complex web-based applications, social network services, and electronic businesses.</div>
+            </div>
+    
+            <div class="faq">
+                <div class="question">2. What are the main components of a Database Management System (DBMS)?</div>
+                <div class="answer">A DBMS consists of several key components including a database engine, a database schema, a query processor, and a transaction management system. It allows for data storage, manipulation, and retrieval.</div>
+            </div>
+    
+            <div class="faq">
+                <div class="question">3. How does an Operating System (OS) work?</div>
+                <div class="answer">An OS manages computer hardware and software resources and provides common services for computer programs. It acts as an intermediary between users and the computer hardware, managing resources like the CPU, memory, and storage.</div>
+            </div>
+    
+            <div class="faq">
+                <div class="question">4. What is Cyber Security?</div>
+                <div class="answer">Cyber security involves protecting computer systems, networks, and data from digital attacks, theft, or damage. It encompasses various practices, technologies, and processes designed to secure networks, devices, and data from cyber threats.</div>
+            </div>
+    
+            <div class="faq">
+                <div class="question">5. What are the common types of databases?</div>
+                <div class="answer">Common types of databases include relational databases (like MySQL, PostgreSQL), NoSQL databases (like MongoDB, Cassandra), and cloud databases (like Amazon RDS, Google Cloud Spanner), each serving different data storage and management needs.</div>
+            </div>
+        </div>
+    
+        <script>
+            
+            function toggleAnswer(questionElement) {
+                const answerElement = questionElement.nextElementSibling;
+                answerElement.classList.toggle('active');
+                questionElement.classList.toggle('active');
+            }
+    
+          
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                question.addEventListener('click', function() {
+                    toggleAnswer(this);
+                });
+            });
+        </script>
+    </footer>
+    
     <div class="copyright">
         <p>© 2024 YATU Learn. All Rights Reserved.</p>
     </div>
