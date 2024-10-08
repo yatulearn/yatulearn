@@ -7,19 +7,19 @@
 }
 
 body {
-    background-image: url(skyblue_theme.jpeg.jpg);
-    animation: fadeInAnimation ease 3s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
+  background-image: url(../assets/images/blue_theme.jpeg.jpg);
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 p {
@@ -170,87 +170,70 @@ nav li a.Courses {
 .text {
     margin-top: 70px;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
-.sem1 {
-    margin-top: 50px;
+.body-container {
+  margin: 20px 10%;
+}
+.category {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.sem1 h1 {
-  
-    margin-left: 50px;
+.category h2 {
+  font-size: 1.25em;
+  margin-bottom: 15px;
+  color: rgb(2,0,36);
 }
 
-.branches {
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
+.collapsible {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%);
+  color: white;
+  cursor: pointer;
+  padding: 7px 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.sem1-cse {
-    margin-left: 50px;
+.collapsible:hover {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%);
 }
 
-.sem1-cse-links {
-    width: 10%;
-    height: 200px;
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ebebeb;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
 
-.sem1-cse-links a button {
-    width: 80px;
-    height: 35px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: lightslategray;
-    color: #ffffff;
-    border: lightslategray;
+ul {
+  list-style-type: none;
+  padding: 10px 0;
 }
 
-.sem1-cse-links a button:hover {
-    background-color: #ffffff;
-    color: lightslategray;
-    border: #ffffff;
-    transition: 0.3s;
+ul li {
+  margin-bottom: 10px;
 }
 
-#sem1 h1 {
-    background-color: lightskyblue;
-    width: 10%;
-    text-align: center;
+ul li a {
+  text-decoration: none;
+  color: rgba(9,9,121,1);
+  font-weight: bold;
 }
 
-#sem2 h1 {
-    background-color: lightsalmon;
-    width: 10%;
-    text-align: center;
-}
-
-#sem3 h1 {
-    background-color: lightgreen;
-    width: 10%;
-    text-align: center;
-}
-
-#sem4 h1 {
-    background-color: lightpink;
-    width: 10%;
-    text-align: center;
-}
-
-#sem5 h1 {
-    background-color: yellow;
-    width: 10%;
-    text-align: center;
-}
-
-.dots {
-    color: transparent;
-}
-
-.border {
-    border: 0.5px solid black;
+ul li a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -402,50 +385,6 @@ footer {
   font-size: medium;
 }
 
-  @media screen and (max-width:810px){
-    .branches{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sem1-cse-links {
-      height: 100px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .sem1-cse h2 br{
-      display: none;
-    }
-
-    .dots{
-      display: none;
-    }
-
-    .text{
-      text-align: start;
-      margin-left: 50px;
-    }
-  }
-
-  @media screen and (max-width:480px){
-    #sem1 h1{
-      width: 30%;
-    }
-    #sem2 h1{
-      width: 30%;
-    }
-    #sem3 h1{
-      width: 30%;
-    }
-    #sem4 h1{
-      width: 30%;
-    }
-    #sem5 h1{
-      width: 30%;
-    }
-  }
-
   @media screen and (max-width: 1400px) {
 
     nav .btn {
@@ -499,6 +438,10 @@ footer {
      display: flex;
     justify-content: space-between;
     width: 100%;
+    }
+
+    .body-container {
+      margin: 20px 5%;
     }
   
     .same p{
