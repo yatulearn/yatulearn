@@ -347,8 +347,8 @@ nav li a.Courses {
   background-color: #ffffff;
 }
 .address {
-  
-  margin-top: 30px;
+  margin-top: 50px;
+  padding-top: 50px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -363,7 +363,6 @@ nav li a.Courses {
   margin: auto;
   background-color: black;
   color: white;
-  border: 2px solid black;
   border-radius: 30px;
   font-size: 25px;
   display: flex;
@@ -413,7 +412,7 @@ nav li a.Courses {
   color: black;
 }
 .common>h4>a {
-  color: blue;
+  color: black;
   font-weight: 300;
   font-size: 1em;
 }
@@ -766,9 +765,8 @@ footer {
   background: #f8f9fa; 
   width: 300px; 
   padding: 20px;
-  border: 2px solid #007bff; 
   border-radius: 10px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
   text-align: center;
   margin: 15px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -783,7 +781,7 @@ footer {
   width: 50px;
   height: 50px;
   margin: auto;
-  background-color: #007bff; 
+  background-color: #000000; 
   color: white;
   border: none;
   border-radius: 50%;
@@ -796,7 +794,7 @@ footer {
 .common > h1 {
   margin-top: 10px;
   font-size: 22px;
-  color: #007bff; 
+  color: #000000; 
 }
 
 .common > h2 {
@@ -812,7 +810,7 @@ footer {
 }
 
 .common a {
-  color: #007bff; 
+  color: #000; 
   text-decoration: none; 
 }
 
