@@ -6,7 +6,7 @@
     box-sizing: border-box;
   }
   body {
-    background-image: url(skyblue_theme.jpeg.jpg);
+    background-color: #b6daf2;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -100,7 +100,7 @@
   nav ul a {
     font-size: 20px;
     text-decoration: none;
-    color: lightgrey;
+    color: rgb(143, 141, 141);
   }
   nav ul a:hover {
     text-decoration: none;
@@ -213,7 +213,7 @@
   }
   .about_learn em {
     font-style: italic; 
-    color: #e67e22;
+    color: #3498db
   }
   /* From Uiverse.io by abrahamcalsin */
   .card-client-flex {
@@ -234,7 +234,7 @@
   }
   .card-client {
     margin-top: 50px;
-    background:rgb(247, 179, 52);
+    background:white;
     width: 17rem;
     height: 24rem;
     padding-top: 15px;
@@ -339,7 +339,6 @@
   .border_address {
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: #ffffff;
   }
   .address {
     
