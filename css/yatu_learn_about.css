@@ -11,6 +11,33 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+#scrollUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+#scrollUpBtn span{
+  position: relative;
+  right: 12px;
+}
+
+
+#scrollUpBtn:hover {
+  background-color: #444;
+}
+
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;

@@ -16,6 +16,9 @@
   </head>
 
   <body>
+    <button id="scrollUpBtn">
+      <i class="fa-solid fa-arrow-up" style="font-size: 20px;"></i>
+    </button>
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
@@ -346,4 +349,24 @@
     </div>
   </footer>
   </body>
+  <script>
+    const scrollUpBtn = document.getElementById('scrollUpBtn');
+
+scrollUpBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    scrollUpBtn.style.display = 'block';
+  } else {
+    scrollUpBtn.style.display = 'none';
+  }
+});
+
+scrollUpBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+  </script>
 </html>

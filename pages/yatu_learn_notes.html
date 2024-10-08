@@ -11,10 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Notes</title>
     <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
   <script>
+
     document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.getElementById('search');
         const notes = document.querySelectorAll('.note');
@@ -37,6 +39,9 @@
 </script>
 
   <body>
+    <button id="scrollUpBtn">
+      <i class="fa-solid fa-arrow-up" style="font-size: 20px;"></i>
+    </button>
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
@@ -333,4 +338,24 @@
       <p>© 2024 YATU Learn. All Rights Reserved.</p>
     </div>
   </footer>
+  <script>
+    const scrollUpBtn = document.getElementById('scrollUpBtn');
+
+scrollUpBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    scrollUpBtn.style.display = 'block';
+  } else {
+    scrollUpBtn.style.display = 'none';
+  }
+});
+
+scrollUpBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+  </script>
 </html>
