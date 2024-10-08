@@ -410,7 +410,7 @@ button:active {
 }
 
 .roadmap_btns button {
-  margin: 20px;
+  margin: 4px;
   height: 60px;
   text-align: center;
 }
@@ -421,7 +421,7 @@ button:active {
 }
 
 .roadmap_btns_right button {
-  margin: 20px;
+  margin: 4px;
   height: 60px;
   text-align: center;
 }
