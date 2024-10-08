@@ -62,6 +62,10 @@ body {
   margin-bottom: 20px;
 }
 
+i.fa-solid.fa-xmark{
+  display: none;
+}
+
 /* Make sure the background image covers smaller screen sizes too */
 @media (max-width: 768px) {
   .hero-container {
@@ -132,6 +136,10 @@ nav ul {
   align-items: center;
   white-space: nowrap;
 }
+
+
+
+
 
 nav .btn {
   --hover-shadows: none;
@@ -402,7 +410,7 @@ button:active {
 }
 
 .roadmap_btns button {
-  margin: 20px;
+  margin: 4px;
   height: 60px;
   text-align: center;
 }
@@ -413,7 +421,7 @@ button:active {
 }
 
 .roadmap_btns_right button {
-  margin: 20px;
+  margin: 4px;
   height: 60px;
   text-align: center;
 }
@@ -665,8 +673,21 @@ footer {
     color: #121212;
   }
 
-  #check:checked ~ ul {
-    left: 0;
+  #check:checked ~ ul{
+    left: 0;    
+  }
+
+  #check:checked ,.fa-solid.fa-bars{
+    z-index: 110;
+    position: relative;
+    left: 0.8rem;
+    
+  }
+
+  i.fa-solid.fa-xmark{
+    /* display: block; */
+    font-size: 2rem;
+    z-index: 100;
   }
 
   .dropdown-content1qp {
@@ -794,13 +815,15 @@ footer {
   } */
   .roadmap {
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
 
   .roadmap_btns {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    /* flex-direction: row; */
   }
   .roadmap_btns button {
     width: 33%;
@@ -817,7 +840,8 @@ footer {
   .roadmap_btns_right {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    /* flex-direction: row; */
   }
 
   .img1 {
@@ -1170,7 +1194,7 @@ nav .main_logo .logo a img {
 }
 
 nav ul {
-  width: 36%;
+  width: 49%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1237,7 +1261,7 @@ nav li a.Courses {
 }
 
 .qp:hover {
-  color: #121212;
+  color: #ffffff;
 }
 
 .dropdown-content1qp {
@@ -1742,7 +1766,7 @@ footer {
   }
 
   nav ul {
-    width: 40%;
+    width: 52%;
     font-size: large;
     display: flex;
     justify-content: space-between;
@@ -1892,7 +1916,12 @@ footer {
   }
 
   #check:checked ~ ul {
+    top: 0rem;
+    height: 100vh;
     left: 0;
+    padding-top: 110px;
+    padding-bottom: 200px;
+    /* padding: 100px 12rem; */
   }
 
   .dropdown-content1qp {
