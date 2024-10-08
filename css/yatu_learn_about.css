@@ -100,7 +100,7 @@ nav .btn:hover {
 nav ul a {
   font-size: 20px;
   text-decoration: none;
-  color: lightgrey;
+  color: rgb(140, 140, 140);
 }
 nav ul a:hover {
   text-decoration: none;
@@ -156,6 +156,11 @@ nav li a.Courses {
   display: flex;
   align-items: center;
 }
+
+.banner_vdo{
+  padding-top: 4rem;
+}
+
 .banner_vdo video {
   border: none;
 }
@@ -860,5 +865,113 @@ footer {
   .common > p,
   .common > h3 {
     font-size: 10px;
+  }
+}
+
+.slogan{
+  text-align: center; 
+  color: #2c3e50;
+  padding: 20px;
+  border: 2px solid red;
+}
+
+.slogan h2{
+  color: #e67e22; font-size: 32px;
+  font-style: italic;;
+}
+
+
+
+/* Styling for the stats section */
+.stats-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: #e8f4f8;
+  width: 100%;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  width: 45%;
+  margin: 1rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  color: #66b3ff;
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 640px) {
+  .stat-item {
+    width: 100%;
+  }
+}
+
+/* Wrapper for vision and mission section */
+.vision-mission-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Flex container for vision and mission boxes */
+.vision-mission-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Box style for vision and mission */
+.box {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 40px 20px; /* Increased padding for content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 500px; /* Fixed height for boxes */
+  max-width: 50%; /* Ensure both boxes take equal width */
+}
+
+/* Title styling */
+.box-title {
+  color: #e74c3c;
+  font-size: 32px; /* Larger font size */
+  margin-bottom: 20px;
+}
+
+/* Image styling */
+.box-image {
+  width: 250px; /* Make image full width */
+  height: 200px; /* Fixed height for the image */
+  object-fit: contain; /* Ensure images fit nicely */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Content styling */
+.box-content {
+  font-size: 18px; /* Increased font size */
+  color: #34495e;
+  line-height: 1.6; /* For better readability */
+}
+
+@media (max-width: 640px) {
+  .vision-mission-container {
+    flex-direction: column;
+  }
+  .box {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
