@@ -97,6 +97,7 @@
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
+            localStorage.setItem("isLoggedIn", "true"); // Set login status
             alert("Logged in: " + user.email);
             window.location.href = 'index.html';
         })

@@ -228,6 +228,35 @@ nav li a.Courses {
   color: darkblue;
 }
 
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.btn-auth {
+  padding: 8px 15px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.btn-auth:hover {
+  background-color: #555;
+}
+
+.login-btn {
+  background-color: #6aa4d0;
+}
+
+.signup-btn {
+  background-color: #6aa4d0;
+  margin-right: 5px;
+}
+
 .cyber {
   display: flex;
   align-items: center;
