@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <title>YATU Learn</title>
+    <style>
+        /* Additional styles for the chatbot */
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px; /* Adjust to your preference */
+            right: 20px; /* Adjust to your preference */
+            z-index: 100; /* Ensure it's above other elements */
+        }
+
+        .chatbot-button {
+            background-color: #007bff; /* Example color */
+            border: none;
+            border-radius: 50%;
+            padding: 8px; /* Adjust size */
+            cursor: pointer;
+            transition: transform 0.3s;
+            width: 50px; /* Adjust size */
+            height: 50px; /* Adjust size */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chatbot-button img {
+            width: 40px; /* Adjust image size */
+            height: 40px; /* Adjust image size */
+        }
+
+        .chatbot-button:hover {
+            transform: scale(1.1);
+        }
+
+        .tooltip-text {
+            display: none;
+            position: absolute;
+            bottom: 60px; /* Adjust to your preference */
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+            z-index: 1001;
+        }
+
+        .chatbot-button:hover .tooltip-text {
+            display: block;
+        }
+    </style>
+</head>
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -17,6 +74,10 @@
     <nav class="main-nav">
         <div class="main_logo">
             <div class="logo">
+ <a href="index.html">
+                    <img src="assets/images/YATU Learn - YL icon Black (2).png" alt="" height="40px" width="50px" />
+                </a>
+
                 <a href="index.html"><img src="assets/images/YATU Learn - YL icon Black (2).png" alt="" height="40px"
                         width="50px" /></a>
             </div>
@@ -24,6 +85,11 @@
         <input type="checkbox" id="check" />
         <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
         <ul>
+            <a href="index.html" class="Courses btn-home">Home<i class="gfg-icon gfg-icon-black-up-carrot" style="float: right; margin-right: -12px; line-height: 1.5"></i></a>
+            <div class="dropdown1qp">
+                <a href="pages/yatu_learn_qp.html" class="qp">
+                    <span>Question Papers<i class="fa-solid fa-angle-down"></i></span>
+                </a>
             <a href="index.html" class="Courses btn-home">Home<i class="gfg-icon gfg-icon-black-up-carrot"
                     style="float: right; margin-right: -12px; line-height: 1.5"></i></a>
             <div class="dropdown1qp">
@@ -38,6 +104,8 @@
                         <a href="pages/yatu_learn_qp.html#border4">4th Sem</a>
                         <a href="pages/yatu_learn_qp.html#border5">5th Sem</a>
                     </div>
+                    <!-- Repeat for IT, ECE, MECH -->
+
                     <h2>IT</h2>
                     <div class="links">
                         <a href="pages/yatu_learn_qp.html#border1">1st Sem</a>
@@ -62,11 +130,16 @@
                         <a href="pages/yatu_learn_qp.html#border4">4th Sem</a>
                         <a href="pages/yatu_learn_qp.html#border5">5th Sem</a>
                     </div>
+
                 </div>
             </div>
             <a href="pages/yatu_learn_notes.html" class="btn-notes">Notes</a>
             <a href="pages/yatu_learn_about.html" class="About btn-about">About</a>
+
+            <a href="contact.html" class="About btn-about">Contact Us</a>
         </ul>
+        </ul>
+
 
         <button class="btn">
             <a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a>
@@ -81,25 +154,76 @@
             <div class="imag"><img src="assets/images/home banner.png" alt="banner" /></div>
         </a>
     </main>
+
+
+    <section>
+        <div class="block1">
+            <div class="card common">
+                <p class="heading">Web Development</p>
+
     <section style="margin: 80px 0;">
         <div class="block1">
             <div class="card common" style="background-image: url(./assets/application-smartphone-business.png);">
                 <div class="gradient-bg">
                     <p class="heading">Web Devlopment</p>
                 </div>
+
                 <div class="btn">
                     <a href="pages/yatu_learn_wd.html"><button>Explore</button></a>
                 </div>
             </div>
+
+            <div class="cardqp common">
+                <p class="heading">Data Structure <br />& Algorithm</p>
+
             <div class="cardqp common" style="background-image: url(./assets/data-structures-and-algorithms.png);">
                 <div class="gradient-bg">
                     <p class="heading">Data Structure <br>& Algorithm</p>
                 </div>
 
+
                 <div class="btn">
                     <a href="pages/yatu_learn_dsa.html"><button>Explore</button></a>
                 </div>
             </div>
+
+        </div>
+        <!-- Additional blocks here -->
+    </section>
+
+    <footer>
+        <div class="flex_align">
+            <div class="box1">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/YL_Black-removebg-preview2.png" alt="" height="110px" width="200px" />
+                    </a>
+                </div>
+                <!-- Additional footer content -->
+            </div>
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="copyright">
+            <p>© 2024 YATU Learn. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="chatbot.html">
+        <div class="chatbot-container">
+            <button class="chatbot-button group">
+                <img src="chatbot.gif" alt="chatbot">
+                <span class="tooltip-text">
+                    Welcome to SOrt Smart! <br>
+                    How can I help You? ^_^ 
+                </span>
+            </button>
+        </div>
+    </a>
+
+    <script src="js/yatu_learn_script.js" crossorigin=""></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
             <div class="cardwd common" style="background-image: url(./assets/1704439037481.png);">
                 <div class="gradient-bg">
                     <p class="heading">Artificial Intelligence<br>& Machine Learning</p>
