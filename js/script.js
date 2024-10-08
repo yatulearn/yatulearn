@@ -40,3 +40,21 @@ scrollUpLinks.forEach(id => {
       link.addEventListener('click', scrollToTop);
   }
 });
+
+// Show or hide the scroll-to-top button based on scroll position
+window.addEventListener('scroll', function() {
+  const scrollBtn = document.getElementById('scrollToTop');
+  if (window.scrollY > 300) {  // Show button after 300px of scroll
+    scrollBtn.classList.add('show');
+  } else {
+    scrollBtn.classList.remove('show');
+  }
+});
+
+// Scroll to top functionality with smooth scrolling
+document.getElementById('scrollToTop').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});

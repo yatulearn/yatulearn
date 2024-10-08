@@ -2195,4 +2195,59 @@ for linkedin
   transform: scale(1.1) !important;;
 }
 
+/* Scroll to top button styling */
+.scroll-top-btn {
+  position: fixed;              /* Stay at the bottom right corner */
+  bottom: 10px;                 /* 20px from the bottom */
+  right: 20px;                  /* 20px from the right */
+  padding: 10px 20px;           /* Padding for the button */
+  background-color: #000;    /* Vibrant orange for the button */
+  color: white;
+  border: none;
+  border-radius: 50px;          /* Rounded button */
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  opacity: 0;                   /* Initially hidden */
+  visibility: hidden;           /* Hidden state */
+  transition: all 0.3s ease;    /* Smooth transition */
+  z-index: 1000; 
+  border: white solid 2px;               /* Stay on top of other elements */
+}
+
+.scroll-top-btn .arrow-up {
+  font-size: 16px;              /* Larger arrow size */
+  margin-right: 5px;            /* Space between arrow and text */
+}
+
+/* Hover and focus effect */
+.scroll-top-btn:hover,
+.scroll-top-btn:focus {
+  border: #000 solid 2px; 
+  background-color: white;    /* Darker orange on hover */
+  outline: none;                /* Remove button outline */
+  transform: translateY(-2px);  /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Show button when scrolling */
+.scroll-top-btn.show {
+  opacity: 1;                   /* Fully visible */
+  visibility: visible;           /* Visible state */
+}
+
+/* Button on small screens */
+@media (max-width: 768px) {
+  .scroll-top-btn {
+    font-size: 12px;            /* Smaller text size */
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-top-btn {
+    font-size: 10px;            /* Even smaller text on mobile */
+    padding: 6px 12px;
+  }
+}
 
