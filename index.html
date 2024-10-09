@@ -14,7 +14,7 @@
     />
     <link
       rel="icon"
-      href="./assets/images/YATU Learn - YL icon Black (2).png"
+      href="./assets/images/yatulogo.png"
       type="image/x-icon"
     />
     <title>YATU Learn</title>
@@ -25,12 +25,42 @@
         <div class="logo">
           <a href="index.html"
             ><img
-              src="assets/images/YATU Learn - YL icon Black (2).png"
+              src="assets/images/yatulogo.png"
               alt=""
-              height="40px"
-              width="50px"
+              height="65px"
+              width="65px"
           /></a>
         </div>
+
+
+        <style>
+/* Add this to your style.css or in the style tag */
+
+/* Initial state for the logo */
+.logo img {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: popUp 1s ease-out forwards;
+}
+
+/* Keyframe animation for the pop-up effect */
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+          
+        </style>
+
       </div>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn"
@@ -256,10 +286,10 @@
       <div class="box1">
         <div class="logo">
           <a href="#" id="scrollUpLink"
-            ><img
-              src="assets/images/YL_Black-removebg-preview2.png"
+            ><img class="logostyle"
+              src="assets/images/yatulogo.png"
               alt=""
-              height="110px"
+              height="200px"
               width="200px"
           /></a>
         </div>
