@@ -1,0 +1,83 @@
+body {
+    top: 0px !important;
+    position: relative;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+  }
+  
+  /* Google Translate Dropdown */
+  .goog-te-combo {
+    display: inline-block;
+    background-color: #fff; /* White background */
+    border: 2px solid #000; /* Black border */
+    border-radius: 0.5rem; /* Slightly more rounded */
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem; /* Tailwind: text-sm */
+    transition: all 0.3s ease;
+    outline: none;
+    color: #000; /* Black text */
+    font-weight: 500; /* Tailwind: font-medium */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Black shadow */
+    width: 100%;
+    margin : auto;
+  }
+  
+  .goog-te-combo:hover {
+    background-color: #f0f0f0; /* Light gray on hover (instead of light blue) */
+    border-color: #000; /* Black border on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25); /* Stronger black shadow on hover */
+  }
+  
+  .goog-logo-link {
+    display: none !important;
+  }
+  
+  .goog-te-gadget {
+    color: transparent !important;
+  }
+  
+  .goog-te-gadget > span > a {
+    display: none !important;
+  }
+  
+  .goog-te-gadget .goog-te-combo {
+    color: #000 !important; /* Black text for dropdown */
+  }
+  
+  #google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:first-child {
+    display: none;
+  }
+  
+  #google_translate_element .goog-te-gadget-simple .goog-te-menu-value:before {
+    content: 'Translate'; /* Change the default text */
+    color: #000; /* Black text */
+  }
+  
+  .goog-te-banner-frame {
+    display: none !important;
+  }
+  
+  .goog-te-menu-frame {
+    max-height: 400px !important;
+    overflow-y: auto !important;
+    background-color: #fff; /* White background for dropdown */
+    border: 1px solid #000; /* Black border */
+    border-radius: 0.5rem; /* Slightly more rounded */
+  }
+  
+  /* Hide the banner frame */
+  .goog-te-banner-frame {
+    display: none !important;
+  }
+  
+  /* Customize the iframe */
+  .skiptranslate > iframe {
+    height: 0 !important;
+    border-style: none;
+    box-shadow: none;
+  }
+.translate-logo{
+    display: block;
+    width: 45px;
+    margin: auto;
+}
