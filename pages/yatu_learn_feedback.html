@@ -105,33 +105,105 @@ button:hover {
     </div>
 
     <script>
-      function submitFeedback() {
+      const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 3000;
+
+// Middleware to parse JSON bodies
+app.use(bodyParser.json());
+
+// POST endpoint to receive feedback
+app.post('/submit-feedback', (req, res) => {
+    const { name, email, rating, comments } = req.body;
+    
+    // Log feedback or store it in a database here
+    console.log(`Feedback received from ${name} (${email}): Rating - ${rating}, Comments - ${comments}`);
+    
+    // You can also send this data via email to the admin using services like Nodemailer
+
+    res.status(200).json({ message: "Feedback received successfully!" });
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
+function submitFeedback() {
     // Get form values
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const rating = document.getElementById("rating").value;
     const comments = document.getElementById("comments").value;
 
-    // Show feedback response and hide form
-    const form = document.getElementById("feedbackForm");
-    const response = document.getElementById("feedbackResponse");
-    const responseMessage = document.getElementById("responseMessage");
+    // Create feedback object
+    const feedback = {
+        name: name,
+        email: email,
+        rating: rating,
+        comments: comments
+    };
 
-    form.classList.add("hidden");
-    response.classList.remove("hidden");
+    // Send feedback data to the server
+    fetch('http://localhost:3000/submit-feedback', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(feedback)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
 
-    // Display message
-    responseMessage.innerHTML = `Thank you, <strong>${name}</strong>, for rating us ${rating}/5. We appreciate your feedback!`;
+        // Show feedback response and hide form
+        const form = document.getElementById("feedbackForm");
+        const response = document.getElementById("feedbackResponse");
+        const responseMessage = document.getElementById("responseMessage");
+
+        form.classList.add("hidden");
+        response.classList.remove("hidden");
+
+        // Display message
+        responseMessage.innerHTML = `Thank you, <strong>${name}</strong>, for rating us ${rating}/5. We appreciate your feedback!`;
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
 
     return false; // Prevent form submission and page reload
 }
+const nodemailer = require('nodemailer');
 
-function resetForm() {
-    // Reset form and show it again
-    document.getElementById("feedbackForm").reset();
-    document.getElementById("feedbackForm").classList.remove("hidden");
-    document.getElementById("feedbackResponse").classList.add("hidden");
-}
+// Setup mail transporter
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'your-email@gmail.com',
+        pass: 'your-email-password'
+    }
+});
+
+app.post('/submit-feedback', (req, res) => {
+    const { name, email, rating, comments } = req.body;
+
+    // Send email to admin
+    const mailOptions = {
+        from: 'your-email@gmail.com',
+        to: 'admin-email@example.com',
+        subject: 'New Feedback Received',
+        text: `Feedback received from ${name} (${email}):\n\nRating: ${rating}\n\nComments:\n${comments}`
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Email sent: ' + info.response);
+    });
+
+    res.status(200).json({ message: 'Feedback received and email sent to admin!' });
+});
+
 
     </script>
 </body>
