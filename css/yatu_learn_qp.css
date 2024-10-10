@@ -27,13 +27,13 @@
   z-index: 1000;
 }
 
-.logo {
+.question_page_logo {
   display: flex;
   height: 50px;
   align-items: center;
 }
 
-.logo img {
+.question_page_logo img {
   height: 80px;
   width: 160px;
   overflow-clip-margin: content-box;
