@@ -388,6 +388,7 @@ ul li a:hover {
   margin: 5px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 70%;
 }
 
