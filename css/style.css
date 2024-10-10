@@ -125,6 +125,11 @@ nav .main_logo .logo a img {
   transition: 0.2s;
 }
 
+.btn-notes ,.qp,  .btn-Coding , .btn-Quizes ,.btn-about ,.btn-home{
+  font-size: 20px;
+  
+}
+
 #check {
   display: none;
 }
