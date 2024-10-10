@@ -473,6 +473,12 @@ button:active {
   z-index: 1;
 }
 
+.roadmap_imgs .img7 {
+  display: none;
+  border-radius: 20px;
+  z-index: 1;
+}
+
 footer {
   margin-top: 50px;
   width: 100%;
@@ -865,6 +871,10 @@ footer {
     width: 90%;
   }
   .img6 {
+    margin-left: 20px;
+    width: 90%;
+  }
+    .img7 {
     margin-left: 20px;
     width: 90%;
   }
@@ -1505,6 +1515,12 @@ button:active {
   z-index: 1;
 }
 
+.roadmap_imgs .img7 {
+  display: none;
+  border-radius: 20px;
+  z-index: 1;
+}
+
 footer {
   margin-top: 50px;
   width: 100%;
@@ -1881,6 +1897,10 @@ footer {
     width: 90%;
   }
   .img6 {
+    margin-left: 20px;
+    width: 90%;
+  }
+  .img7 {
     margin-left: 20px;
     width: 90%;
   }
