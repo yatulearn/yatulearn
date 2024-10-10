@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +34,37 @@
       type="image/x-icon"
     />
     <title>YATU Learn</title>
+    <style>
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #0073b1;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: none; /* Hidden by default */
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #005580;
+            transform: scale(1.1);
+        }
+
+        .scroll-to-top i {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
   </head>
   <body>
     <nav class="main-nav">
@@ -104,9 +139,6 @@
       </button>
     </nav>
 
-    <!-- <main>
-    <a href="yatu_learn_notes.html"><div class="imag"><img src="home banner.png" alt="banner"></div></a>
-    </main> -->
     <main>
       <a href="pages/yatu_learn_notes.html">
         <div class="imag">
@@ -114,6 +146,68 @@
         </div>
       </a>
     </main>
+    <section style="margin: 80px 0;">
+        <div class="block1">
+            <div class="card common" style="background-image: url(./assets/application-smartphone-business.png);">
+                <div class="gradient-bg">
+                    <p class="heading">Web Development</p>
+                </div>
+                <div class="btn">
+                    <a href="pages/yatu_learn_wd.html"><button>Explore</button></a>
+                </div>
+            </div>
+            <div class="cardqp common" style="background-image: url(./assets/data-structures-and-algorithms.png);">
+                <div class="gradient-bg">
+                    <p class="heading">Data Structure <br>& Algorithm</p>
+                </div>
+                <div class="btn">
+                    <a href="pages/yatu_learn_dsa.html"><button>Explore</button></a>
+                </div>
+            </div>
+            <div class="cardwd common" style="background-image: url(./assets/1704439037481.png);">
+                <div class="gradient-bg">
+                    <p class="heading">Artificial Intelligence<br>& Machine Learning</p>
+                </div>
+                <div class="btn">
+                    <a href="pages/yatu_learn_aiml.html"><button>Explore</button></a>
+                </div>
+            </div>
+            <div class="cardp common" style="background-image: url(./assets/lock-network-technology-concept.png);">
+                <div class="gradient-bg">
+                    <p class="heading">Cyber Security</p>
+                </div>
+                <div class="btn">
+                    <a href="pages/yatu_learn_cs.html"><button>Explore</button></a>
+                </div>
+            </div>
+            <div class="card1 common" style="background-image: url(./assets/kazan-russia-april-11-2017-260nw.png);">
+                <div class="gradient-bg">
+                    <p class="heading">Operating System</p>
+                </div>
+                <div class="btn">
+                    <a href="pages/yatu_learn_os.html">
+                        <button>Explore</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card2 common" style="background-image: url(./assets/CN-1.png);">
+                <div class="gradient-bg">
+                    <p class="heading">Computer Network</p>
+                </div>
+                <div class="btn">
+                    <a href="pages/yatu_learn_cn.html"><button>Explore</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="roadmap">
+        <div class="roadmap_btns">
+            <button class="btn_web" onclick="setActive(this)">Web Development</button>
+
+            <button class="btn_dsa" onclick="setActive(this)">Web Devlopment</button>
+            <button class="btn_dsa" onclick="setActive(this)">DSA</button>
+            <button class="btn_cs"  onclick="setActive(this)">Cyber Security</button>
     <section style="margin: 80px 0">
       <div class="block1">
         <div
@@ -261,8 +355,32 @@
         </button>
       </div>
     </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn" title="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <button id="backToTop" style="display: none;">Back to Top</button>
     <script src="js/yatu_learn_script.js" crossorigin=""></script>
+    <script>
+        // Scroll to Top Button Functionality
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = 'flex'; // Show button
+            } else {
+                scrollToTopBtn.style.display = 'none'; // Hide button
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+        };
+    </script>
+</body>
+
+<footer>
   </body>
   <footer>
     <script src="js/B2T.js"></script>
