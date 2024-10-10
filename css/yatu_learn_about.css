@@ -100,7 +100,7 @@ nav .btn:hover {
 nav ul a {
   font-size: 20px;
   text-decoration: none;
-  color: lightgrey;
+  color: rgb(140, 140, 140);
 }
 nav ul a:hover {
   text-decoration: none;
@@ -156,6 +156,11 @@ nav li a.Courses {
   display: flex;
   align-items: center;
 }
+
+.banner_vdo{
+  padding-top: 4rem;
+}
+
 .banner_vdo video {
   border: none;
 }
