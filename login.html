@@ -71,8 +71,9 @@
   document.querySelector('.google-btn').addEventListener('click', () => {
       signInWithPopup(auth, googleProvider)
           .then((result) => {
-              console.log('Google sign-in successful:', result.user);
+              alert('Google sign-in successful:'+ result.user);
               window.location.href = 'index.html';
+              localStorage.setItem("isLoggedIn", "true"); // Set login status
           })
           .catch((error) => {
              alert('Error during Google sign-in: ' + error.message);
@@ -84,8 +85,9 @@
   document.querySelector('.github-btn').addEventListener('click', () => {
       signInWithPopup(auth, githubProvider)
           .then((result) => {
-              console.log('GitHub sign-in successful:', result.user);
+              alert('GitHub sign-in successful:'+ result.user);
               window.location.href = 'index.html';
+              localStorage.setItem("isLoggedIn", "true"); // Set login status
           })
           .catch((error) => {
               alert('Error during GitHub sign-in: ' + error.message);
