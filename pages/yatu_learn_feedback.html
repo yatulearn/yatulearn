@@ -189,7 +189,7 @@ app.post('/submit-feedback', (req, res) => {
     // Send email to admin
     const mailOptions = {
         from: document.getElementById("email").value,
-        to: 'yatulearn@gmail.com',
+        to: 'ankitharankithar@gmail.com',
         subject: 'New Feedback Received',
         text: `Feedback received from ${name} (${email}):\n\nRating: ${rating}\n\nComments:\n${comments}`
     };
