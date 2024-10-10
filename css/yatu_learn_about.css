@@ -975,3 +975,71 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+.accordion {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion__header {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.accordion__header:hover {
+    background-color: #1a242f;
+}
+
+.accordion__content {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.accordion__icon {
+    transition: transform 0.3s;
+}
+
+.accordion.active .accordion__content {
+    display: block;
+}
+
+.accordion.active .accordion__icon {
+    transform: rotate(45deg);
+}
+
+.accordion__content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease; 
+    opacity: 0;
+    max-height: 0;
+}
+
+.accordion.active .accordion__content {
+    opacity: 1;
+}
+
+.accordion.active .accordion__content {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .accordion__title {
+        font-size: 24px;
+    }
+
+    .accordion__question {
+        font-size: 16px;
+    }
+
+    .accordion__answer {
+        font-size: 14px;
+    }
+}
