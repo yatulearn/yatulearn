@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
@@ -17,49 +18,40 @@
       href="./assets/images/YATU Learn - YL icon Black (2).png"
       type="image/x-icon"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="icon"
-      href="./assets/images/YATU Learn - YL icon Black (2).png"
-      type="image/x-icon"
-    />
     <title>YATU Learn</title>
   </head>
   <body>
+    <!-- Navigation -->
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
-          <a href="index.html"
-            ><img
+          <a href="index.html">
+            <img
               src="assets/images/YATU Learn - YL icon Black (2).png"
-              alt=""
+              alt="YATU Learn Logo"
               height="40px"
               width="50px"
-          /></a>
+            />
+          </a>
         </div>
       </div>
       <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn"
-        ><i class="fa-solid fa-bars"></i
-      ></label>
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
       <i class="fa-solid fa-xmark"></i>
       <ul class="hemburger-dropdown">
-        <a href="index.html" class="Courses btn-home"
-          >Home<i
+        <a href="index.html" class="Courses btn-home">
+          Home
+          <i
             class="gfg-icon gfg-icon-black-up-carrot"
             style="float: right; margin-right: -12px; line-height: 1.5"
-          ></i
-        ></a>
+          ></i>
+        </a>
         <div class="dropdown1qp">
           <a href="pages/yatu_learn_qp.html" class="qp">
-            <span>Question Papers<i class="fa-solid fa-angle-down"></i></span
-          ></a>
+            <span>Question Papers<i class="fa-solid fa-angle-down"></i></span>
+          </a>
           <div class="dropdown-content1qp">
             <h2>CSE</h2>
             <div class="links">
@@ -97,6 +89,7 @@
         </div>
         <a href="pages/yatu_learn_notes.html" class="btn-notes">Notes</a>
         <a href="pages/yatu_learn_about.html" class="About btn-about">About</a>
+        <a href="pages/yatu_learn_blockchain.html" class="Blockchain btn-blockchain">Blockchain</a> <!-- New Link -->
       </ul>
 
       <button class="btn">
@@ -104,9 +97,7 @@
       </button>
     </nav>
 
-    <!-- <main>
-    <a href="yatu_learn_notes.html"><div class="imag"><img src="home banner.png" alt="banner"></div></a>
-    </main> -->
+    <!-- Main Content -->
     <main>
       <a href="pages/yatu_learn_notes.html">
         <div class="imag">
@@ -114,13 +105,12 @@
         </div>
       </a>
     </main>
+
     <section style="margin: 80px 0">
       <div class="block1">
         <div
           class="card common"
-          style="
-            background-image: url(./assets/application-smartphone-business.png);
-          "
+          style="background-image: url('./assets/application-smartphone-business.png');"
         >
           <div class="gradient-bg">
             <p class="heading">Web Development</p>
@@ -131,9 +121,7 @@
         </div>
         <div
           class="cardqp common"
-          style="
-            background-image: url(./assets/data-structures-and-algorithms.png);
-          "
+          style="background-image: url('./assets/data-structures-and-algorithms.png');"
         >
           <div class="gradient-bg">
             <p class="heading">Data Structure <br />& Algorithm</p>
@@ -145,7 +133,7 @@
         </div>
         <div
           class="cardwd common"
-          style="background-image: url(./assets/1704439037481.png)"
+          style="background-image: url('./assets/1704439037481.png')"
         >
           <div class="gradient-bg">
             <p class="heading">
@@ -156,13 +144,9 @@
             <a href="pages/yatu_learn_aiml.html"><button>Explore</button></a>
           </div>
         </div>
-        <!-- </div> -->
-        <!-- <div class="block2"> -->
         <div
           class="cardp common"
-          style="
-            background-image: url(./assets/lock-network-technology-concept.png);
-          "
+          style="background-image: url('./assets/lock-network-technology-concept.png');"
         >
           <div class="gradient-bg">
             <p class="heading">Cyber Security</p>
@@ -173,9 +157,7 @@
         </div>
         <div
           class="card1 common"
-          style="
-            background-image: url(./assets/kazan-russia-april-11-2017-260nw.png);
-          "
+          style="background-image: url('./assets/kazan-russia-april-11-2017-260nw.png');"
         >
           <div class="gradient-bg">
             <p class="heading">Operating System</p>
@@ -188,7 +170,7 @@
         </div>
         <div
           class="card2 common"
-          style="background-image: url(./assets/CN-1.png)"
+          style="background-image: url('./assets/CN-1.png')"
         >
           <div class="gradient-bg">
             <p class="heading">Computer Network</p>
@@ -197,8 +179,22 @@
             <a href="pages/yatu_learn_cn.html"><button>Explore</button></a>
           </div>
         </div>
+        <!-- New Blockchain Card -->
+        <div
+          class="cardbc common"
+          style="background-image: url('./assets/blockchain-image.png');"
+        >
+          <div class="gradient-bg">
+            <p class="heading">Blockchain</p>
+          </div>
+          <div class="btn">
+            <a href="pages/yatu_learn_blockchain.html"><button>Explore</button></a>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- Roadmap Section -->
     <div class="roadmap">
       <div class="roadmap_btns">
         <button class="btn_web" onclick="setActive(this)">
@@ -239,14 +235,14 @@
         <img
           class="img5"
           src="assets/images/Functions-of-Operating-System-2.jpg.webp"
-          alt="ai"
+          alt="os"
           height="280px"
           width="350px"
         />
         <img
           class="img6"
           src="assets/images/cn roadmap.png"
-          alt="ai"
+          alt="cn"
           height="280px"
           width="350px"
         />
@@ -261,91 +257,95 @@
         </button>
       </div>
     </div>
+
+    <!-- Back to Top Button -->
     <button id="backToTop" style="display: none;">Back to Top</button>
+
+    <!-- Scripts -->
     <script src="js/yatu_learn_script.js" crossorigin=""></script>
-  </body>
-  <footer>
     <script src="js/B2T.js"></script>
-</body>
-<footer>
-    <div class="flex_align">
-      <div class="box1">
-        <div class="logo">
-          <a href="#" id="scrollUpLink"
-            ><img
-              src="assets/images/YL_Black-removebg-preview2.png"
-              alt=""
-              height="110px"
-              width="200px"
-          /></a>
-        </div>
-        <div class="header same">
-          <p>Explore</p>
-          <a href="#" id="scrollUpLink">Home</a>
-          <a href="pages/yatu_learn_qp.html">Papers</a>
-          <a href="pages/yatu_learn_notes.html">Notes</a>
-          <a href="pages/yatu_learn_about.html">About</a>
-        </div>
-        <div class="policies same">
-          <div class="policy">
-            <p>policy</p>
-            <a href="pages/privacy_learn.html">Privacy policy</a>
-            <a href="pages/yatu_learn_about.html#contact">Contact Us</a>
+    <script src="js/script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+      <div class="flex_align">
+        <div class="box1">
+          <div class="logo">
+            <a href="#" id="scrollUpLink">
+              <img
+                src="assets/images/YL_Black-removebg-preview2.png"
+                alt="YATU Learn Logo"
+                height="110px"
+                width="200px"
+              />
+            </a>
           </div>
-          <div class="media">
-            <p>Social:</p>
-            <div class="icon_flex">
-              <a
-                href="https://www.linkedin.com/company/yatulearn/"
-                class="linkedin"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/yatulearn/" class="instagram"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://www.youtube.com/@YATU_Store" class="youtube"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-              <a href="https://x.com/yatulearn" class="twitter"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+          <div class="header same">
+            <p>Explore</p>
+            <a href="index.html" id="scrollUpLink">Home</a>
+            <a href="pages/yatu_learn_qp.html">Papers</a>
+            <a href="pages/yatu_learn_notes.html">Notes</a>
+            <a href="pages/yatu_learn_about.html">About</a>
+          </div>
+          <div class="policies same">
+            <div class="policy">
+              <p>Policy</p>
+              <a href="pages/privacy_learn.html">Privacy Policy</a>
+              <a href="pages/yatu_learn_about.html#contact">Contact Us</a>
+            </div>
+            <div class="media">
+              <p>Social:</p>
+              <div class="icon_flex">
+                <a
+                  href="https://www.linkedin.com/company/yatulearn/"
+                  class="linkedin"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/yatulearn/" class="instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/@YATU_Store" class="youtube"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="https://x.com/yatulearn" class="twitter"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="vertical_line"></div>
-        <div class="email_adress same">
-          <p class="mail">Address:</p>
-          <span>
-            Near Panjab University<br />
-            SSGRC, Bajwara, Una<br />
-            road, Hoishiarpur, 146021,<br />
-            Punjab, India</span
-          ><br />
-          <br />
-          <div class="num">Ph No. : 7068247779</div>
-          <a href="https://mail.google.com/mail/u/0/#inbox"
-            >E-mail : yatulearn@gmail.com</a
-          >
+          <div class="vertical_line"></div>
+          <div class="email_adress same">
+            <p class="mail">Address:</p>
+            <span>
+              Near Panjab University<br />
+              SSGRC, Bajwara, Una<br />
+              road, Hoishiarpur, 146021,<br />
+              Punjab, India
+            </span>
+            <br /><br />
+            <div class="num">Ph No. : 7068247779</div>
+            <a href="mailto:yatulearn@gmail.com">E-mail : yatulearn@gmail.com</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="course_flex">
-      <div class="courses">
-        <p>Courses:</p>
-        <div class="courses_link">
-          <a href="pages/yatu_learn_wd.html">Web Dev</a>
-          <a href="pages/yatu_learn_dsa.html">DSA</a>
-          <a href="pages/yatu_learn_aiml.html">AI ML</a>
-          <a href="pages/yatu_learn_cs.html">Cyber Security</a>
-          <a href="pages/yatu_learn_os.html">Operating System</a>
-          <a href="pages/yatu_learn_cn.html">Networking</a>
+      <div class="course_flex">
+        <div class="courses">
+          <p>Courses:</p>
+          <div class="courses_link">
+            <a href="pages/yatu_learn_wd.html">Web Dev</a>
+            <a href="pages/yatu_learn_dsa.html">DSA</a>
+            <a href="pages/yatu_learn_aiml.html">AI ML</a>
+            <a href="pages/yatu_learn_cs.html">Cyber Security</a>
+            <a href="pages/yatu_learn_os.html">Operating System</a>
+            <a href="pages/yatu_learn_cn.html">Networking</a>
+            <a href="pages/yatu_learn_blockchain.html">Blockchain</a> <!-- New Link -->
+          </div>
         </div>
       </div>
-    </div>
-    <div class="horizontal_line"></div>
-    <div class="copyright">
-      <p>© 2024 YATU Learn. All Rights Reserved.</p>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
+      <div class="horizontal_line"></div>
+      <div class="copyright">
+        <p>© 2024 YATU Learn. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
