@@ -30,6 +30,47 @@ window.addEventListener("scroll",function() {
         btna.classList.remove("change_btn");
     }
 })
+var coll = document.getElementsByClassName("collapsible");
+for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+}
+ nav = document.querySelector("nav");
+let buttons = document.querySelectorAll("nav .btn-home, nav .qp, nav .btn-notes, nav .btn-about");
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 0) {
+        nav.classList.add("change");
+        buttons.forEach(button => button.classList.add("change_btn"));
+    } else {
+        nav.classList.remove("change");
+        buttons.forEach(button => button.classList.remove("change_btn"));
+    }
+});
+
+// Roadmap
+let roadmapButtons = document.querySelectorAll(".roadmap_btns button");
+let images = document.querySelectorAll(".roadmap_imgs img");
+
+roadmapButtons.forEach((button, index) => {
+    button.addEventListener("click", function() {
+        images.forEach(img => img.style.display = "none"); // Hide all images
+        images[index].style.display = "flex"; // Show the clicked image
+
+        // Remove 'active' class from all buttons and add to the clicked one
+        roadmapButtons.forEach(btn => btn.classList.remove("btn_web"));
+        this.classList.add("btn_web");
+    });
+});
+
+// Show Web Development image by default
+images.forEach((img, index) => {
+    if (index === 0) img.style.display = "flex"; // Show the first image (Web Development)
+    else img.style.display = "none"; // Hide others
+});
 
 //  Roadmap
 
