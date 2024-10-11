@@ -1,80 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".css/yatu_learn_dbms.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/yatu_learn_dbms.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/B2T.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>DATABASE MANAGEMENT SYSTEMS (DBMS)</title>
-    <link rel="icon" href="./assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
+    <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
 </head>
 
 <body>
-    <nav class="main-nav">
-        <div class="main_logo">
-            <div class="logo">
-                <a href="index.html"><img src="YATU Learn - YL icon Black (2).png" alt="" height="40px"
-                        width="50px"></a>
-            </div>
-
+  <button id="backToTop" style="display: none;">Back to Top</button>
+  <nav class="main-nav">
+    <div class="main_logo">
+      <div class="logo">
+        <a href="../index.html"
+          ><img
+            src="../assets/images/YATU Learn - YL icon Black (2).png"
+            alt=""
+            height="40px"
+            width="50px"
+        /></a>
+      </div>
+    </div>
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn"
+      ><i class="fa-solid fa-bars"></i
+    ></label>
+    <ul>
+      <a href="../index.html" class="Courses btn-home"
+        >Home<i
+          class="gfg-icon gfg-icon-black-up-carrot"
+          style="float: right; margin-right: -12px; line-height: 1.5"
+        ></i
+      ></a>
+      <div class="dropdown1qp">
+        <a href="yatu_learn_qp.html" class="qp">
+          <span>Question Papers<i class="fa-solid fa-angle-down"></i></span
+        ></a>
+        <div class="dropdown-content1qp">
+          <h2>CSE</h2>
+          <div class="links">
+            <a href="yatu_learn_qp.html#border1">1st Sem</a>
+            <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+            <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+            <a href="yatu_learn_qp.html#border4">4th Sem</a>
+            <a href="yatu_learn_qp.html#border5">5th Sem</a>
+          </div>
+          <h2>IT</h2>
+          <div class="links">
+            <a href="yatu_learn_qp.html#border1">1st Sem</a>
+            <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+            <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+            <a href="yatu_learn_qp.html#border4">4th Sem</a>
+            <a href="yatu_learn_qp.html#border5">5th Sem</a>
+          </div>
+          <h2>ECE</h2>
+          <div class="links">
+            <a href="yatu_learn_qp.html#border1">1st Sem</a>
+            <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+            <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+            <a href="yatu_learn_qp.html#border4">4th Sem</a>
+            <a href="yatu_learn_qp.html#border5">5th Sem</a>
+          </div>
+          <h2>MECH</h2>
+          <div class="links">
+            <a href="yatu_learn_qp.html#border1">1st Sem</a>
+            <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+            <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+            <a href="yatu_learn_qp.html#border4">4th Sem</a>
+            <a href="yatu_learn_qp.html#border5">5th Sem</a>
+          </div>
         </div>
-         <input type="checkbox" id="check">
-            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
-        <ul>
-           
-            <a href="index.html" class="Courses btn-home">Home<i class="gfg-icon  gfg-icon-black-up-carrot "
-                    style="float: right; margin-right: -12px; line-height: 1.5;"></i></a>
-            <div class="dropdown1qp">
-                <a href="yatu_learn_qp.html" class="qp"> <span>Question Papers<i
-                            class="fa-solid fa-angle-down"></i></span></a>
-                <div class="dropdown-content1qp">
-                    <h2>CSE</h2>
-                    <div class="links">
-                        <a href="yatu_learn_qp.html#border1">1st Sem</a>
-                        <a href="yatu_learn_qp.html#border2">2nd Sem</a>
-                        <a href="yatu_learn_qp.html#border3">3rd Sem</a>
-                        <a href="yatu_learn_qp.html#border4">4th Sem</a>
-                        <a href="yatu_learn_qp.html#border5">5th Sem</a>
-                    </div>
-                    <h2>IT</h2>
-                    <div class="links">
-                        <a href="yatu_learn_qp.html#border1">1st Sem</a>
-                        <a href="yatu_learn_qp.html#border2">2nd Sem</a>
-                        <a href="yatu_learn_qp.html#border3">3rd Sem</a>
-                        <a href="yatu_learn_qp.html#border4">4th Sem</a>
-                        <a href="yatu_learn_qp.html#border5">5th Sem</a>
-                    </div>
-                    <h2>ECE</h2>
-                    <div class="links">
-                        <a href="yatu_learn_qp.html#border1">1st Sem</a>
-                        <a href="yatu_learn_qp.html#border2">2nd Sem</a>
-                        <a href="yatu_learn_qp.html#border3">3rd Sem</a>
-                        <a href="yatu_learn_qp.html#border4">4th Sem</a>
-                        <a href="yatu_learn_qp.html#border5">5th Sem</a>
-                    </div>
-                    <h2>MECH</h2>
-                    <div class="links">
-                        <a href="yatu_learn_qp.html#border1">1st Sem</a>
-                        <a href="yatu_learn_qp.html#border2">2nd Sem</a>
-                        <a href="yatu_learn_qp.html#border3">3rd Sem</a>
-                        <a href="yatu_learn_qp.html#border4">4th Sem</a>
-                        <a href="yatu_learn_qp.html#border5">5th Sem</a>
-                    </div>
-                </div>
-            </div>
-            <a href="yatu_learn_notes.html" class="btn-notes">Notes</a>
-            <a href="yatu_learn_about.html" class="About btn-about">About</a>
-        </ul>
-        <button class="btn"><a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a></button>
+      </div>
+      <a href="yatu_learn_notes.html" class="btn-notes">Notes</a>
+      <a href="yatu_learn_about.html" class="About btn-about">About</a>
+    </ul>
+    <button class="btn">
+      <a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a>
+    </button>
     </nav>
-    <body>
-                <h1> DATABASE MANAGEMENT SYSTEMS (DBMS) </h1>
+    <h1> DATABASE MANAGEMENT SYSTEMS (DBMS) </h1>
     <H2 class="What">What is DBMS?</H2>
     <p class="p">A Database Management System (DBMS) is software designed to store, manage, and retrieve data efficiently. DBMS provides an interface between the users and the databases, ensuring that data is organized and available for use while maintaining its integrity and security. It allows users to create, read, update, and delete data in a structured way.</p>
-    <main><img src=".assets/images/dbms.jpg"  height="300" width="auto">
+    <main><img src="../assets/images/dbms.jpg"  height="300" width="auto">
     </main>
     <br>
     
@@ -105,7 +122,7 @@
         * <b>2010s:</b> The rise of cloud databases, enabling DBaaS (Database as a Service), such as Amazon RDS, Google Cloud SQL.<br>
         * <b>Present:</b> Hybrid systems and multi-model databases combine SQL and NoSQL features, while distributed databases like Google Spanner and CockroachDB emerge.
     </p>
-    <main><img src=".assets/images/history_dbms.png"  height="300" width="auto">
+    <main><img src="../assets/images/history_dbms.png" height="300" width="auto">
     </main>
     
     
@@ -142,7 +159,7 @@
     </p>
 
 
-    <main><img src=".assets/images/types_dbms.jpg" alt="EvaluationofAI-roadmap" height="300" width="auto">
+    <main><img src="../assets/images/types_dbms.jpg" alt="EvaluationofAI-roadmap" height="300" width="auto">
     </main>
 
 
@@ -184,7 +201,7 @@
         * <b>Backup and Recovery:</b> Provides tools for data backup, recovery, and disaster management.<br>
         * <b>Concurrency Control:</b> Manages concurrent access to data in a multi-user environment.
     </p>
-    <main><img src=".assets/images/use_dbms.jpg" alt="EvaluationofAI-roadmap" height="300" width="auto">
+    <main><img src="../assets/images/use_dbms.jpg" height="300" width="auto">
     </main>
 
     <h2>How to Learn DBMS?</h2>
@@ -281,67 +298,86 @@
     <p class="p">
         Database Management Systems play a crucial role in today's data-driven world. Understanding DBMS concepts not only enhances your data management skills but also opens up numerous career opportunities in data science, software development, and database administration. By following structured learning paths and utilizing available resources, you can become proficient in DBMS and contribute effectively to data management solutions.
     </p>
-        <script src="yatu_learn_script.js" crossorigin=""></script>
-    </body>
+    <script src="../js/yatu_learn_script.js" crossorigin=""></script>
+    <script src="../js/B2T.js"></script>
     <footer>
-        <div class="flex_align">
-            <div class="box1">
-                <div class="logo">
-                    <a href="index.html"><img src="YL_Black-removebg-preview2.png" alt="" height="110px"
-                            width="200px"></a>
-                </div>
-                <div class="header same">
-                    <p>Explore</p>
-                    <a href="index.html">Home</a>
-                    <a href="yatu_learn_qp.html">Papers</a>
-                    <a href="yatu_learn_notes.html">Notes</a>
-                    <a href="yatu_learn_about.html">About</a>
-                </div>
-                <div class="policies same">
-                    <div class="policy">
-                        <p>policy</p>
-                        <a href="privacy_learn.html">Privacy policy</a>
-                        <a href="yatu_learn_about.html#contact">Contact Us</a>
-                    </div>
-                    <div class="media">
-                        <p>Social:</p>
-                        <div class="icon_flex">
-                            <a href="https://www.linkedin.com/company/yatulearn/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/yatulearn/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@YATU_Store"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://x.com/yatulearn"><i class="fa-brands fa-x-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="vertical_line">
-                </div>
-                <div class="email_adress same">
-                    <p class="mail">address:</p>
-                    <span> Near Panjab University<br> SSGRC, Bajwara, Una<br> road, Hoishiarpur, 146021,<br> Punjab,
-                        India</span><br>
-                    <br>
-                    <div class="num">Ph No. : 7068247779</div>
-                    <a href="https://mail.google.com/mail/u/0/#inbox">E-mail : yatulearn@gmail.com</a>
-                </div>
+      <div class="flex_align">
+        <div class="box1">
+          <div class="logo">
+            <a href="../index.html"
+              ><img
+                src="../assets/images/YL_Black-removebg-preview2.png"
+                alt=""
+                height="110px"
+                width="200px"
+            /></a>
+          </div>
+          <div class="header same">
+            <p>Explore</p>
+            <a href="../index.html">Home</a>
+            <a href="yatu_learn_qp.html">Papers</a>
+            <a href="yatu_learn_notes.html">Notes</a>
+            <a href="yatu_learn_about.html">About</a>
+          </div>
+          <div class="policies same">
+            <div class="policy">
+              <p>policy</p>
+              <a href="privacy_learn.html">Privacy policy</a>
+              <a href="yatu_learn_about.html#contact">Contact Us</a>
             </div>
-        </div>
-        <div class="course_flex">
-            <div class="courses">
-                <p>Courses:</p>
-                <div class="courses_link">
-                    <a href="yatu_learn_wd.html">Web Dev</a>
-                    <a href="yatu_learn_dsa.html">DSA</a>
-                    <a href="yatu_learn_aiml.html">AI ML</a>
-                    <a href="yatu_learn_cs.html">Cyber Security</a>
-                    <a href="yatu_learn_os.html">Operating System</a>
-                    <a href="yatu_learn_cn.html">Networking</a>
-                </div>
+            <div class="media">
+              <p>Social:</p>
+              <div class="icon_flex">
+                <a href="https://www.linkedin.com/company/yatulearn/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/yatulearn/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/@YATU_Store"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="https://x.com/yatulearn"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </div>
             </div>
+          </div>
+          <div class="vertical_line"></div>
+          <div class="email_adress same">
+            <p class="mail">address:</p>
+            <span>
+              Near Panjab University<br />
+              SSGRC, Bajwara, Una<br />
+              road, Hoishiarpur, 146021,<br />
+              Punjab, India</span
+            ><br />
+            <br />
+            <div class="num">Ph No. : 7068247779</div>
+            <a href="https://mail.google.com/mail/u/0/#inbox"
+              >E-mail : yatulearn@gmail.com</a
+            >
+          </div>
         </div>
-        <div class="horizontal_line">
+      </div>
+      <div class="course_flex">
+        <div class="courses">
+          <p>Courses:</p>
+          <div class="courses_link">
+            <a href="yatu_learn_wd.html">Web Dev</a>
+            <a href="yatu_learn_dsa.html">DSA</a>
+            <a href="yatu_learn_aiml.html">AI ML</a>
+            <a href="yatu_learn_cs.html">Cyber Security</a>
+            <a href="yatu_learn_os.html">Operating System</a>
+            <a href="yatu_learn_cn.html">Networking</a>
+          </div>
         </div>
-        <div class="copyright">
-            <p>© 2024 YATU Learn. All Rights Reserved.</p>
-        </div>
+      </div>
+      <div class="horizontal_line"></div>
+      <div class="copyright">
+        <p>© 2024 YATU Learn. All Rights Reserved.</p>
+      </div>
     </footer>
+  </body>
 </html>
+
