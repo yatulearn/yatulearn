@@ -686,7 +686,7 @@ footer {
   }
 
   nav .btn {
-    margin-top: 3px;
+    margin-left: auto;
     height: 30px;
     width: 8%;
     display: flex;
@@ -896,7 +896,7 @@ footer {
   }
 
   nav .btn {
-    margin-top: 3px;
+    margin-left: auto;
     height: 35px;
     width: 8%;
     display: flex;
@@ -1632,8 +1632,116 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 }
+
+/* Base button styles */
+.auth-buttons .btn-auth {
+  color: aliceblue;
+  background-color: #6aa4d0;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 2px solid #4b4b4b;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  .auth-buttons .btn-auth {
+      height: auto;
+      font-size: 12px;
+      width: auto;
+
+  }
+
+  #logoutButton{
+    width: auto;              
+    font-size: 10px;  
+    height:auto;
+    margin-left:10px;
+   margin-right:10px;
+   margin-bottom:10px;
+    
+}
+
+.logo {
+  display: none;
+}
+}
+
+
+@media screen and (max-width: 477px) {
+  .auth-buttons {
+      flex-direction: row;
+      justify-content: space-around;  
+      align-items: center;
+      gap: 10px;  
+  }
+
+  .auth-buttons .btn-auth {
+      height: auto;
+      font-size: 10px;
+      width: auto;
+     
+  }
+
+  #logoutButton{
+    width: auto;              
+    font-size: 10px;  
+    height:auto;
+    margin-left:10px;
+   margin-right:10px;
+   margin-bottom:10px;
+    
+}
+.logo {
+  display: none;
+}
+}
+
+/* Very small screens (320px or smaller) */
+@media screen and (max-width: 399px) {
+  .auth-buttons {
+      flex-direction: row;    /* Stack buttons vertically */
+      justify-content: center;
+      align-items: center;
+      gap: 10px;                 /* Add vertical spacing between buttons */
+  }
+
+  .auth-buttons .btn-auth {
+      width: auto;                /* Buttons take 80% of screen width */
+      font-size: 10px;  
+      height:auto;
+      margin-left:10px;
+     margin-right:10px;
+     margin-bottom:10px;
+       /* Smaller font size */
+  }
+
+  #logoutButton{
+    width: auto;                /* Buttons take 80% of screen width */
+    font-size: 10px;  
+    height:auto;
+    margin-left:10px;
+   margin-right:10px;
+   margin-bottom:10px;
+     /* Smaller font size */
+}
+
+.logo {
+  display: none;
+}
+}
+
+
+
+
 
 @media screen and (max-width: 960px) {
   nav ul a {
@@ -1702,7 +1810,7 @@ footer {
   }
 
   nav .btn {
-    margin-top: 3px;
+    margin-left: auto;
     height: 30px;
     width: 8%;
     display: flex;
@@ -1868,7 +1976,7 @@ footer {
   } */
   .checkbtn {
     display: block;
-    margin: 5px 0;
+    margin-right: auto;
     line-height: 30px;
   }
 
@@ -1912,7 +2020,7 @@ footer {
   }
 
   nav .btn {
-    margin-top: 3px;
+    margin-left: auto;
     height: 35px;
     width: 8%;
     display: flex;
@@ -2021,6 +2129,7 @@ footer {
     height: 30px;
     font-size: 10px;
     width: 8%;
+    margin-left: auto;
   }
 
   nav .btn a {
