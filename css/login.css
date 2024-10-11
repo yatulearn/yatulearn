@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 70px;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 700px;
+    background-color: #f4f6fc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    margin:70px;
+    padding: auto;
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #5a67d8; /* Color similar to the one in the image */
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 40px; /* Adjust size as per your requirement */
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #0a0a0a;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: underline;
+    color: #090909;
+    margin-bottom: 20px;
+    font-size: 14px;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #2936a9;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+.or {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.or hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.or span {
+    margin: 0 10px;
+}
+
+.google-btn {
+    background-color: #f9fafd69;
+    border: 1px solid #0a0a0a;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.google-btn i {
+    margin-right: 10px;
+    color: #db4437;
+}
+.github-btn {
+    background-color: #f9fafd69;
+    border: 1px solid #0a0a0a;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.github-btn i {
+    margin-right: 10px;
+    color: #191818;
+}
+
+.signup-link p{
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.signup-link a{
+    margin-left: 10px;
+    text-decoration: underline;
+    color: #090909;
+    font-size: 14px;
+    align-self: flex-end;
+    font-weight: bold;
+}
+.image-container {
+    width: 50%;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #faf6f6;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
