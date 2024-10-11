@@ -285,7 +285,132 @@
           <a href="pages/yatu_learn_qp.html">Papers</a>
           <a href="pages/yatu_learn_notes.html">Notes</a>
           <a href="pages/yatu_learn_about.html">About</a>
+          <a href="#" id="rateUsBtn">Rate Us</a>
         </div>
+                <!-- Modify the existing Rate Us Popup -->
+        <div id="rateUsPopup" class="popup">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Rate Us</h2>
+            <form id="rateUsForm">
+              <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5" title="Excellent"></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="Very Good"></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="Good"></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="Fair"></label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="Poor"></label>
+              </div>
+              <textarea id="comments" name="comments" rows="4" placeholder="Your feedback (optional)"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Add this after the rate us form -->
+        <div id="thankYouMessage" class="thank-you-message">
+          <p>Thank you for your feedback!</p>
+        </div>
+
+        <!-- CSS for Popup -->
+        <style>
+          .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+
+          .popup-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+          }
+
+          .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+
+          .close:hover, .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+          }
+
+          button {
+            margin-top: 10px;
+          }
+
+            .thank-you-message {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            border-radius: 10px;
+            margin: 20px 0;
+          }
+
+        </style>
+
+        <!-- JavaScript to Handle Popup -->
+        <script>
+          // Get elements
+          const rateUsBtn = document.getElementById('rateUsBtn');
+          const rateUsPopup = document.getElementById('rateUsPopup');
+          const closePopup = document.querySelector('.close');
+        
+          // Show popup when "Rate Us" is clicked
+          rateUsBtn.onclick = function () {
+            rateUsPopup.style.display = 'block';
+          }
+        
+          // Close popup when "X" is clicked
+          closePopup.onclick = function () {
+            rateUsPopup.style.display = 'none';
+          }
+        
+          // Close popup when clicking outside the form
+          window.onclick = function (event) {
+            if (event.target == rateUsPopup) {
+              rateUsPopup.style.display = 'none';
+            }
+          }
+        
+          // Prevent page reload on form submission and show Thank You message
+          document.getElementById('rateUsForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the page from refreshing
+        
+            // Show the Thank You message
+            document.getElementById('thankYouMessage').style.display = 'block';
+        
+            // Automatically close the popup after submission
+            rateUsPopup.style.display = 'none';
+        
+            // Optionally, hide the form after submission
+            document.getElementById('rateUsForm').style.display = 'none';
+        
+            // Automatically close the Thank You message after 2 seconds
+            setTimeout(function() {
+              document.getElementById('thankYouMessage').style.display = 'none';
+            }, 1000); // 1000 milliseconds = 2 seconds
+          });
+        </script>
+        
         <div class="policies same">
           <div class="policy">
             <p>policy</p>
@@ -348,4 +473,6 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <!-- Add this just before the closing </body> tag -->
+  <button id="backToTopBtn" class="back-to-top">↑</button>
 </html>
