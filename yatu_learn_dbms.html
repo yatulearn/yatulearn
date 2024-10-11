@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/yatu_learn_dbms.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/B2T.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>DATABASE MANAGEMENT SYSTEMS (DBMS)</title>
+    <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
+</head>
+
+<body>
+  <button id="backToTop" style="display: none;">Back to Top</button>
+  <nav class="main-nav">
+    <div class="main_logo">
+      <div class="logo">
+        <a href="../index.html"
+          ><img
+            src="../assets/images/YATU Learn - YL icon Black (2).png"
+            alt=""
+            height="40px"
+            width="50px"
+        /></a>
+      </div>
+    </div>
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn"
+      ><i class="fa-solid fa-bars"></i
+    ></label>
+    <ul>
+      <a href="../index.html" class="Courses btn-home"
+        >Home<i
+          class="gfg-icon gfg-icon-black-up-carrot"
+          style="float: right; margin-right: -12px; line-height: 1.5"
+        ></i
+      ></a>
+      <div class="dropdown1qp">
+        <a href="yatu_learn_qp.html" class="qp">
+          <span>Question Papers<i class="fa-solid fa-angle-down"></i></span
+        ></a>
+        <div class="dropdown-content1qp">
+          <h2>CSE</h2>
+          <div class="links">
+            <a href="yatu_learn_qp.html#border1">1st Sem</a>
+            <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+            <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+            <a href="yatu_learn_qp.html#border4">4th Sem</a>
+            <a href="yatu_learn_qp.html#border5">5th Sem</a>
+          </div>
+          <h2>IT</h2>
+          <div class="links">
+            <a href="yatu_learn_qp.html#border1">1st Sem</a>
+            <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+            <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+            <a href="yatu_learn_qp.html#border4">4th Sem</a>
+            <a href="yatu_learn_qp.html#border5">5th Sem</a>
+          </div>
+          <h2>ECE</h2>
+          <div class="links">
+            <a href="yatu_learn_qp.html#border1">1st Sem</a>
+            <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+            <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+            <a href="yatu_learn_qp.html#border4">4th Sem</a>
+            <a href="yatu_learn_qp.html#border5">5th Sem</a>
+          </div>
+          <h2>MECH</h2>
+          <div class="links">
+            <a href="yatu_learn_qp.html#border1">1st Sem</a>
+            <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+            <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+            <a href="yatu_learn_qp.html#border4">4th Sem</a>
+            <a href="yatu_learn_qp.html#border5">5th Sem</a>
+          </div>
+        </div>
+      </div>
+      <a href="yatu_learn_notes.html" class="btn-notes">Notes</a>
+      <a href="yatu_learn_about.html" class="About btn-about">About</a>
+    </ul>
+    <button class="btn">
+      <a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a>
+    </button>
+    </nav>
+    <h1> DATABASE MANAGEMENT SYSTEMS (DBMS) </h1>
+    <H2 class="What">What is DBMS?</H2>
+    <p class="p">A Database Management System (DBMS) is software designed to store, manage, and retrieve data efficiently. DBMS provides an interface between the users and the databases, ensuring that data is organized and available for use while maintaining its integrity and security. It allows users to create, read, update, and delete data in a structured way.</p>
+    <main><img src="../assets/images/dbms.jpg"  height="300" width="auto">
+    </main>
+    <br>
+    
+
+    <h2 class="What">History and Evolution of DBMS</h2>
+    <p class="p">The evolution of DBMS technology over time:</p>
+
+    <h4>1. Early Databases (1960s-1970s):</h4>
+    <p class="p">
+        * <b>1960s:</b> Hierarchical and network models dominate early database management (e.g., IBM's IMS).<br>
+        * <b>1970:</b> Edgar F. Codd introduces the relational database model, revolutionizing database management.<br>
+    </p>
+
+    <h4>2. The Rise of Relational Databases (1980s):</h4>
+    <p class="p">
+        * <b>1980s:</b> Relational Database Management Systems (RDBMS) become mainstream, with SQL (Structured Query Language) as the standard for database queries.<br>
+        * <b>1985:</b> Oracle, IBM DB2, and Microsoft SQL Server emerge as popular commercial RDBMSs.
+    </p>
+
+    <h4>3. Object-Oriented and NoSQL Databases (1990s-2000s):</h4>
+    <p class="p">
+        * <b>1990s:</b> Object-oriented databases (OODBMS) appear, focusing on multimedia and complex data types.<br>
+        * <b>2000s:</b> NoSQL databases like MongoDB and Cassandra gain popularity for handling unstructured data and scalability challenges in big data environments.
+    </p>
+
+    <h4>4. Cloud Databases and Modern DBMS (2010s-Present):</h4>
+    <p class="p">
+        * <b>2010s:</b> The rise of cloud databases, enabling DBaaS (Database as a Service), such as Amazon RDS, Google Cloud SQL.<br>
+        * <b>Present:</b> Hybrid systems and multi-model databases combine SQL and NoSQL features, while distributed databases like Google Spanner and CockroachDB emerge.
+    </p>
+    <main><img src="../assets/images/history_dbms.png" height="300" width="auto">
+    </main>
+    
+    
+        
+    <H2 class="What">Types of Database Models</H2>
+    <p class="p">There are various types of DBMS models based on how data is structured and accessed:</p>
+
+    <h4>1. Hierarchical Database:</h4>
+    <p class="p">
+        * <b>Definition:</b> Organizes data in a tree-like structure, where each record has a parent-child relationship.<br>
+        * <b>Examples:</b> IBM's Information Management System (IMS).<br>
+        * <b>Applications:</b> Used in banking systems, telecommunication networks, and airline reservation systems.
+    </p>
+
+    <h4>2. Network Database:</h4>
+    <p class="p">
+        * <b>Definition:</b> A flexible model where records can have multiple parent-child relationships (many-to-many).<br>
+        * <b>Examples:</b> Integrated Data Store (IDS).<br>
+        * <b>Applications:</b> Used in complex data relationships like supply chain management.
+    </p>
+
+    <h4>3. Relational Database (RDBMS):</h4>
+    <p class="p">
+        * <b>Definition:</b> Stores data in tables with rows and columns, and relationships are defined between these tables using keys (primary/foreign keys).<br>
+        * <b>Examples:</b> MySQL, Oracle, PostgreSQL.<br>
+        * <b>Applications:</b> Widely used in business applications, web applications, and data analytics.
+    </p>
+
+    <h4>4. Object-Oriented Database (OODBMS):</h4>
+    <p class="p">
+        * <b>Definition:</b> Integrates object-oriented programming principles with database management, storing objects instead of rows/columns.<br>
+        * <b>Examples:</b> ObjectDB, db4o.<br>
+        * <b>Applications:</b> Suitable for applications with complex data structures like multimedia, CAD systems.
+    </p>
+
+
+    <main><img src="../assets/images/types_dbms.jpg" alt="EvaluationofAI-roadmap" height="300" width="auto">
+    </main>
+
+
+    <h2>Key Concepts in DBMS</h2>
+    <h4>1. ACID Properties:</h4>
+    <p class="p">
+        * <b>Atomicity:</b> Ensures that a transaction is all or nothing.<br>
+        * <b>Consistency:</b> Ensures that a transaction brings the database from one valid state to another.<br>
+        * <b>Isolation:</b> Ensures that transactions are processed independently.<br>
+        * <b>Durability:</b> Guarantees that committed transactions are saved permanently.
+    </p>
+
+    <h4>2. Normalization:</h4>
+    <p class="p">
+        * <b>Definition:</b> The process of organizing data to reduce redundancy and improve data integrity.<br>
+        * <b>Forms:</b> 1NF, 2NF, 3NF, BCNF, and 4NF.<br>
+        * <b>Purpose:</b> To ensure minimal redundancy and avoid data anomalies.
+    </p>
+
+    <h4>3. Indexing:</h4>
+    <p class="p">
+        * <b>Definition:</b> A data structure that improves the speed of data retrieval operations on a database table.<br>
+        * <b>Types:</b> B-tree, Hash Indexes.<br>
+        * <b>Usage:</b> Used to optimize query performance.
+    </p>
+
+    <h4>4. Transactions:</h4>
+    <p class="p">
+        * <b>Definition:</b> A unit of work that is executed to perform database operations and must adhere to ACID properties.<br>
+        * <b>Examples:</b> Banking transactions, purchasing in e-commerce platforms.
+    </p>
+    </p> <br>
+
+    <h2>Why Use DBMS?</h2> 
+    <p class="p">
+        * <b>Data Management:</b> Provides efficient data storage, retrieval, and management.<br>
+        * <b>Data Security:</b> Ensures data security and access control through user authentication and permissions.<br>
+        * <b>Data Integrity:</b> Maintains data accuracy and consistency.<br>
+        * <b>Backup and Recovery:</b> Provides tools for data backup, recovery, and disaster management.<br>
+        * <b>Concurrency Control:</b> Manages concurrent access to data in a multi-user environment.
+    </p>
+    <main><img src="../assets/images/use_dbms.jpg" height="300" width="auto">
+    </main>
+
+    <h2>How to Learn DBMS?</h2>
+    <h4>1. Understand the Basics:</h4>
+    <p class="p">
+        * Learn the fundamental concepts such as databases, schemas, tables, primary keys, and foreign keys.<br>
+        * Understand the difference between SQL and NoSQL databases.
+    </p>
+
+    <h4>2. Learn SQL:</h4>
+    <p class="p">
+        * Learn how to write SQL queries to perform CRUD (Create, Read, Update, Delete) operations.<br>
+        * Explore advanced SQL topics like joins, subqueries, and triggers.
+    </p>
+
+    <h4>3. Practice with Popular Databases:</h4>
+    <p class="p">
+        * Gain hands-on experience with relational databases like MySQL, PostgreSQL, and Oracle.<br>
+        * Experiment with NoSQL databases like MongoDB and Cassandra for handling unstructured data.
+    </p>
+
+    <h4>4. Study Database Design:</h4>
+    <p class="p">
+        * Learn about ER (Entity-Relationship) modeling and schema design.<br>
+        * Understand normalization and denormalization processes.
+    </p>
+
+    <h4>5. Learn Database Administration:</h4>
+    <p class="p">
+        * Explore database administration tasks like backup, restore, indexing, and query optimization.<br>
+        * Learn about database security, user management, and concurrency control.
+    </p>
+
+
+    <h2>Roadmaps for DBMS Learning</h2>
+    
+    <h4>1. Beginner Level:</h4>
+    <p class="p">
+        * Understand the fundamental concepts of databases.<br>
+        * Learn about different types of DBMS models.<br>
+        * Get familiar with basic SQL commands (SELECT, INSERT, UPDATE, DELETE).<br>
+        * Practice using an RDBMS like MySQL or PostgreSQL.<br>
+    </p>
+
+    <h4>2. Intermediate Level:</h4>
+    <p class="p">
+        * Deepen your understanding of normalization and denormalization.<br>
+        * Learn advanced SQL techniques (joins, subqueries, indexing).<br>
+        * Explore transaction management and ACID properties.<br>
+        * Start working with NoSQL databases (e.g., MongoDB).<br>
+    </ul>
+
+    <h4>3. Advanced Level:</h4>
+    <p class="p">
+        * Study database design and schema modeling in-depth.<br>
+        * Learn about database performance tuning and optimization.<br>
+        * Explore data warehousing and ETL (Extract, Transform, Load) processes.<br>
+        * Understand distributed databases and cloud database management.<br>
+    </p>
+
+    <h4>4. Expert Level:</h4>
+    <p class="p">
+        * Specialize in database administration (DBA) roles.<br>
+        * Gain expertise in database security practices.<br>
+        * Explore emerging technologies like NewSQL and multi-model databases.<br>
+        * Contribute to open-source DBMS projects or engage in research in database technologies.<br>
+    </p>
+
+    <h2>Resources for Learning DBMS</h2>
+    <h4>1. Books:</h4>
+        <p class="p">
+            * <b>"Database System Concepts"</b> by Abraham Silberschatz, Henry Korth, and S. Sudarshan.<br>
+            * <b>"SQL in 10 Minutes, Sams Teach Yourself"</b> by Ben Forta.<br>
+            * <b>"Fundamentals of Database Systems"</b> by Elmasri and Navathe.<br>
+        </p>
+    
+
+    <h4>2. Online Courses:</h4>
+        <p class="p">
+            * <b>Coursera:</b> "Databases and SQL for Data Science" by IBM.<br>
+            * <b>edX:</b> "Database Systems" by MIT.<br>
+            * <b>Udacity:</b> "Data Engineering Nanodegree" (includes DBMS concepts).<br>
+        </p>
+    
+
+    <h4>3. Resources:</h4>
+        <p class="p">
+            * W3Schools SQL Tutorial.<br>
+            * SQLZoo for interactive SQL practice.<br>
+            * MongoDB University for learning NoSQL concepts.<br>
+        </p>
+
+    <h2>Conclusion</h2>
+    <p class="p">
+        Database Management Systems play a crucial role in today's data-driven world. Understanding DBMS concepts not only enhances your data management skills but also opens up numerous career opportunities in data science, software development, and database administration. By following structured learning paths and utilizing available resources, you can become proficient in DBMS and contribute effectively to data management solutions.
+    </p>
+    <script src="../js/yatu_learn_script.js" crossorigin=""></script>
+    <script src="../js/B2T.js"></script>
+    <footer>
+      <div class="flex_align">
+        <div class="box1">
+          <div class="logo">
+            <a href="../index.html"
+              ><img
+                src="../assets/images/YL_Black-removebg-preview2.png"
+                alt=""
+                height="110px"
+                width="200px"
+            /></a>
+          </div>
+          <div class="header same">
+            <p>Explore</p>
+            <a href="../index.html">Home</a>
+            <a href="yatu_learn_qp.html">Papers</a>
+            <a href="yatu_learn_notes.html">Notes</a>
+            <a href="yatu_learn_about.html">About</a>
+          </div>
+          <div class="policies same">
+            <div class="policy">
+              <p>policy</p>
+              <a href="privacy_learn.html">Privacy policy</a>
+              <a href="yatu_learn_about.html#contact">Contact Us</a>
+            </div>
+            <div class="media">
+              <p>Social:</p>
+              <div class="icon_flex">
+                <a href="https://www.linkedin.com/company/yatulearn/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/yatulearn/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/@YATU_Store"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="https://x.com/yatulearn"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="vertical_line"></div>
+          <div class="email_adress same">
+            <p class="mail">address:</p>
+            <span>
+              Near Panjab University<br />
+              SSGRC, Bajwara, Una<br />
+              road, Hoishiarpur, 146021,<br />
+              Punjab, India</span
+            ><br />
+            <br />
+            <div class="num">Ph No. : 7068247779</div>
+            <a href="https://mail.google.com/mail/u/0/#inbox"
+              >E-mail : yatulearn@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="course_flex">
+        <div class="courses">
+          <p>Courses:</p>
+          <div class="courses_link">
+            <a href="yatu_learn_wd.html">Web Dev</a>
+            <a href="yatu_learn_dsa.html">DSA</a>
+            <a href="yatu_learn_aiml.html">AI ML</a>
+            <a href="yatu_learn_cs.html">Cyber Security</a>
+            <a href="yatu_learn_os.html">Operating System</a>
+            <a href="yatu_learn_cn.html">Networking</a>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal_line"></div>
+      <div class="copyright">
+        <p>© 2024 YATU Learn. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
