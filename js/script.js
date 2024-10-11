@@ -40,3 +40,64 @@ scrollUpLinks.forEach(id => {
       link.addEventListener('click', scrollToTop);
   }
 });
+// Add this to your existing script.js file
+
+document.addEventListener('DOMContentLoaded', function() {
+    const rateUsBtn = document.getElementById('rateUsBtn');
+    const rateUsPopup = document.getElementById('rateUsPopup');
+    const closePopup = rateUsPopup.querySelector('.close');
+    const rateUsForm = document.getElementById('rateUsForm');
+    const thankYouMessage = document.getElementById('thankYouMessage');
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    rateUsBtn.onclick = function() {
+      rateUsPopup.style.display = 'block';
+    }
+  
+    closePopup.onclick = function() {
+      rateUsPopup.style.display = 'none';
+    }
+  
+    window.onclick = function(event) {
+      if (event.target == rateUsPopup) {
+        rateUsPopup.style.display = 'none';
+      }
+    }
+  
+    rateUsForm.onsubmit = function(event) {
+      event.preventDefault();
+      const rating = document.querySelector('input[name="rating"]:checked');
+      const comments = document.getElementById('comments').value;
+      
+      if (rating) {
+        // Here you would typically send this data to your server
+        console.log('Rating:', rating.value);
+        console.log('Comments:', comments);
+        
+        // Show thank you message
+        thankYouMessage.style.display = 'block';
+        setTimeout(() => {
+          thankYouMessage.style.display = 'none';
+        }, 3000);
+
+        rateUsPopup.style.display = 'none';
+        rateUsForm.reset();
+      } else {
+        alert('Please select a rating before submitting.');
+      }
+    }
+
+    // Back to Top button functionality
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = 'block';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    };
+
+    backToTopBtn.onclick = function() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    };
+});
