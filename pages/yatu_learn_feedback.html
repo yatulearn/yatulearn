@@ -118,7 +118,7 @@ app.post('/submit-feedback', (req, res) => {
     const { name, email, rating, comments } = req.body;
     
     // Log feedback or store it in a database here
-    console.log(`Feedback received from ${name} (${email}): Rating - ${rating}, Comments - ${comments}`);
+    console.log('Feedback received from ${name} (${email}): Rating - ${rating}, Comments - ${comments}');
     
     // You can also send this data via email to the admin using services like Nodemailer
 
@@ -126,7 +126,7 @@ app.post('/submit-feedback', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log('Server running at http://localhost:${port}');
 });
 function submitFeedback() {
     // Get form values
@@ -164,7 +164,7 @@ function submitFeedback() {
         response.classList.remove("hidden");
 
         // Display message
-        responseMessage.innerHTML = `Thank you, <strong>${name}</strong>, for rating us ${rating}/5. We appreciate your feedback!`;
+        responseMessage.innerHTML = 'Thank you, <strong>${name}</strong>, for rating us ${rating}/5. We appreciate your feedback!';
     })
     .catch((error) => {
         console.error('Error:', error);
@@ -191,7 +191,7 @@ app.post('/submit-feedback', (req, res) => {
         from: document.getElementById("email").value,
         to: 'ankitharankithar@gmail.com',
         subject: 'New Feedback Received',
-        text: `Feedback received from ${name} (${email}):\n\nRating: ${rating}\n\nComments:\n${comments}`
+        text: 'Feedback received from ${name} (${email}):\n\nRating: ${rating}\n\nComments:\n${comments}'
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
