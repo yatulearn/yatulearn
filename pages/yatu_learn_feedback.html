@@ -178,8 +178,8 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'your-email@gmail.com',
-        pass: 'your-email-password'
+        user: 'ankitharankithar@gmail.com',
+        pass: 'Ankitha@123'
     }
 });
 
@@ -189,7 +189,7 @@ app.post('/submit-feedback', (req, res) => {
     // Send email to admin
     const mailOptions = {
         from: document.getElementById("email").value,
-        to: 'yatulearn@gmail.com',
+        to: 'ankitharankithar@gmail.com',
         subject: 'New Feedback Received',
         text: `Feedback received from ${name} (${email}):\n\nRating: ${rating}\n\nComments:\n${comments}`
     };
