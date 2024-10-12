@@ -1,14 +1,16 @@
-const themeIcon = document.getElementById('theme-icon');
+document.addEventListener("DOMContentLoaded", function() {
+  const themeIcon = document.getElementById('theme-icon');
+  
+  // Check the current mode in local storage, if any
+  let isDarkMode = localStorage.getItem('dark-mode') === 'true';
 
-// Check the current mode in local storage, if any
-let isDarkMode = localStorage.getItem('dark-mode') === 'true';
+  // Apply the initial mode
+  document.body.classList.toggle('dark-mode', isDarkMode);
+  themeIcon.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
 
-// Apply the initial mode
-document.body.classList.toggle('dark-mode', isDarkMode);
-themeIcon.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
-
-themeIcon.addEventListener('click', () => {
+  themeIcon.addEventListener('click', () => {
     isDarkMode = !isDarkMode;
+    console.log('Dark mode:', isDarkMode);
     document.body.classList.toggle('dark-mode', isDarkMode);
 
     // Update the icon
@@ -16,6 +18,7 @@ themeIcon.addEventListener('click', () => {
 
     // Save the current mode in local storage
     localStorage.setItem('dark-mode', isDarkMode);
+  });
 });
 
 

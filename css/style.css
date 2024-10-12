@@ -17,6 +17,10 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
 /* ///// */
 /* Hero section container with background image */
 .hero-container {

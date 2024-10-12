@@ -36,6 +36,7 @@ nav {
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .toggle-container {
   display: flex;
@@ -129,7 +130,7 @@ nav ul a {
 }
 nav ul a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: black;
 }
 .change {
   background-color: #ffffff;
