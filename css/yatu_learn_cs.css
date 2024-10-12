@@ -84,29 +84,29 @@ nav ul {
 }
 
 nav .btn {
-  --hover-shadows: none;
-  border: none;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: normal;
-  border-radius: 0.7em;
   background-color: rgb(234, 35, 74);
+  color: #ffffff;
+  border: none;
+  border-radius: 0.7em;
+  padding: 0.8em 1.5em;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  width: 8%;
-  padding: 1em 2em;
+  transition: all 0.3s ease;
+  width: auto;
   margin-right: 50px;
 }
 
+nav .btn:hover {
+  background-color: #d61e4d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 nav .btn a {
-  font-size: 14px;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-}
-
-nav .btn:hover {
-  color: rgb(234, 35, 74);
-  background-color: #4B4B4B;
 }
 
 nav ul a {
