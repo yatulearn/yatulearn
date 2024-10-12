@@ -1,0 +1,44 @@
+/* Motivation Box Styles */
+.motivation {
+    background-color: #e6f7ff; /* Lighter blue background */
+    border: 1px solid #1e90ff; /* Slightly darker blue border */
+    border-radius: 15px; /* More rounded corners */
+    padding: 30px; /* Increased padding */
+    margin: 40px auto; /* Centered with auto margin */
+    max-width: 600px; /* Maximum width for larger screens */
+    box-shadow: 0 6px 20px rgba(30, 144, 255, 0.2); /* Soft shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    text-align: center; /* Centered text */
+}
+
+/* Title Styles */
+.motivation h2 {
+    color: #007BFF; /* Bright blue for the title */
+    margin-bottom: 15px; /* Space below the title */
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Bold font */
+    text-transform: uppercase; /* Uppercase letters */
+}
+
+/* Tip Text Styles */
+.motivation p {
+    color: #333; /* Dark text for readability */
+    font-size: 18px; /* Increased font size */
+    line-height: 1.6; /* Improved line height */
+    margin-bottom: 20px; /* Space below the text */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .motivation {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .motivation h2 {
+        font-size: 20px; /* Smaller title font size */
+    }
+
+    .motivation p {
+        font-size: 16px; /* Smaller tip text size */
+    }
+}
