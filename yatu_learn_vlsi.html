@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/yatu_learn_vlsi.css"/>
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>VLSI </title>
+    <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <div class="main_logo">
+        <div class="logo">
+          <a href="../index.html"
+            ><img
+              src="../assets/images/YATU Learn - YL icon Black (2).png"
+              alt=""
+              height="40px"
+              width="50px"
+          /></a>
+        </div>
+      </div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <ul>
+        <a href="../index.html" class="Courses btn-home"
+          >Home<i
+            class="gfg-icon gfg-icon-black-up-carrot"
+            style="float: right; margin-right: -12px; line-height: 1.5"
+          ></i
+        ></a>
+        <div class="dropdown1qp">
+          <a href="yatu_learn_qp.html" class="qp">
+            <span>Question Papers<i class="fa-solid fa-angle-down"></i></span
+          ></a>
+          <div class="dropdown-content1qp">
+            <h2>CSE</h2>
+            <div class="links">
+              <a href="yatu_learn_qp.html#border1">1st Sem</a>
+              <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+              <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+              <a href="yatu_learn_qp.html#border4">4th Sem</a>
+              <a href="yatu_learn_qp.html#border5">5th Sem</a>
+            </div>
+            <h2>IT</h2>
+            <div class="links">
+              <a href="yatu_learn_qp.html#border1">1st Sem</a>
+              <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+              <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+              <a href="yatu_learn_qp.html#border4">4th Sem</a>
+              <a href="yatu_learn_qp.html#border5">5th Sem</a>
+            </div>
+            <h2>ECE</h2>
+            <div class="links">
+              <a href="yatu_learn_qp.html#border1">1st Sem</a>
+              <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+              <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+              <a href="yatu_learn_qp.html#border4">4th Sem</a>
+              <a href="yatu_learn_qp.html#border5">5th Sem</a>
+            </div>
+            <h2>MECH</h2>
+            <div class="links">
+              <a href="yatu_learn_qp.html#border1">1st Sem</a>
+              <a href="yatu_learn_qp.html#border2">2nd Sem</a>
+              <a href="yatu_learn_qp.html#border3">3rd Sem</a>
+              <a href="yatu_learn_qp.html#border4">4th Sem</a>
+              <a href="yatu_learn_qp.html#border5">5th Sem</a>
+            </div>
+          </div>
+        </div>
+        <a href="yatu_learn_notes.html" class="btn-notes">Notes</a>
+        <a href="yatu_learn_about.html" class="About btn-about">About</a>
+      </ul>
+      <button class="btn">
+        <a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a>
+      </button>
+    </nav>
+
+    <h1 class="h1">What is VLSI ?</h1>
+    <br />
+    <div class="content-box">
+    <p class="p">
+        VLSI stands for Very Large Scale Integration.
+        It refers to the process of creating integrated circuits (ICs) by combining thousands to millions of transistors 
+        onto a single chip. This technology is fundamental in modern electronics, enabling the development of complex devices like microprocessors,
+        memory chips, and other digital systems.<br />
+    </p>
+    <br/>
+    <h2> History of VLSI</h2>
+    <br />
+
+    <p class="p">
+      
+        VLSI technology emerged in the 1970s as a natural progression from earlier integration techniques,
+        such as SSI (Small Scale Integration) and MSI (Medium Scale Integration). 
+        The ability to place thousands of transistors on a single chip allowed for more complex and capable circuits.
+        The development of CMOS technology in the 1980s was particularly significant,
+        as it provided a way to create chips that consumed less power while achieving higher speeds.<br />
+    </p>
+    <br />
+    <h2>Key Components of VLSI Design</h2>
+<br />
+<p class="p">
+  <b>a. Transistors:</b>
+    *Transistors are the basic units of digital circuits. 
+     In VLSI, they are used to create logic gates (AND, OR, NOT),
+     which are the building blocks of digital circuits.<br />
+  <b>b. Logic Gates and Circuits:</b>
+    *These gates are combined to form more complex circuits, such as adders, multiplexers, and flip-flops. 
+     The interconnection of these components forms the desired functionality of the chip.<br />
+  <b>c. Design Hierarch:</b><br/>
+  <b>1)System Level:</b> *Defines the overall architecture and functionality.<br/>
+  <b>2)Architectural Design:</b>* Focuses on the high-level design of components and how they interact.<br/>
+  <b>3)Logic Design:</b> *Converts the architectural design into a logical representation using gates.<br/>
+  <b>4)Circuit Design:</b>* Involves detailed design of the circuit elements, including sizing of transistors.<br/>
+  <b>5)Physical Design:</b>* Deals with the layout of the chip, including placement and routing of components.<br />
+</p>
+<br />
+    
+    <main>
+      <img class="img7"
+        src="..\assets\images\vlsiroadmap.jpg"
+        alt="Vlsi"
+        height="auto"
+        width="70%"
+      />
+    </main>
+
+    <h2> Fabrication Technologies</h2>
+    <br/><br />
+    <p class="p">
+      The fabrication of VLSI circuits involves several key steps, often referred to as the "fabrication flow." Here's a breakdown:<br/><br/>
+        <b>a. Wafer Preparation:</b>
+        <br>*Substrate Material: Most VLSI chips are built on silicon wafers. 
+        Silicon is chosen for its excellent semiconductor properties.<br/>
+        *Wafer Cleaning:Wafers undergo rigorous cleaning to remove any contaminants that might affect the quality of the circuits.<br/>
+        <b>b. Oxidation:</b>
+        *A thin layer of silicon dioxide (SiO₂) is grown on the silicon wafer surface through thermal oxidation. 
+        This oxide layer acts as an insulator and protects the silicon.<br/>
+        <b>c. Photolithography:</b>
+        <br>*Photoresist Application: A light-sensitive material (photoresist) is applied to the wafer.<br/>
+        *Exposure: The wafer is exposed to ultraviolet (UV) light through a mask that contains the circuit pattern. 
+        This process transfers the desired design onto the photoresist.<br/>
+        *Development: The exposed photoresist is developed, removing either the exposed or unexposed areas (depending on whether it's a positive or negative photoresist).<br/>
+        <b>d. Etching:</b>
+        <br>*Wet Etching: A chemical solution removes the exposed silicon dioxide, leaving behind the desired pattern.<br/>
+        *Dry Etching: Techniques like reactive ion etching (RIE) create more precise patterns by using plasma to etch the materials.<br/>
+        <b>e. Doping:</b>
+        *This process introduces impurities (dopants) into specific regions of the silicon to modify its electrical properties. 
+        Common dopants include boron (for p-type) and phosphorus (for n-type) materials.<br/>
+        <b> f. Thin Film Deposition:</b>
+        *Deposition of insulating or conductive layers (using Chemical Vapor Deposition (CVD) or Physical Vapor Deposition (PVD)).<br/>
+        <b> g. Planarization:</b>
+        *Chemical Mechanical Planarization (CMP) to flatten the wafer surface for uniform layer deposition.<br/>
+        <b>h. Metallization (Interconnect Formation):</b>
+        *Deposition and patterning of metal layers (e.g., aluminum or copper) to form interconnects between components.<br/>
+        <b>i.Dielectric Deposition:</b>
+        *Deposition of insulating materials (e.g., silicon dioxide) between metal layers to prevent electrical shorting.<br/>
+        <b>j.Wafer Testing & Dicing:</b>
+        *After the fabrication is complete, the wafer undergoes a series of electrical tests (called wafer probing) to verify the functionality of the ICs.<br/>
+        *The wafer is then diced into individual chips (dies), which are further packaged.<br/>
+        <b>k. Packaging:</b>
+        <br>*Chip Packaging:The individual dies are placed in protective casings that contain pins or pads to connect the chip to external systems. The packaging provides physical protection and helps dissipate heat.<br/>
+        *Wire Bonding:The internal connections between the die and the package are established using wire bonding or flip-chip techniques.<br/>
+    </p>
+    <br />
+    <br />
+    <h2>Evolution of VLSI:</h2>
+    <br />
+    <br />
+    <p class="p">
+ 
+      
+        *The evolution of VLSI (Very Large Scale Integration) technology has been a transformative journey in electronics, marked by significant milestones in the miniaturization and complexity of integrated circuits (ICs). It began in the 1960s with Small-Scale Integration (SSI), where fewer than 100 transistors were placed on a single chip. These early chips were used in basic devices like calculators and radios, and they incorporated simple components like logic gates and flip-flops. The development of the transistor and the integrated circuit during this period was a breakthrough, but the limited functionality of these chips was a major constraint.<br>
+        
+        *As fabrication technology improved in the late 1960s and early 1970s, Medium-Scale Integration (MSI) emerged. MSI chips could house between 100 and 1,000 transistors, allowing for the creation of more complex circuits such as multiplexers and basic arithmetic units. This advancement enabled early computers and communication systems to be built with more compact and efficient ICs. The increasing transistor count in MSI opened the door to new applications, but designers were still limited by relatively simple chip designs.<br>
+        
+        *The next leap came with Large-Scale Integration (LSI) in the 1970s, which saw chips containing between 1,000 and 100,000 transistors. This era marked the invention of the microprocessor, which revolutionized computing by integrating a central processing unit (CPU) onto a single chip. Microprocessors like the Intel 4004 and Intel 8080 laid the foundation for personal computing, making computers smaller, more affordable, and accessible to businesses and consumers. Memory chips like RAM and ROM were also developed, further advancing computing capabilities. The challenge of this era, however, was managing heat dissipation and power consumption as more transistors were packed onto each chip.<br>
+        
+        *With the advent of VLSI in the 1980s, the scale of integration dramatically increased, allowing for hundreds of thousands to billions of transistors on a single chip. This era enabled the development of modern CPUs, GPUs, complex memory devices, and System-on-Chip (SoC) designs, which integrate multiple functions like processing, memory, and communication onto a single chip. VLSI technology became the foundation for modern electronics, powering everything from personal computers and smartphones to IoT devices, automotive systems, and advanced telecommunications.<br>
+        
+        *Key innovations in VLSI included improvements in photolithography, etching techniques, and semiconductor materials, which made it possible to continually shrink transistor sizes and increase processing power without dramatically increasing power consumption. Today, VLSI is critical for developing advanced applications such as artificial intelligence, quantum computing, and energy-efficient electronics. Its evolution continues as researchers push the boundaries of 3D ICs, nanotechnology, and quantum computing to meet the growing demand for more powerful and efficient devices.
+    </p>
+    <br />
+    <h2>Future Trends in VLSI:</h2>
+    <br />
+    <br />
+    <p class="p">
+      <b>1.3D Integrated Circuits (3D ICs):</b> * Traditional VLSI has relied on 2D planar designs, 
+      but as devices continue to shrink, the limits of Moore's Law become apparent. 
+      3D ICs offer a way to continue increasing transistor density by stacking multiple layers of circuits vertically.
+       This reduces the distance between components, improving performance and power efficiency. 
+       3D ICs are particularly beneficial for applications requiring high bandwidth and low power,
+        such as data centers and AI processing units. <br />
+      <b>2. FinFET and Beyond CMOS Transistors:</b>
+      *As transistor sizes approach atomic scales, traditional CMOS (Complementary Metal-Oxide-Semiconductor) technology faces physical and performance limits.
+       FinFET (Fin Field-Effect Transistor) technology, which uses a 3D gate structure to improve control over the channel,
+       has already become mainstream in advanced semiconductor manufacturing. Beyond FinFET, 
+       researchers are exploring new materials like graphene, carbon nanotubes, and spintronics to develop transistors that can function efficiently at even smaller scales, 
+       further enhancing the performance of VLSI circuits. <br />
+      <b>3. Nanotechnology and Quantum Computing:</b>
+      * Nanotechnology is playing an increasingly important role in VLSI as transistors are designed at the nanometer scale.
+       New materials and fabrication techniques are being researched to continue shrinking transistor sizes and improve efficiency.
+       In addition, quantum computing is emerging as a revolutionary technology that could potentially replace classical computing architectures.
+      Quantum bits (qubits) operate differently from traditional transistors, enabling exponential increases in processing power. While quantum computing is still in its early stages, VLSI researchers are exploring how to integrate quantum elements with conventional semiconductor technologies. <br />
+      <b>4. Heterogeneous Integration and System-on-Chip (SoC):</b>
+      * As devices become more complex, heterogeneous integration—the process of combining different types of components (e.g., logic, memory, analog, and RF circuits) on a single chip—will be increasingly important.
+       System-on-Chip (SoC) designs are already common, but future trends will see more diverse functionalities integrated into a single chip to reduce power consumption, 
+       improve performance, and save space. This trend is crucial for areas such as 5G, IoT (Internet of Things), and autonomous vehicles, 
+       where multiple functionalities need to be packed into a compact form factor.. <br />
+      <b>5. Artificial Intelligence and Machine Learning Accelerators:</b>
+      *  The rise of AI (Artificial Intelligence) and machine learning (ML) has created a need for specialized hardware that can efficiently handle the vast amounts of data and complex computations involved in these applications. 
+      Future VLSI chips will incorporate dedicated AI/ML accelerators that optimize performance for deep learning,
+       image recognition, and natural language processing. These chips will be designed for energy efficiency,
+        as AI applications often require continuous and intensive processing.<br />
+      <b>6.  Low-Power and Energy-Efficient Designs:</b>
+      *With the increasing demand for portable devices and IoT systems, 
+      low-power VLSI design is becoming more critical. 
+      Reducing power consumption is essential not only for extending battery life in mobile devices
+       but also for reducing the environmental impact of large-scale data centers. 
+       Future VLSI technologies will emphasize energy-efficient architectures, power gating, 
+       and dynamic voltage scaling to optimize power consumption without sacrificing performance.<br />
+      <b>7. Neuromorphic Computing:</b>
+      * Inspired by the human brain, neuromorphic computing seeks to create VLSI systems that mimic neural networks, 
+      using circuits that process information similarly to biological neurons. 
+      This approach could revolutionize areas like real-time processing and AI by offering faster,
+       more energy-efficient computations. Neuromorphic chips have the potential to significantly enhance pattern recognition 
+       and sensory data processing, making them ideal for applications like robotics, smart sensors, and cognitive computing. <br />
+      <b>8. Advanced Packaging Techniques:</b>
+      *As the demand for more powerful chips continues to grow, 
+      advanced packaging methods like chiplet-based design and wafer-level packaging are becoming more important. 
+      These techniques allow for the integration of multiple chips or functions into a single package,
+       improving overall system performance and reducing form factor. Chiplet-based architectures, 
+       where different functional blocks are created as separate chips and then assembled into a single package, 
+       will enable greater flexibility in design and manufacturing.<br />
+      <b>9. Photonics Integration:</b>
+      * The integration of optical components into VLSI chips is becoming a significant trend as the need for faster data transmission grows.
+       Silicon photonics enables the use of light (photons) instead of electrical signals for communication between chips, 
+       offering much higher data bandwidth and lower latency. This is especially important for data-intensive applications such as 
+       high-performance computing, cloud infrastructure, and advanced telecommunications.<br />
+      <b>10.  Security in VLSI Designs:</b>
+      *As devices become more interconnected, ensuring hardware-level security in VLSI designs is increasingly critical. 
+      Future trends will focus on developing secure architectures that can prevent attacks like hardware tampering, 
+      side-channel attacks, and reverse engineering. Hardware security modules and built-in encryption mechanisms 
+      will be key components of future VLSI chips, especially in applications involving sensitive data,
+       such as financial systems, defense, and IoT. <br />
+    </p>
+    <br />
+    <h2>Roadmaps for:</h2>
+    <br />
+    <br />
+    <p class="p">
+      <b>1. Beginner Level: Establishing Fundamentals:</b><br>
+      At the beginner stage, you need to build a strong foundation in electronics, digital systems, and semiconductor physics. This knowledge is essential for understanding the principles of VLSI.
+      <br>
+      <b>Key Areas to Focus:</b><br>
+      <b>Basic Electronics and Semiconductor Physics:</b>
+      
+      *Study Ohm's Law, Kirchhoff's Laws, resistors, capacitors, inductors, diodes, and transistors.
+      Understand the basics of semiconductor materials (p-type and n-type), p-n junctions, and MOSFETs (Metal-Oxide-Semiconductor Field-Effect Transistors).
+    <br> <b>Digital Logic Design:</b> 
+      
+      <br>*Learn about binary and hexadecimal number systems, Boolean algebra, and truth tables.
+      Understand combinational and sequential logic circuits: logic gates, multiplexers, decoders, flip-flops, and counters.
+      Explore simple digital systems like adders, multipliers, and basic state machines.
+     <br><b>*Recommended Learning Resources:</b> 
+      
+      <br><b>*Books:</b> “Digital Design” by M. Morris Mano
+      <br><b>*Courses:</b> Online courses like "Digital Circuits" on Coursera, NPTEL, or edX.
+      <br><b>*Tools to Use:</b>
+      Simulation Software: Start with tools like Logisim or CircuitVerse to design and simulate basic digital circuits.
+      <br><br>
+      
+      <b>2. Intermediate Level: Introduction to VLSI Design:</b><br>
+        Once you're comfortable with digital logic and basic electronics, it's time to dive into the core VLSI concepts.
+        <br>
+        <b>Key Areas to Focus:</b><br>
+        <b>VLSI Design Flow:</b><br>
+        
+        *Learn the stages of the VLSI design process: specification, design, synthesis, verification, physical design, and testing.
+        Understand the different design methodologies: ASIC (Application-Specific Integrated Circuit) and FPGA (Field-Programmable Gate Arrays).<br>
+        <b>CMOS Technology:</b><br>
+        
+        *Understand CMOS transistors (nMOS and pMOS), their working principles, and the CMOS inverter.
+        Study static and dynamic characteristics of CMOS circuits, including power consumption and delays.
+        Learn about parasitic effects, scaling, and design rules in CMOS technology.<br>
+        <b>VLSI Design Using HDL (Hardware Description Language):</b><br>
+        
+        *Learn Verilog or VHDL to design and simulate digital circuits.
+        Implement simple designs like combinational and sequential circuits using HDL.<br>
+        <b>Recommended Learning Resources:</b><br>
+        
+        <b>Books:</b><br> “CMOS VLSI Design: A Circuits and Systems Perspective” by Neil H. E. Weste and David Harris<br>
+       <b>Courses:</b><br>  "VLSI Design" on Udemy, Coursera, or edX.<br>
+        <b>Tools to Use:</b><br>
+        EDA (Electronic Design Automation) Tools: Familiarize yourself with tools like Xilinx Vivado, ModelSim, and Quartus for FPGA development.
+        <br><br>
+
+        <b>3. Intermediate to Advanced Level: Specialization in VLSI Design</b><br>
+          At this stage, you start focusing on specific areas of VLSI design and optimization techniques for both digital and analog circuits.
+          
+          <br><b>Key Areas to Focus:</b><br>
+          <b>Advanced Digital Design:</b><br>
+          
+          *Study arithmetic circuits, pipelining, and memory design (SRAM, DRAM).
+          Learn about System-on-Chip (SoC) design, clock distribution, and timing analysis.
+          Explore low-power design techniques and optimization strategies for VLSI systems.
+          <br><b>Analog VLSI Design:</b><br>
+          
+          *Understand operational amplifiers, filters, and data converters in CMOS technology.
+          Explore mixed-signal designs (ADC, DAC) and power management circuits.<br>
+          <b>FPGA and ASIC Design:</b><br>
+          
+          *Work on real-world projects using FPGA boards (e.g., Xilinx or Altera FPGAs).
+          Study ASIC design flow, including floorplanning, placement, routing, and DRC (Design Rule Check).
+          Understand standard cell libraries, synthesis, and gate-level simulation.
+         <br> <b>Verification and Testing:</b><br>
+          
+          Learn about verification methodologies such as functional verification, timing verification, and formal verification.
+          Explore Design for Testability (DFT) techniques like scan chains and Built-In Self-Test (BIST).
+          <br><b>Recommended Learning Resources:</b><br>
+          
+          <b>*Books:</b>“Principles of CMOS VLSI Design” by Neil H.E. Weste and Kamran Eshraghian, "Digital Integrated Circuits" by Jan Rabaey.<br>
+          <b>*Courses:</b><br> "VLSI Design Verification and Testing" on Coursera, FPGA-based design courses on Udemy.<br>
+          <b>*Tools to Use:</b><br>
+         <b>*Advanced EDA Tools:</b> Get proficient with tools like Cadence Virtuoso, Synopsys Design Compiler, and HSPICE for IC design, synthesis, and simulation.<br>
+           <br>
+         <b>4. Advanced Level: Cutting-Edge Topics and Industry Experience</b><br>
+          At the advanced stage, you should focus on cutting-edge technologies and industry-relevant skills that are critical for VLSI professionals.
+          
+          <br><b>Key Areas to Focus:</b>
+         <br><b> Advanced Semiconductor Technologies:</b>
+          
+          *Study FinFET, SOI (Silicon on Insulator), 3D ICs, and emerging technologies like Quantum Computing and Neuromorphic Computing.
+          Learn about nanotechnology and how it impacts future VLSI designs.<br>
+          <b>System-Level Design and Verification:</b><br>
+          
+          *Work on SystemVerilog for advanced verification techniques.
+          Study UVM (Universal Verification Methodology) for efficient testbench design.<br>
+          <b>Low-Power and High-Performance Design:</b><br>
+          
+          *Learn about dynamic voltage scaling (DVS), multi-core processing, and power-aware synthesis.
+          Explore techniques for designing low-power chips for mobile, wearable, and IoT applications.<br>
+          <b>Design for Manufacturability (DFM):</b>
+          
+          <br>*Study how to optimize designs for ease of manufacturing, considering issues like yield, variability, and lithographic constraints.
+          <b>Recommended Learning Resources:</b><br>
+          
+          <b>Books: </b>"Advanced ASIC Chip Synthesis" by Himanshu Bhatnagar<br>
+          <b>Courses:</b> "Advanced Digital VLSI Design" and "Low-Power VLSI Design" on Coursera or edX.<br>
+          <b>Tools to Use:</b><br>
+          <b>Industry Tools:</b> Master industry-standard tools like Synopsys ICC2 for place-and-route, Mentor Graphics Calibre for DRC/LVS checks, and Cadence Innovus for physical design.</b>
+    </p>
+    <br />
+    <h2>Conclusion</h2>
+    <p class="p">VLSI is fundamental to modern electronics,
+      enabling the miniaturization, performance improvement, and cost reduction of semiconductor devices.
+      It continues to evolve, driving innovation across industries and shaping the future of technology in areas like artificial intelligence, quantum computing, and IoT.   </p>
+    <h2>Recommended Resources</h2>
+    <p class="p">
+      Below are some highly recommended resources for learning about vlsi:
+      <br /><br />
+      * <b>Books:</b><br>
+      1) CMOS VLSI Design:A Circuits and Systems Perspective" by Neil H.E. Weste and David Harris<br>
+      2)"Digital Design" by M. Morris Mano
+      (website: <a href="https://digitalsystemdesign.in/wp-content/uploads/2018/05/digital_design-__morris_mano-fifth_edition.pdf">Digital design</a>) <br>
+      3)"VLSI Design" by David A. Hodges, Horace G. Jackson, and Resve Ballagh <br>
+      <br>
+      * <b>Tools and Software:</b>Get familiar with industry-standard EDA (Electronic Design Automation) tools like Cadence, Synopsys, and ModelSim. 
+     <br>
+      * <b>Online Courses:</b>Coursera, edX, and Udacity offer VLSI design and digital logic courses.
+      <br>
+      * <b>swayam courses:</b><a href="https://archive.nptel.ac.in/courses/108/105/108105113/" >digital circuits</a>,
+      <a href="https://www.youtube.com/watch?v=vHLBO05TeyU&list=PLwdnzlV3ogoVlY7iVqr-FhWUQEX7JDdiP">digital design with verilog</a>,
+      <a href="https://archive.nptel.ac.in/courses/108/103/108103179/">system design through verilog</a><br>
+      *<b>Communities and Forums:</b>Join online communities like Stack Overflow, Reddit, and specialized forums for VLSI discussions and networking.
+      <br /><br />
+    </p>
+    </div>
+    <script src="../js/yatu_learn_script.js" crossorigin=""></script>
+    <footer>
+      <div class="flex_align">
+        <div class="box1">
+          <div class="logo">
+            <a href="../index.html"
+              ><img
+                src="../assets/images/YL_Black-removebg-preview2.png"
+                alt=""
+                height="110px"
+                width="200px"
+            /></a>
+          </div>
+          <div class="header same">
+            <p>Explore</p>
+            <a href="index.html">Home</a>
+            <a href="yatu_learn_qp.html">Papers</a>
+            <a href="yatu_learn_notes.html">Notes</a>
+            <a href="yatu_learn_about.html">About</a>
+          </div>
+          <div class="policies same">
+            <div class="policy">
+              <p>policy</p>
+              <a href="privacy_learn.html">Privacy policy</a>
+              <a href="yatu_learn_about.html#contact">Contact Us</a>
+            </div>
+            <div class="media">
+              <p>Social:</p>
+              <div class="icon_flex">
+                <a href="https://www.linkedin.com/company/yatulearn/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/yatulearn/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/@YATU_Store"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="https://x.com/yatulearn"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="vertical_line"></div>
+          <div class="email_adress same">
+            <p class="mail">address:</p>
+            <span>
+              Near Panjab University<br />
+              SSGRC, Bajwara, Una<br />
+              road, Hoishiarpur, 146021,<br />
+              Punjab, India</span
+            ><br />
+            <br />
+            <div class="num">Ph No. : 7068247779</div>
+            <a href="https://mail.google.com/mail/u/0/#inbox"
+              >E-mail : yatulearn@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="course_flex">
+        <div class="courses">
+          <p>Courses:</p>
+          <div class="courses_link">
+            <a href="yatu_learn_wd.html">Web Dev</a>
+            <a href="yatu_learn_dsa.html">DSA</a>
+            <a href="yatu_learn_aiml.html">AI ML</a>
+            <a href="yatu_learn_cs.html">Cyber Security</a>
+            <a href="yatu_learn_os.html">Operating System</a>
+            <a href="yatu_learn_cn.html">Networking</a>
+            <a href="yatu_learn_vlsi.html">Vlsi</a>
+            <a href="yatu_learn_iot.html">iot</a>
+            <a href="yatu_learn_digitalcrts.html">Digitalelectronics</a>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal_line"></div>
+      <div class="copyright">
+        <p>© 2024 YATU Learn. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
