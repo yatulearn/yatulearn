@@ -29,6 +29,18 @@
       href="./assets/images/YATU Learn - YL icon Black (2).png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="./assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>YATU Learn</title>
   </head>
   <body>
@@ -113,6 +125,13 @@
           <img src="assets/images/home banner.png" alt="banner" />
         </div>
       </a>
+        <a href="pages/yatu_learn_notes.html">
+            <div class="imag"><img src="assets/images/home banner.png" alt="banner" /></div>
+        </a>
+      <a href="pages/yatu_learn_notes.html"
+        ><div class="imag">
+          <img src="assets/images/home banner.png" alt="banner" /></div
+      ></a>
     </main>
     <section style="margin: 80px 0">
       <div class="block1">
@@ -260,8 +279,90 @@
           Computer Network
         </button>
       </div>
+        <div class="roadmap_btns">
+            <button class="btn_web" onclick="setActive(this)">Web Devlopment</button>
+            <button class="btn_dsa" onclick="setActive(this)">DSA</button>
+            <button class="btn_cs"  onclick="setActive(this)">Cyber Security</button>
+        </div>
+        <div class="roadmap_imgs">
+            <img class="img1" src="assets/images/Ms roadmap.png" alt="webd" height="280px" width="350px" />
+            <img class="img2" src="assets/images/DSA.png" alt="dsa" height="280px" width="350px" />
+            <img class="img3" src="assets/images/Cyber Security.png" alt="cyber" height="280px" width="350px" />
+            <img class="img4" src="assets/images/AI.png" alt="ai" height="280px" width="350px" />
+            <img class="img5" src="assets/images/Functions-of-Operating-System-2.jpg.webp" alt="ai" height="280px"
+                width="350px" />
+            <img class="img6" src="assets/images/cn roadmap.png" alt="ai" height="280px" width="350px" />
+        </div>
+        <div class="roadmap_btns_right">
+            <button class="btn_ai" onclick="setActive(this)">AI ML</button>
+            <button class="btn_os" onclick="setActive(this)">Operating System</button>
+            <button class="btn_cn" onclick="setActive(this)">Computer Network</button>
+        </div>
+      <div class="roadmap_btns">
+        <button class="btn_web" onclick="setActive(this)">Web Devlopment</button>
+        <button class="btn_dsa" onclick="setActive(this)">DSA</button>
+        <button class="btn_cs" onclick="setActive(this)">Cyber Security</button>
+      </div>
+      <div class="roadmap_imgs">
+        <img
+          class="img1"
+          src="assets/images/Ms roadmap.png"
+          alt="webd"
+          height="280px"
+          width="350px"
+        />
+        <img
+          class="img2"
+          src="assets/images/DSA.png"
+          alt="dsa"
+          height="280px"
+          width="350px"
+        />
+        <img
+          class="img3"
+          src="assets/images/Cyber Security.png"
+          alt="cyber"
+          height="280px"
+          width="350px"
+        />
+        <img
+          class="img4"
+          src="assets/images/AI.png"
+          alt="ai"
+          height="280px"
+          width="350px"
+        />
+        <img
+          class="img5"
+          src="assets/images/Functions-of-Operating-System-2.jpg.webp"
+          alt="ai"
+          height="280px"
+          width="350px"
+        />
+        <img
+          class="img6"
+          src="assets/images/cn roadmap.png"
+          alt="ai"
+          height="280px"
+          width="350px"
+        />
+      </div>
+      <div class="roadmap_btns_right">
+        <button class="btn_ai"  onclick="setActive(this)">AI ML</button>
+        <button class="btn_os"  onclick="setActive(this)">Operating System</button>
+        <button class="btn_cn"  onclick="setActive(this)">Computer Network</button>
+      </div>
     </div>
     <button id="backToTop" style="display: none;">Back to Top</button>
+    <div id="footer"></div>
+    <script>
+      // Load footer dynamically
+      fetch("components/main_footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
     <script src="js/yatu_learn_script.js" crossorigin=""></script>
   </body>
   <footer>
@@ -348,4 +449,8 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+</footer><script src="js/script.js"></script>
+
+  </body>
+  <script src="./js/script.js"></script>
 </html>

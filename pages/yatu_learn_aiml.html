@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Artificial Intelligence & Machine Learning</title>
     <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
@@ -659,5 +660,14 @@
         <p>© 2024 YATU Learn. All Rights Reserved.</p>
       </div>
     </footer>
+    <div id="footer"></div>
+    <script>
+      // Load footer dynamically
+      fetch("../components/main_footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
   </body>
 </html>

@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Question Paper</title>
     <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
@@ -421,6 +422,15 @@
         </div>
       </div>
     </div>
+    <div id="footer"></div>
+    <script>
+      // Load footer dynamically
+      fetch("../components/main_footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
     <script src="../js/yatu_learn_script.js" crossorigin=""></script>
     <script src="../js/B2T.js"></script>
   </body>
