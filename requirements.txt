@@ -146,8 +146,6 @@ stack-data==0.6.3
 tenacity==8.5.0
 tensorboard==2.16.2
 tensorboard-data-server==0.7.2
-tensorflow @ file:///D:/Tensorflow/tensorflow-2.16.1-cp312-cp312-win_amd64.whl#sha256=1c5611e7357b7a4bc6dccc60750c91e27cdff82622fc917848f22add5ab8de26
-tensorflow==2.16.1
 termcolor==2.4.0
 terminado==0.18.1
 threadpoolctl==3.5.0
