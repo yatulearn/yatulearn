@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/yatu_learn_os.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/B2T.css" />
     <link
       rel="stylesheet"
@@ -16,9 +17,32 @@
     <title>Operating System</title>
     <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
-
   <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const themeIcon = document.getElementById('theme-icon');
+        
+        // Check the current mode in local storage, if any
+        let isDarkMode = localStorage.getItem('dark-mode') === 'true';
+
+        // Apply the initial mode
+        document.body.classList.toggle('dark-mode', isDarkMode);
+        themeIcon.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
+
+        themeIcon.addEventListener('click', () => {
+          isDarkMode = !isDarkMode;
+          document.body.classList.toggle('dark-mode', isDarkMode);
+
+          // Update the icon
+          themeIcon.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
+
+          // Save the current mode in local storage
+          localStorage.setItem('dark-mode', isDarkMode);
+        });
+      });
+    </script>
     <button id="backToTop" style="display: none;">Back to Top</button>
+
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
@@ -87,6 +111,10 @@
       <button class="btn">
         <a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a>
       </button>
+      <div class="toggle-container">
+        <span class="material-icons sun-icon" id="theme-icon">light_mode</span>
+      </div>
+    </nav>
     </nav>
 
     <h1 class="h1">What is an Operating System (OS)?</h1>

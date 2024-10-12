@@ -11,6 +11,11 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -31,6 +36,27 @@ nav {
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.toggle-container {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  right: 200px;
+  width: 70px;  /* Set width to make the box bigger */
+  height: 46px;
+  border: 2px solid #000; 
+  border-radius: 5px; 
+}
+.material-icons {
+  font-size: 36px;
+  cursor: pointer;
+  }
+.dark-mode {
+  background-color: #121212;
+  color: white;
 }
 nav .main_logo {
   display: flex;
@@ -104,7 +130,7 @@ nav ul a {
 }
 nav ul a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: black;
 }
 .change {
   background-color: #ffffff;
@@ -125,6 +151,31 @@ nav li a.Courses {
 }
 .qp:hover {
   color: #ffffff;
+}
+.dark-mode nav .btn a {
+  color: #cccccc; /* Lighter text for better contrast */
+}
+
+.dark-mode nav .btn:hover {
+  color: #ff8080; /* A lighter hover color for dark backgrounds */
+  background-color: #2C2C2C;
+}
+
+.dark-mode nav ul a {
+  color: #cccccc; /* Adjusting link colors */
+}
+
+.dark-mode nav ul a:hover {
+  color: #ffffff; /* Ensures hover effect stands out in dark mode */
+}
+
+.dark-mode .change {
+  background-color: #1c1c1c; /* Darker background */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Softer shadow */
+}
+
+.dark-mode .change_btn {
+  color: #cccccc; /* Lighter button text for better readability */
 }
 .dropdown-content1qp {
   display: none;

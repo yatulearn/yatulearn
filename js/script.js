@@ -1,3 +1,27 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const themeIcon = document.getElementById('theme-icon');
+  
+  // Check the current mode in local storage, if any
+  let isDarkMode = localStorage.getItem('dark-mode') === 'true';
+
+  // Apply the initial mode
+  document.body.classList.toggle('dark-mode', isDarkMode);
+  themeIcon.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
+
+  themeIcon.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+    console.log('Dark mode:', isDarkMode);
+    document.body.classList.toggle('dark-mode', isDarkMode);
+
+    // Update the icon
+    themeIcon.textContent = isDarkMode ? 'dark_mode' : 'light_mode';
+
+    // Save the current mode in local storage
+    localStorage.setItem('dark-mode', isDarkMode);
+  });
+});
+
+
 // Function to set the active button
 function setActive(button) {
     // Get all buttons inside '.roadmap_btns' and '.roadmap_btns_right'
@@ -23,7 +47,20 @@ window.onload = function() {
     const defaultButton = document.querySelector('.roadmap_btns .btn_web'); // Select 'Web Development' button
     setActive(defaultButton); // Make it active
 };
-// Function to handle scroll up action
+document.getElementById('scrollUpLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth' 
+    });
+  });
+  document.getElementById('scrollUpLin').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth' 
+    });
+  });  
 function scrollToTop(event) {
   event.preventDefault();
   window.scrollTo({
@@ -31,8 +68,6 @@ function scrollToTop(event) {
       behavior: 'smooth'
   });
 }
-
-// Add event listeners for scroll up links
 const scrollUpLinks = ['scrollUpLink', 'scrollUpLin'];
 scrollUpLinks.forEach(id => {
   const link = document.getElementById(id);
