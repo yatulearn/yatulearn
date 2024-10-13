@@ -4,6 +4,7 @@
   padding: 0;
   font-family: tahoma;
   box-sizing: border-box;
+
 }
 
 body {
@@ -198,6 +199,10 @@ nav li a.Courses {
 
 .dropdown1qp {
   display: inline-block;
+}
+
+.symbol{
+  padding-left: 10px;
 }
 
 .qp:hover {
@@ -680,14 +685,13 @@ footer {
   #check:checked ,.fa-solid.fa-bars{
     z-index: 110;
     position: relative;
-    left: 0.8rem;
-    
+    left: 0.8rem; 
   }
 
   i.fa-solid.fa-xmark{
     /* display: block; */
     font-size: 2rem;
-    z-index: 100;
+    z-index: 100;   
   }
 
   .dropdown-content1qp {
