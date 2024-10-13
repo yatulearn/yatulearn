@@ -39,14 +39,14 @@
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: 
+- **Frontend**:
   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-- **Version Control**: 
+- **Version Control**:
   ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
   ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-- **Deployment**: 
+- **Deployment**:
   ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## 🏁 Quick Start
@@ -54,6 +54,19 @@
 1. Visit [YATU Learn](https://yatulearn-i5od1dgx4-saurabhsithkars-projects.vercel.app/)
 2. Navigate through our user-friendly interface to access question papers, study materials, and courses.
 3. Join our community and start your learning journey!
+
+## 🐳 Docker Setup
+
+**To run this website in a Docker container, follow these steps:**
+
+1. Clone the repository: `git clone https://github.com/Saurabh-Sithkar/yatulearn.git`
+2. Navigate to the directory:  `cd yatulearn`
+3. Build the Docker image using the command:  `docker build -t yatulearn .`
+4. Run the contianer  using the command `docker run -d -p 8080:80 yatulearn`
+5. Now, the website will be accessible at  Now, the website will be accessible at [http://localhost:8080]()
+6. To stop the container: `docker stop <container_id>`
+
+***Note:- Make sure you have docker installed on your pc .***
 
 ## 🗺️ Roadmap
 
@@ -84,12 +97,6 @@ We are committed to fostering an inclusive and respectful community. Please read
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Our Valuable Contributors ❤️✨
-
-[![Contributors](https://contrib.rocks/image?repo=yatulearn/yatulearn)](https://github.com/yatulearn/yatulearn/graphs/contributors)
-## 📜 License
-
-
 ## 🙏 Acknowledgments
 
 - Heartfelt thanks to all contributors who have helped shape YATU Learn
@@ -108,10 +115,9 @@ For inquiries, support, or collaboration opportunities, reach out to us:
 
 ---
 
-## Our Valuable Contributors ❤️✨
+## ✨ Our Valuable Contributors ❤️
 
 [![Contributors](https://contrib.rocks/image?repo=yatulearn/yatulearn)](https://github.com/yatulearn/yatulearn/graphs/contributors)
-
 
 <p align="center">
   <strong>Made with ❤️ by the YATU Learn Team</strong><br>
