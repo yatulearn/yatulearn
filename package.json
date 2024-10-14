@@ -1,0 +1,12 @@
+{
+  "name": "yatulearn",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img src=\"assets/images/YATU%20Learn%20-%20YL%20icon%20Black%20(2).png\" alt=\"YATU Learn Logo\" width=\"200\">\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
