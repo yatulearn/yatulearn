@@ -29,6 +29,7 @@
       href="./assets/images/YATU Learn - YL icon Black (2).png"
       type="image/x-icon"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>YATU Learn</title>
   </head>
   <body>
@@ -115,7 +116,15 @@
       </a>
     </main>
     <section style="margin: 80px 0">
+      <h1 style="text-align: center; color: #2c3e50; font-size: 36px; margin-bottom: 20px;">Courses</h1>
+      <div class="search-container">
+      <input type="text" id="search" placeholder="Search for notes...">
+      <button type="button">Search</button>
+  </div>
       <div class="block1">
+
+        
+
         <div
           class="card common"
           style="
@@ -143,6 +152,7 @@
             <a href="pages/yatu_learn_dsa.html"><button>Explore</button></a>
           </div>
         </div>
+
         <div
           class="cardwd common"
           style="background-image: url(./assets/1704439037481.png)"
@@ -261,12 +271,8 @@
         </button>
       </div>
     </div>
-    <button id="backToTop" style="display: none;">Back to Top</button>
-    <script src="js/yatu_learn_script.js" crossorigin=""></script>
-  </body>
-  <footer>
-    <script src="js/B2T.js"></script>
-</body>
+    
+
 <footer>
     <div class="flex_align">
       <div class="box1">
@@ -347,5 +353,10 @@
       <p>© 2024 YATU Learn. All Rights Reserved.</p>
     </div>
   </footer>
+
   <script src="js/script.js"></script>
+  <button id="backToTop" style="display: none;">Back to Top</button>
+    <script src="js/yatu_learn_script.js" crossorigin=""></script>
+    <script src="js/B2T.js"></script>
+  </body>
 </html>
