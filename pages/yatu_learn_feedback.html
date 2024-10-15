@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+#feedbackResponse h3 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm" onsubmit="return submitFeedback()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+
+            <button onclick="submitFeedback()">Submit Feedback</button>
+        </form>
+
+        <div id="feedbackResponse" class="hidden">
+            <h3>Thank you for your feedback!</h3>
+            <p id="responseMessage"></p>
+            <button onclick="resetForm()">Submit another feedback</button>
+        </div>
+    </div>
+
+    <script>
+      const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 3000;
+
+// Middleware to parse JSON bodies
+app.use(bodyParser.json());
+
+// POST endpoint to receive feedback
+app.post('/submit-feedback', (req, res) => {
+    const { name, email, rating, comments } = req.body;
+    
+    // Log feedback or store it in a database here
+    console.log('Feedback received from ${name} (${email}): Rating - ${rating}, Comments - ${comments}');
+    
+    // You can also send this data via email to the admin using services like Nodemailer
+
+    res.status(200).json({ message: "Feedback received successfully!" });
+});
+
+app.listen(port, () => {
+    console.log('Server running at http://localhost:${port}');
+});
+function submitFeedback() {
+    // Get form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const rating = document.getElementById("rating").value;
+    const comments = document.getElementById("comments").value;
+
+    // Create feedback object
+    const feedback = {
+        name: name,
+        email: email,
+        rating: rating,
+        comments: comments
+    };
+
+    // Send feedback data to the server
+    fetch('http://localhost:3000/submit-feedback', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(feedback)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+
+        // Show feedback response and hide form
+        const form = document.getElementById("feedbackForm");
+        const response = document.getElementById("feedbackResponse");
+        const responseMessage = document.getElementById("responseMessage");
+
+        form.classList.add("hidden");
+        response.classList.remove("hidden");
+
+        // Display message
+        responseMessage.innerHTML = 'Thank you, <strong>${name}</strong>, for rating us ${rating}/5. We appreciate your feedback!';
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
+    return false; // Prevent form submission and page reload
+}
+const nodemailer = require('nodemailer');
+
+// Setup mail transporter
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'ankitharankithar@gmail.com',
+        pass: 'Ankitha@123'
+    }
+});
+
+app.post('/submit-feedback', (req, res) => {
+    const { name, email, rating, comments } = req.body;
+
+    // Send email to admin
+    const mailOptions = {
+        from: document.getElementById("email").value,
+        to: 'ankitharankithar@gmail.com',
+        subject: 'New Feedback Received',
+        text: 'Feedback received from ${name} (${email}):\n\nRating: ${rating}\n\nComments:\n${comments}'
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Email sent: ' + info.response);
+    });
+
+    res.status(200).json({ message: 'Feedback received and email sent to admin!' });
+});
+
+
+    </script>
+</body>
+</html>
