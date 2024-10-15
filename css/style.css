@@ -409,20 +409,23 @@ button:active {
   flex-direction: column;
 }
 
-.roadmap_btns button {
+.roadmap_btns button a{
   margin: 4px;
   height: 60px;
+  
   text-align: center;
 }
 
 .roadmap_btns_right {
   display: flex;
+
   flex-direction: column;
 }
 
 .roadmap_btns_right button {
   margin: 4px;
   height: 60px;
+  color: #000;
   text-align: center;
 }
 
