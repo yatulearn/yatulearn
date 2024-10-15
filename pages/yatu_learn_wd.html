@@ -4,8 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/yatu_learn_wd.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer .container div {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .footer h6 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .footer h6::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #6f42c1;
+            margin-top: 5px;
+        }
+        .footer p, .footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #6f42c1;
+        }
+        .footer .social-icons {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #6f42c1;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .footer .social-icons a:hover {
+            color: #adb5bd;
+        }
+        .footer .copyright {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #23272b;
+            color: #adb5bd;
+        }
+    </style>
     <link rel="stylesheet" href="../css/sidebar.css" />
-    <link rel="stylesheet" href="../css/B2T.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,7 +75,6 @@
       referrerpolicy="no-referrer"
     />
     <title>Web Devlopment</title>
-    <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
 
   <nav class="main-nav">
@@ -86,7 +146,6 @@
   </nav>
 
   <body>
-    <button id="backToTop" style="display: none;">Back to Top</button>
     <h1>Web Development</h1>
     <div class="content-box">
     <h2>What is Web Development?</h2>
@@ -395,104 +454,55 @@
       practice, you can become a proficient web developer capable of building
       anything from simple websites to complex web applications.
     </p>
-    <b>Recommended Resources</b>:
-    <p class="p">
-      Below are some highly recommended resources for aspiring and seasoned web developers:
-      <br /><br />
-      * <b>FreeCodeCamp</b>: A comprehensive platform offering free coding lessons, challenges, and projects that cover everything from HTML and CSS to full-stack web development. (Website: <a href="https://www.freecodecamp.org">FreeCodeCamp</a>)
-      <br /><br />
-      * <b>MDN Web Docs</b>: Mozilla's MDN Web Docs is a highly trusted resource for learning web technologies, with thorough documentation on HTML, CSS, and JavaScript. (Website: <a href="https://developer.mozilla.org">MDN Web Docs</a>)
-      <br /><br />
-      * <b>W3Schools</b>: A beginner-friendly platform for learning web development. It offers tutorials and references on web languages such as HTML, CSS, JavaScript, and more. (Website: <a href="https://www.w3schools.com">W3Schools</a>)
-      <br /><br />
-      * <b>Codecademy</b>: An interactive platform that offers free and paid courses on web development, including HTML, CSS, JavaScript, React, and more. (Website: <a href="https://www.codecademy.com">Codecademy</a>)
-      <br /><br />
-      * <b>Stack Overflow</b>: A popular Q&A site where developers can ask questions and get answers from the programming community. It’s a valuable resource for troubleshooting and learning best practices. (Website: <a href="https://stackoverflow.com">Stack Overflow</a>)
-      <br /><br />
-      * <b>GitHub</b>: A platform for hosting and sharing code repositories. GitHub is essential for version control and collaboration on web development projects. (Website: <a href="https://github.com">GitHub</a>)
-      <br /><br />
-      * <b>Udemy</b>: Offers a wide range of paid and free courses on various aspects of web development, from beginner to advanced levels. (Website: <a href="https://www.udemy.com">Udemy</a>)
-    </p>
     </div>
     <script src="../js/yatu_learn_script.js" crossorigin=""></script>
-    <script src="../js/B2T.js"></script>
   </body>
   <footer>
-    <div class="flex_align">
-      <div class="box1">
-        <div class="logo">
-          <a href="../index.html"
-            ><img
-              src="../assets/images/YL_Black-removebg-preview2.png"
-              alt=""
-              height="110px"
-              width="200px"
-          /></a>
+    <div class="footer">
+        <div class="social-icons">
+            <p>Get connected with us on social networks!</p>
+            <a href="https://www.linkedin.com/company/yatulearn/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/yatulearn"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@YATU_Store"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/yatulearn/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/yatulearn/"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="header same">
-          <p>Explore</p>
-          <a href="yatu_learn.html">Home</a>
-          <a href="yatu_learn_qp.html">Papers</a>
-          <a href="yatu_learn_notes.html">Notes</a>
-          <a href="yatu_learn_about.html">About</a>
-        </div>
-        <div class="policies same">
-          <div class="policy">
-            <p>policy</p>
-            <a href="privacy_learn.html">Privacy policy</a>
-            <a href="yatu_learn_about.html#contact">Contact Us</a>
-          </div>
-          <div class="media">
-            <p>Social:</p>
-            <div class="icon_flex">
-              <a href="https://www.linkedin.com/company/yatulearn/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/yatulearn/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://www.youtube.com/@YATU_Store"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-              <a href="https://x.com/yatulearn"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+        <div class="container">
+            <div>
+                <a href="index.html"><img src="../assets/images/YL_Black-removebg-preview.png" alt="" height="110px"
+                    width="200px" /></a>
+               
             </div>
-          </div>
+            <div>
+                <h6>Courses:</h6>
+                <p><a href="pages/yatu_learn_wd.html">Web Dev</a></p>
+                <p><a href="pages/yatu_learn_dsa.html">DSA</a></p>
+                <p><a href="pages/yatu_learn_aiml.html">AI ML</a></p>
+                <p><a href="pages/yatu_learn_cs.html">Cyber Security</a></p>
+                <p><a href="pages/yatu_learn_os.html">Operating System</a></p>
+                <p><a href="pages/yatu_learn_cn.html">Networking</a></p>
+            </div>
+            <div>
+                <h6>Explore</h6>
+                <p>  <a href="index.html">Home</a></p>
+                <p><a href="pages/yatu_learn_qp.html">Papers</a></p>
+                <p><a href="pages/yatu_learn_notes.html">Notes</a></p>
+                <p><a href="pages/yatu_learn_about.html">About</a></p>
+            </div>
+            <div>
+                <h6>Address</h6>
+                <p><i class="fas fa-home"></i> Near Panjab University<br />
+                    SSGRC, Bajwara, Una<br />
+                    road, Hoishiarpur, 146021,<br />
+                    Punjab, India</p>
+                <p><i class="fas fa-envelope"></i>E-mail : yatulearn@gmail.com</p>
+                <p><i class="fas fa-phone"></i> Ph No. : 7068247779</p>
+               
+            </div>
         </div>
-        <div class="vertical_line"></div>
-        <div class="email_adress same">
-          <p class="mail">address:</p>
-          <span>
-            Near Panjab University<br />
-            SSGRC, Bajwara, Una<br />
-            road, Hoishiarpur, 146021,<br />
-            Punjab, India</span
-          ><br />
-          <br />
-          <div class="num">Ph No. : 7068247779</div>
-          <a href="https://mail.google.com/mail/u/0/#inbox"
-            >E-mail : yatulearn@gmail.com</a
-          >
+        <div class="copyright">
+            © 2024 YATU Learn. All Rights Reserved.
         </div>
-      </div>
     </div>
-    <div class="course_flex">
-      <div class="courses">
-        <p>Courses:</p>
-        <div class="courses_link">
-          <a href="yatu_learn_wd.html">Web Dev</a>
-          <a href="yatu_learn_dsa.html">DSA</a>
-          <a href="yatu_learn_aiml.html">AI ML</a>
-          <a href="yatu_learn_cs.html">Cyber Security</a>
-          <a href="yatu_learn_os.html">Operating System</a>
-          <a href="yatu_learn_cn.html">Networking</a>
-        </div>
-      </div>
-    </div>
-    <div class="horizontal_line"></div>
-    <div class="copyright">
-      <p>© 2024 YATU Learn. All Rights Reserved.</p>
-    </div>
-  </footer>
+</footer>
 </html>

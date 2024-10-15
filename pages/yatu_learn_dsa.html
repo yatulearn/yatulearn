@@ -1,11 +1,74 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer .container div {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .footer h6 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .footer h6::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #6f42c1;
+            margin-top: 5px;
+        }
+        .footer p, .footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #6f42c1;
+        }
+        .footer .social-icons {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #6f42c1;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .footer .social-icons a:hover {
+            color: #adb5bd;
+        }
+        .footer .copyright {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #23272b;
+            color: #adb5bd;
+        }
+    </style>
     <link rel="stylesheet" href="../css/yatu_learn_dsa.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
-    <link rel="stylesheet" href="../css/B2T.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,11 +77,9 @@
       referrerpolicy="no-referrer"
     />
     <title>Data Structure & Algorithm</title>
-    <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
 
   <body>
-    <button id="backToTop" style="display: none;">Back to Top</button>
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
@@ -88,12 +149,12 @@
         <a href="https://forms.gle/v4cY8FfyyhuJnWeSA">Doubts</a>
       </button>
     </nav>
+    <h1>Data Structures and Algorithms</h1>
+    <h6>...</h6>
+    <h6>...</h6>
+    <br /><br />
     <div class="content-box">
-      <h1>Data Structures and Algorithms</h1>
-      <h6>...</h6>
-      <h6>...</h6>
-      <br /><br />
-    <h2 class="dsa-heading">What is DSA (Data Structures and Algorithms)?</h2>
+    <h2>What is DSA (Data Structures and Algorithms)?</h2>
     <p class="p">
       DSA stands for Data Structures and Algorithms. It's a fundamental concept
       in computer science and programming that deals with how data is organized,
@@ -113,7 +174,7 @@
       DFS). <br />
     </p>
     <br />
-    <h2 class="dsa-heading">Why DSA ?</h2>
+    <h2>Why DSA ?</h2>
     <h6>...</h6>
     <p class="p">
       1. Efficiency: In software development, efficiency is crucial. Whether
@@ -137,7 +198,7 @@
     </p>
     <br />
 
-    <h2 class="dsa-heading">How to Learn DSA ?</h2>
+    <h2>How to Learn DSA ?</h2>
 
     <main>
       <img src="../assets/images/DSA.png" alt="dsa-roadmap" height="auto" width="60%" />
@@ -227,7 +288,7 @@
       ><br />
     </p>
 
-    <h2 class="dsa-heading">What to Learn in DSA ?</h2>
+    <h2>What to Learn in DSA ?</h2>
 
     <p class="p">
       <span
@@ -284,7 +345,7 @@
     </p>
     <br />
 
-    <h2 class="dsa-heading">Conclusion</h2>
+    <h2>Conclusion</h2>
     <h6>...</h6>
     <p class="p">
       Mastering DSA is a long-term investment in your programming skills. It
@@ -295,104 +356,55 @@
       improve your problem-solving skills, which are crucial for any software
       development career. <br />
     </p>
-    <h2 class="dsa-heading">Recommended Resources</h2>
-    <p class="p">
-      Below are some highly recommended resources for learning Data Structures and Algorithms (DSA):
-      <br /><br />
-      * <b>GeeksforGeeks (GFG)</b>: A popular resource for learning DSA with detailed tutorials, coding problems, and interview preparation materials. (Website: <a href="https://www.geeksforgeeks.org">GeeksforGeeks</a>)
-      <br /><br />
-      * <b>LeetCode</b>: One of the best platforms for practicing DSA problems. It’s also widely used for coding interview preparation. (Website: <a href="https://leetcode.com">LeetCode</a>)
-      <br /><br />
-      * <b>HackerRank</b>: A platform offering a wide range of coding challenges and tutorials, especially focused on DSA topics. (Website: <a href="https://www.hackerrank.com">HackerRank</a>)
-      <br /><br />
-      * <b>Codeforces</b>: A competitive programming platform that hosts contests and has an extensive problem set to practice DSA. (Website: <a href="https://codeforces.com">Codeforces</a>)
-      <br /><br />
-      * <b>Introduction to Algorithms (CLRS)</b>: A widely recommended book for studying algorithms, often referred to as the "bible" for DSA. (Book: <a href="https://mitpress.mit.edu/9780262033848/introduction-to-algorithms">Introduction to Algorithms</a>)
-      <br /><br />
-      * <b>Coursera - Data Structures and Algorithms Specialization</b>: A series of courses covering DSA in-depth, offered by UC San Diego and the National Research University Higher School of Economics. (Website: <a href="https://www.coursera.org/specializations/data-structures-algorithms">Coursera</a>)
-      <br /><br />
-      * <b>InterviewBit</b>: A platform that focuses on DSA practice problems specifically for interview preparation. (Website: <a href="https://www.interviewbit.com">InterviewBit</a>)
-    </p>
     </div>
     <script src="../js/yatu_learn_script.js" crossorigin=""></script>
-    <script src="../js/B2T.js"></script>
   </body>
   <footer>
-    <div class="flex_align">
-      <div class="box1">
-        <div class="logo">
-          <a href="../index.html"
-            ><img
-              src="../assets/images/YL_Black-removebg-preview2.png"
-              alt=""
-              height="110px"
-              width="200px"
-          /></a>
+    <div class="footer">
+        <div class="social-icons">
+            <p>Get connected with us on social networks!</p>
+            <a href="https://www.linkedin.com/company/yatulearn/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/yatulearn"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@YATU_Store"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/yatulearn/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/yatulearn/"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="header same">
-          <p>Explore</p>
-          <a href="../index.html">Home</a>
-          <a href="yatu_learn_qp.html">Papers</a>
-          <a href="yatu_learn_notes.html">Notes</a>
-          <a href="yatu_learn_about.html">About</a>
-        </div>
-        <div class="policies same">
-          <div class="policy">
-            <p>policy</p>
-            <a href="privacy_learn.html">Privacy policy</a>
-            <a href="yatu_learn_about.html#contact">Contact Us</a>
-          </div>
-          <div class="media">
-            <p>Social:</p>
-            <div class="icon_flex">
-              <a href="https://www.linkedin.com/company/yatulearn/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/yatulearn/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://www.youtube.com/@YATU_Store"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-              <a href="https://x.com/yatulearn"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+        <div class="container">
+            <div>
+                <a href="index.html"><img src="../assets/images/YL_Black-removebg-preview.png" alt="" height="110px"
+                    width="200px" /></a>
+               
             </div>
-          </div>
+            <div>
+                <h6>Courses:</h6>
+                <p><a href="pages/yatu_learn_wd.html">Web Dev</a></p>
+                <p><a href="pages/yatu_learn_dsa.html">DSA</a></p>
+                <p><a href="pages/yatu_learn_aiml.html">AI ML</a></p>
+                <p><a href="pages/yatu_learn_cs.html">Cyber Security</a></p>
+                <p><a href="pages/yatu_learn_os.html">Operating System</a></p>
+                <p><a href="pages/yatu_learn_cn.html">Networking</a></p>
+            </div>
+            <div>
+                <h6>Explore</h6>
+                <p>  <a href="index.html">Home</a></p>
+                <p><a href="pages/yatu_learn_qp.html">Papers</a></p>
+                <p><a href="pages/yatu_learn_notes.html">Notes</a></p>
+                <p><a href="pages/yatu_learn_about.html">About</a></p>
+            </div>
+            <div>
+                <h6>Address</h6>
+                <p><i class="fas fa-home"></i> Near Panjab University<br />
+                    SSGRC, Bajwara, Una<br />
+                    road, Hoishiarpur, 146021,<br />
+                    Punjab, India</p>
+                <p><i class="fas fa-envelope"></i>E-mail : yatulearn@gmail.com</p>
+                <p><i class="fas fa-phone"></i> Ph No. : 7068247779</p>
+               
+            </div>
         </div>
-        <div class="vertical_line"></div>
-        <div class="email_adress same">
-          <p class="mail">address:</p>
-          <span>
-            Near Panjab University<br />
-            SSGRC, Bajwara, Una<br />
-            road, Hoishiarpur, 146021,<br />
-            Punjab, India</span
-          ><br />
-          <br />
-          <div class="num">Ph No. : 7068247779</div>
-          <a href="https://mail.google.com/mail/u/0/#inbox"
-            >E-mail : yatulearn@gmail.com</a
-          >
+        <div class="copyright">
+            © 2024 YATU Learn. All Rights Reserved.
         </div>
-      </div>
     </div>
-    <div class="course_flex">
-      <div class="courses">
-        <p>Courses:</p>
-        <div class="courses_link">
-          <a href="yatu_learn_wd.html">Web Dev</a>
-          <a href="yatu_learn_dsa.html">DSA</a>
-          <a href="yatu_learn_aiml.html">AI ML</a>
-          <a href="yatu_learn_cs.html">Cyber Security</a>
-          <a href="yatu_learn_os.html">Operating System</a>
-          <a href="yatu_learn_cn.html">Networking</a>
-        </div>
-      </div>
-    </div>
-    <div class="horizontal_line"></div>
-    <div class="copyright">
-      <p>© 2024 YATU Learn. All Rights Reserved.</p>
-    </div>
-  </footer>
+</footer>
 </html>
