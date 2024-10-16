@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .quiz-section {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .option {
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .option:hover {
+            background-color: #e87f16;
+        }
+
+        .selected {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        #nextButton, #submitButton {
+            margin-top: 20px;
+            display: none;
+        }
+
+        #scoreCard {
+            display: none; /* Initially hide the score card */
+            padding: 20px;
+            margin: 20px auto;
+            background: #d4edda; /* Light green background */
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #score {
+            font-size: 36px; /* Larger font size for the score */
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .emoji {
+            font-size: 40px; /* Size of emojis */
+        }
+    </style>
+</head>
+<body style="background-color:darkblue;">
+    <div class="navbar">
+        <h1>HTML QUIZ</h1>
+    </div>
+
+    <div class="quiz-section">
+        <h2>Question <span id="questionNumber">1</span></h2>
+        <h3 id="questionText"></h3>
+        <div id="optionsContainer"></div>
+        <button id="nextButton">Next</button>
+        <button id="submitButton">Submit Quiz</button>
+    </div>
+
+    <div id="scoreCard">
+        <h2>Your Score!</h2>
+        <div id="score"></div>
+        <div class="emoji">🎉✨🥳</div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "What is the purpose of using div tags in HTML?",
+                options: [
+                    "For creating Different styles.",
+                    "For creating different sections.",
+                    "For adding headings.",
+                    "For adding titles."
+                ],
+                answer: 1 // Correct answer index
+            },
+            {
+                question: "Which of the following tags is used to make a portion of text italic in HTML?",
+                options: [
+                    "<italic>",
+                    "<style= 'i'>",
+                    "<i>",
+                    "<style='italic'>"
+                ],
+                answer: 2
+            },
+            {
+                question: "Which of the following tags is used to add a line-break in HTML?",
+                options: [
+                    "<br>",
+                    "<break>",
+                    "</break>",
+                    "</br>"
+                ],
+                answer: 0
+            },
+            {
+                question: "Which of the following attributes is used to open a hyperlink in a new tab?",
+                options: [
+                    "tab",
+                    "href",
+                    "target",
+                    "ref"
+                ],
+                answer: 2
+            },
+            {
+                question: "Which of the following is the correct way to add background color in HTML?",
+                options: [
+                    "<body color = 'green'>",
+                    "<body bg-color = 'green'>",
+                    "<body style = 'background-color=green'>",
+                    "<body style = 'background-color: green;'>"
+                ],
+                answer: 3
+            },
+            {
+                question: "Which among the following is correct HTML code for making a checkbox?",
+                options: [
+                    "<checkbox>",
+                    "<input type='checkbox'>",
+                    "<check>",
+                    "<input type='check'>"
+                ],
+                answer: 1
+            },
+            {
+                question: "Which tag is used for creating a drop-down selection list?",
+                options: [
+                    "<select>",
+                    "<option>",
+                    "<dropdown>",
+                    "<list>"
+                ],
+                answer: 0
+            },
+            {
+                question: "Which tag is used to add a header in HTML5 table?",
+                options: [
+                    "<theader>",
+                    "<h1>",
+                    "<th>",
+                    "<header>"
+                ],
+                answer: 0
+            },
+            {
+                question: "Which of the following elements can be used in HTML to create a table?",
+                options: [
+                    "<table>, <tbody>, <trow>",
+                    "<table>, <tb>, <trow>",
+                    "<table>, <tbody>, <tr>",
+                    "All of the above"
+                ],
+                answer: 2
+            },
+            {
+                question: "Which among the following is the correct way in HTML to insert an image?",
+                options: [
+                    "<img url='https://bit.ly/2FicgIx'>Geeksforgeeks</img>",
+                    "<img href='https://bit.ly/2FicgIx' alt='Geeksforgeeks'></img>",
+                    "<img src='https://bit.ly/2FicgIx' alt='Geeksforgeeks'>",
+                    "<image src='https://bit.ly/2FicgIx' alt='Geeksforgeeks'></image>"
+                ],
+                answer: 2
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0; // Initialize score
+
+        function loadQuestion() {
+            const questionText = document.getElementById("questionText");
+            const optionsContainer = document.getElementById("optionsContainer");
+            const questionNumber = document.getElementById("questionNumber");
+            const nextButton = document.getElementById("nextButton");
+            const submitButton = document.getElementById("submitButton");
+
+            questionText.innerText = questions[currentQuestion].question;
+            optionsContainer.innerHTML = ""; // Clear previous options
+            questionNumber.innerText = currentQuestion + 1;
+
+            questions[currentQuestion].options.forEach((option, index) => {
+                const optionElement = document.createElement("div");
+                optionElement.innerText = option;
+                optionElement.classList.add("option");
+                optionElement.onclick = () => selectOption(optionElement, index);
+                optionsContainer.appendChild(optionElement);
+            });
+
+            nextButton.style.display = "none"; // Hide next button initially
+            submitButton.style.display = "none"; // Hide submit button initially
+
+            // Show next button for all but the last question
+            if (currentQuestion < questions.length - 1) {
+                nextButton.style.display = "block";
+            } else {
+                submitButton.style.display = "block"; // Show submit button for the last question
+            }
+        }
+
+        function selectOption(selectedOption, index) {
+            const options = document.querySelectorAll(".option");
+            options.forEach(option => option.classList.remove("selected")); // Remove selection from all options
+            selectedOption.classList.add("selected"); // Add selection to the clicked option
+
+            // Check if selected answer is correct
+            if (index === questions[currentQuestion].answer) {
+                score++; // Increment score for correct answer
+            }
+        }
+
+        document.getElementById("nextButton").onclick = () => {
+            currentQuestion++;
+            loadQuestion(); // Load the next question
+        };
+
+        document.getElementById("submitButton").onclick = () => {
+            displayResult();
+        };
+
+        function displayResult() {
+            const scoreCard = document.getElementById("scoreCard");
+            const scoreDisplay = document.getElementById("score");
+
+            scoreDisplay.innerHTML = `You got ${score} out of ${questions.length} correct!`;
+            scoreCard.style.display = "block"; // Show the score card
+            document.querySelector(".quiz-section").style.display = "none"; // Hide quiz section
+        }
+
+        // Load the first question
+        loadQuestion();
+    </script>
+</body>
+</html>
