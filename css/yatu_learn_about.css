@@ -104,7 +104,7 @@ nav ul a {
 }
 nav ul a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 .change {
   background-color: #ffffff;
@@ -124,7 +124,7 @@ nav li a.Courses {
   display: inline-block;
 }
 .qp:hover {
-  color: #ffffff;
+  color: #000000;
 }
 .dropdown-content1qp {
   display: none;
