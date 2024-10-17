@@ -426,11 +426,7 @@ button:active {
   text-align: center;
 }
 
-.btn_web {
-  background-color: #ffffff;
-  color: #121212;
-  box-shadow: var(--hover-shadows);
-}
+
 
 .occur {
   color: #ffffff;
@@ -1458,11 +1454,7 @@ button:active {
   text-align: center;
 }
 
-.btn_web {
-  background-color: #ffffff;
-  color: #121212;
-  box-shadow: var(--hover-shadows);
-}
+
 
 .occur {
   color: #ffffff;
