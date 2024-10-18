@@ -657,3 +657,145 @@ footer {
   line-height: 1.6; /* Improved line spacing */
   margin: 10px 0; /* Space between paragraphs */
 }
+
+/* faq */
+.faq{
+  padding: 50px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+.faq h2{
+  font-weight: 500;
+  font-size: 40px;
+}
+.accordion{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+.accordion li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+.accordion li label{
+  display: flex;
+
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #f5f1f1;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+label::after{
+  content: '+';
+  font: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s ;
+}
+input[type="radio"]{
+  display: none;
+}
+.accordion input {
+  display: none;
+}
+
+.accordion label {
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.accordion .content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.accordion input:checked + label + .content {
+  display: block; /* Show content when input is checked */
+}
+
+.accordion input[type="radio"]:checked + label::after{
+  transform: rotate(135deg);
+}
+
+.faq.email-signup{
+  max-width: 600px;
+  margin: 20px auto 60px;
+}
+.faq small{
+  font-size: 19px;
+}
+
+.p {
+  margin: 0; /* Reset default margin */
+}
+
+.roadmap {
+  list-style-type: disc; /* Use bullet points */
+  padding-left: 20px; /* Space from the left for bullets */
+}
+
+.roadmap li {
+  margin-bottom: 1rem; /* Add space between each point */
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.main-point {
+  font-weight: bold; /* Make the main points bold */
+  color: black; /* Set main points to black color */
+}
+
+.roadmap li span {
+  font-weight: normal; /* Make the content of points normal weight */
+  color: black; /* Ensure that the content is in black */
+}
+
+input[type="radio"] {
+  display: none; /* Hide radio buttons */
+}
+
+label {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.content,
+.sub-content {
+  display: none; /* Initially hide the content */
+  padding: 10px; /* Padding for the content */
+}
+
+input[type="radio"]:checked + label + .content {
+  display: block; /* Show content when radio button is checked */
+}
+
+.sub-accordion {
+  list-style-type: none; /* Remove default list style */
+  padding-left: 0; /* Remove left padding */
+}
+
+.sub-content {
+  padding-left: 20px; /* Indent the sub-content */
+}
+
+input[type="radio"]:checked + label + .sub-content {
+  display: block; /* Show sub-content when sub radio button is checked */
+}
+
+.roadmap {
+  list-style-type: none; /* Remove default list style */
+  padding-left: 0; /* Remove left padding */
+}
+
+.main-point {
+  font-weight: bold;
+}
