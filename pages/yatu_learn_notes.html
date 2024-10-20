@@ -3,8 +3,69 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/yatu_learn_notes.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer .container div {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .footer h6 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .footer h6::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #6f42c1;
+            margin-top: 5px;
+        }
+        .footer p, .footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #6f42c1;
+        }
+        .footer .social-icons {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #6f42c1;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .footer .social-icons a:hover {
+            color: #adb5bd;
+        }
+        .footer .copyright {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #23272b;
+            color: #adb5bd;
+        }
+    </style>
     <link rel="stylesheet" href="../css/sidebar.css" />
-    <link rel="stylesheet" href="../css/B2T.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,32 +74,9 @@
       referrerpolicy="no-referrer"
     />
     <title>Notes</title>
-    <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const searchInput = document.getElementById('search');
-        const notes = document.querySelectorAll('.note');
-
-        // Show all notes initially
-        notes.forEach(note => note.style.display = 'block');
-
-        searchInput.addEventListener('input', function() {
-            const filter = searchInput.value.toLowerCase();
-            
-            notes.forEach(note => {
-                if (note.textContent.toLowerCase().includes(filter)) {
-                    note.style.display = 'block'; // Show relevant notes
-                } else {
-                    note.style.display = 'none'; // Hide non-relevant notes
-                }
-            });
-        });
-    });
-</script>
 
   <body>
-    <button id="backToTop" style="display: none;">Back to Top</button>
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
@@ -109,231 +147,397 @@
       </button>
     </nav>
     <h1>Notes</h1>
-    <div class="search-container">
-      <input type="text" id="search" placeholder="Search for notes..." />
-      <button type="button">Search</button>
-  </div>
-    <div class="body-container">
-      <section class="category">
-          <h2>Branch-Wise</h2>
-          <div class="topic">
-              <button class="collapsible">Computer Science and Engineering (CSE)</button>
-              <div class="content">
-                  <ul>
-                      <li class="note"><a href="https://drive.google.com/file/d/14VgdwJcQRGps0ZYkAg-KvFJUf-1I4zMV/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Let Us C</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1Rzu1PThqq_8WcPiwRYwWebqexVsQJkfN/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> C++ Programming</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1YCN5sunMPeO4kA1j5Y07Ieo48nEpdeJK/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Intro to Computers</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/18h-YOcpydDsWYo6UyvXH1mQi6uh61ZHn/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Software Engineering</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1NY1rWr-V3oaxMeMiER1sqLpysm3ogKiK/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Compilers</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1XZqZ6GfOYWfQcdbrm8o05XLJ-OMuEY_h/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Database Systems</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/12uXFvytfDpyKZZI-iDi8qfi2WquGSJni/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Neural Networks</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1-_68RWqB5fnypYdD9l7XDiJ-6p5yUgyv/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Data Mining</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1SaaT3I4TPCec61gZ5cp99IqAaieyaf7S/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Data Communication</a></li>
-                  </ul>
-              </div>
+    <div class="notes">
+      <div class="part1">
+        <div class="layer1">
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/14VgdwJcQRGps0ZYkAg-KvFJUf-1I4zMV/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Let us C</h3>
           </div>
-          <div class="topic">
-              <button class="collapsible">Information Technology (IT)</button>
-              <div class="content">
-                  <ul>
-                    <li class="note"><a href="https://drive.google.com/file/d/14VgdwJcQRGps0ZYkAg-KvFJUf-1I4zMV/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Let Us C</a></li>
-                    <li class="note"><a href="https://drive.google.com/file/d/1Rzu1PThqq_8WcPiwRYwWebqexVsQJkfN/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> C++ Programming</a></li>
-                    <li class="note"><a href="https://drive.google.com/file/d/1YCN5sunMPeO4kA1j5Y07Ieo48nEpdeJK/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Intro to Computers</a></li>
-                    <li class="note"><a href="https://drive.google.com/file/d/18h-YOcpydDsWYo6UyvXH1mQi6uh61ZHn/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Software Engineering</a></li>
-                    <li class="note"><a href="https://drive.google.com/file/d/1NY1rWr-V3oaxMeMiER1sqLpysm3ogKiK/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Compilers</a></li>
-                    <li class="note"><a href="https://drive.google.com/file/d/1XZqZ6GfOYWfQcdbrm8o05XLJ-OMuEY_h/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Database Systems</a></li>
-                  </ul>
-              </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1Rzu1PThqq_8WcPiwRYwWebqexVsQJkfN/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>C++</h3>
           </div>
-          <div class="topic">
-              <button class="collapsible">Electronics and Communication Engineering (ECE)</button>
-              <div class="content">
-                  <ul>
-                      <li class="note"  ><a href="" target="_blank">Coming Soon...</a></li>
-                  </ul>
-              </div>
+          <div class="one end">
+            <a
+              href="https://drive.google.com/file/d/18h-YOcpydDsWYo6UyvXH1mQi6uh61ZHn/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Software <br />Engineering</h3>
           </div>
-          <div class="topic">
-              <button class="collapsible">Electrical Engineering (EE)</button>
-              <div class="content">
-                  <ul>
-                      <li class="note"><a href="https://drive.google.com/file/d/1P0-nPvglgYXII1-0IXtzvCiWqoj1Aa8P/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Digital Electronics</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1UVygwTNKYXCm-vLwlxuGqn-HRe-cYV9r/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Digital Image Processing</a></li>
-                  </ul>
-              </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/12uXFvytfDpyKZZI-iDi8qfi2WquGSJni/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>
+              Neural <br />
+              Network
+            </h3>
           </div>
-          <div class="topic">
-              <button class="collapsible">Mechanical Engineering (ME)</button>
-              <div class="content">
-                  <ul>
-                      <li class="note"><a href="" target="_blank">Coming Soon...</a></li>
-                  </ul>
-              </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/12MQaV25049O1OawYb8aNw_jMUI72B0p4/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Matlab</h3>
           </div>
-          <div class="topic">
-              <button class="collapsible">Chemical Engineering (ME)</button>
-              <div class="content">
-                  <ul>
-                      <li class="note"><a href="https://drive.google.com/file/d/1dyBdoEZXPVUBKATEZVba86v56nIcpGPZ/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Catalysis</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1xnJQHBGeKvgX8IzWj6i4guPIxRUncBiS/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Thermo Handwritten Notes</a></li>
-                  </ul>
-              </div>
+        </div>
+        <div class="layer2">
+          <div class="one end">
+            <a
+              href="https://drive.google.com/file/d/1NY1rWr-V3oaxMeMiER1sqLpysm3ogKiK/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Compiler</h3>
           </div>
-      </section>
-  
-      <section class="category">
-          <h2>Subject-Wise</h2>
-          <div class="topic">
-              <button class="collapsible">Engineering Mathematics</button>
-              <div class="content">
-                  <ul>
-                      <li class="note"><a href="https://drive.google.com/file/d/1Shk7gh31397hXBhxSy5hnrxnysO1IrEt/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Thomas' Calculus</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1jTg0XoGqXJq6p4zr67Vm4dNyLV1kOBeX/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Partial Differential Equations(PDE)</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1x9PN8pDU9Ro13SYNKZWK5eVu0S0Q4lrA/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Linear Algebra</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1fkffarG0E13jFoKx5G-__BqkRAYPdnqH/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> PDE Handwritten Notes</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1rt6KZcHj1VcrUKrqxW2V6N9FdaxWyroN/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Advance Engineering</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1kVlzmepaZGuz9OXF5wtiTpcQAp16gDvY/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Probability & statistics</a></li>
-                      <li class="note"><a href="https://docs.google.com/presentation/d/1_gvd4b56PSwcbVBsLPdYcYx8RPolqiJT/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Schorindger Equation</a></li>
-                  </ul>
-              </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1UVygwTNKYXCm-vLwlxuGqn-HRe-cYV9r/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>
+              Digital Image<br />
+              Processing
+            </h3>
           </div>
-          <div class="topic">
-              <button class="collapsible">Engineering Physics</button>
-              <div class="content">
-                  <ul>
-                      <li class="note"><a href="https://docs.google.com/presentation/d/15T41CnJjumKIhqwlA_ctSMbVTJAmQjPX/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Origin of quantum mechanics</a></li>
-                      <li class="note"><a href="https://docs.google.com/presentation/d/1Aer-LuOs6P_uVXt4xIfE9-WWnDSmF9s7/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Quantum mechanics</a></li>
-                      <li class="note"><a href="https://docs.google.com/presentation/d/1UzEUZ-gGr2bcxqCjFV_NOmoFszDhPqms/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Hydrogen Atom</a></li>
-                      <li class="note"><a href="https://docs.google.com/presentation/d/1RO5qL_tMwLi0sdc91Lg82RfK_di1Rbwu/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Theory of Relativity</a></li>
-                      <li class="note"><a href="https://drive.google.com/file/d/1xBFhS2cdDpU6xhb-cxViBkSLZmbqVZyt/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Theory of Relativity notes</a></li>
-                      <li class="note"><a href="https://drive.google.com/drive/folders/10gagjhGjyb2YerUET0MR7f1AfOtdALRz?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Coordination</a></li>
-                  </ul>
-              </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1XZqZ6GfOYWfQcdbrm8o05XLJ-OMuEY_h/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>
+              Database<br />
+              System
+            </h3>
           </div>
-          <div class="topic">
-              <button class="collapsible">Programming languages</button>
-              <div class="content">
-                  <ul>
-                    <li class="note"><a href="https://drive.google.com/file/d/14VgdwJcQRGps0ZYkAg-KvFJUf-1I4zMV/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Let Us C</a></li>
-                    <li class="note"><a href="https://drive.google.com/file/d/1Rzu1PThqq_8WcPiwRYwWebqexVsQJkfN/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> C++ Programming</a></li>
-                  </ul>
-              </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1-_68RWqB5fnypYdD9l7XDiJ-6p5yUgyv/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Data Mining</h3>
           </div>
-      </section>
-  
-      <section class="category">
-          <h2>Technology</h2>
-          <div class="topic">
-              <button class="collapsible">AI & ML</button>
-              <div class="content">
-                  <ul>
-                    <li class="note"><a href="https://drive.google.com/file/d/12uXFvytfDpyKZZI-iDi8qfi2WquGSJni/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Neural Networks</a></li>
-                  </ul>
-              </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1SaaT3I4TPCec61gZ5cp99IqAaieyaf7S/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Data <br />Communication</h3>
           </div>
-          <div class="topic">
-              <button class="collapsible">Data</button>
-              <div class="content">
-                  <ul>
-                    <li class="note"><a href="https://drive.google.com/file/d/1-_68RWqB5fnypYdD9l7XDiJ-6p5yUgyv/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Data Mining</a></li>
-                    <li class="note"><a href="https://drive.google.com/file/d/1SaaT3I4TPCec61gZ5cp99IqAaieyaf7S/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Data Communication</a></li>
-                  </ul>
-              </div>
+        </div>
+        <div class="layer3">
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1Shk7gh31397hXBhxSy5hnrxnysO1IrEt/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Thomas</h3>
           </div>
-      </section>
-  
-      <section class="category">
-          <h2>Software & Tools</h2>
-          <div class="topic">
-              <button class="collapsible">Matlab</button>
-              <div class="content">
-                  <ul>
-                      <li class="note"><a href="https://drive.google.com/file/d/12MQaV25049O1OawYb8aNw_jMUI72B0p4/view?usp=drive_link" target="_blank"><img src="../assets/images/pdf-removebg-preview.png" alt=">" height="15px"> Matlab Programming for Engineers</a></li>
-                  </ul>
-              </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1jTg0XoGqXJq6p4zr67Vm4dNyLV1kOBeX/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>PDE</h3>
           </div>
-      </section>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1x9PN8pDU9Ro13SYNKZWK5eVu0S0Q4lrA/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Linear Algebra</h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1fkffarG0E13jFoKx5G-__BqkRAYPdnqH/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>PDE Notes</h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1rt6KZcHj1VcrUKrqxW2V6N9FdaxWyroN/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>
+              Advance<br />
+              Engineering
+            </h3>
+          </div>
+        </div>
       </div>
-  
+      <div class="part2">
+        <div class="layer4">
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1kVlzmepaZGuz9OXF5wtiTpcQAp16gDvY/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>
+              Probability<br />
+              & Statistics
+            </h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://docs.google.com/presentation/d/1_gvd4b56PSwcbVBsLPdYcYx8RPolqiJT/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Schodinger <br />Equation</h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://docs.google.com/presentation/d/15T41CnJjumKIhqwlA_ctSMbVTJAmQjPX/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Origin of Quantum<br />Mechanics</h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://docs.google.com/presentation/d/1Aer-LuOs6P_uVXt4xIfE9-WWnDSmF9s7/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Quantum <br />Mechanics</h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://docs.google.com/presentation/d/1UzEUZ-gGr2bcxqCjFV_NOmoFszDhPqms/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Hydrogen Atom</h3>
+          </div>
+        </div>
+        <div class="layer5">
+          <div class="one">
+            <a
+              href="https://docs.google.com/presentation/d/1RO5qL_tMwLi0sdc91Lg82RfK_di1Rbwu/edit?usp=drive_link&ouid=101753568670873900932&rtpof=true&sd=true"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>
+              Theory of<br />
+              Relativity
+            </h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1YCN5sunMPeO4kA1j5Y07Ieo48nEpdeJK/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>
+              Intro to<br />
+              Computer
+            </h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1P0-nPvglgYXII1-0IXtzvCiWqoj1Aa8P/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>
+              Digital<br />
+              Electronics
+            </h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1xBFhS2cdDpU6xhb-cxViBkSLZmbqVZyt/view?usp=drive_link"
+              alt=""
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>
+              Theory of<br />
+              Relativity Notes
+            </h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/drive/folders/10gagjhGjyb2YerUET0MR7f1AfOtdALRz?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Cordination</h3>
+          </div>
+        </div>
+        <div class="layer6">
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1dyBdoEZXPVUBKATEZVba86v56nIcpGPZ/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Catalysis</h3>
+          </div>
+          <div class="one">
+            <a
+              href="https://drive.google.com/file/d/1xnJQHBGeKvgX8IzWj6i4guPIxRUncBiS/view?usp=drive_link"
+              ><img
+                src="../assets/images/pdf-removebg-preview.png"
+                alt=""
+                width="100%"
+                height="150px"
+            /></a>
+            <h3>Thermo</h3>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="../js/yatu_learn_script.js" crossorigin=""></script>
-    <script src="../js/B2T.js"></script>
   </body>
   <footer>
-    <div class="flex_align">
-      <div class="box1">
-        <div class="logo">
-          <a href="../index.html"
-            ><img
-              src="../assets/images/YL_Black-removebg-preview2.png"
-              alt=""
-              height="110px"
-              width="200px"
-          /></a>
+    <div class="footer">
+        <div class="social-icons">
+            <p>Get connected with us on social networks!</p>
+            <a href="https://www.linkedin.com/company/yatulearn/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/yatulearn"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@YATU_Store"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/yatulearn/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/yatulearn/"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="header same">
-          <p>Explore</p>
-          <a href="../index.html">Home</a>
-          <a href="yatu_learn_qp.html">Papers</a>
-          <a href="yatu_learn_notes.html">Notes</a>
-          <a href="yatu_learn_about.html">About</a>
-        </div>
-        <div class="policies same">
-          <div class="policy">
-            <p>policy</p>
-            <a href="privacy_learn.html">Privacy policy</a>
-            <a href="yatu_learn_about.html#contact">Contact Us</a>
-          </div>
-          <div class="media">
-            <p>Social:</p>
-            <div class="icon_flex">
-              <a href="https://www.linkedin.com/company/yatulearn/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/yatulearn/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://www.youtube.com/@YATU_Store"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-              <a href="https://x.com/yatulearn"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
+        <div class="container">
+            <div>
+                <a href="index.html"><img src="../assets/images/YL_Black-removebg-preview.png" alt="" height="110px"
+                    width="200px" /></a>
+               
             </div>
-          </div>
+            <div>
+                <h6>Courses:</h6>
+                <p><a href="pages/yatu_learn_wd.html">Web Dev</a></p>
+                <p><a href="pages/yatu_learn_dsa.html">DSA</a></p>
+                <p><a href="pages/yatu_learn_aiml.html">AI ML</a></p>
+                <p><a href="pages/yatu_learn_cs.html">Cyber Security</a></p>
+                <p><a href="pages/yatu_learn_os.html">Operating System</a></p>
+                <p><a href="pages/yatu_learn_cn.html">Networking</a></p>
+            </div>
+            <div>
+                <h6>Explore</h6>
+                <p>  <a href="index.html">Home</a></p>
+                <p><a href="pages/yatu_learn_qp.html">Papers</a></p>
+                <p><a href="pages/yatu_learn_notes.html">Notes</a></p>
+                <p><a href="pages/yatu_learn_about.html">About</a></p>
+            </div>
+            <div>
+                <h6>Address</h6>
+                <p><i class="fas fa-home"></i> Near Panjab University<br />
+                    SSGRC, Bajwara, Una<br />
+                    road, Hoishiarpur, 146021,<br />
+                    Punjab, India</p>
+                <p><i class="fas fa-envelope"></i>E-mail : yatulearn@gmail.com</p>
+                <p><i class="fas fa-phone"></i> Ph No. : 7068247779</p>
+               
+            </div>
         </div>
-        <div class="vertical_line"></div>
-        <div class="email_adress same">
-          <p class="mail">address:</p>
-          <span>
-            Near Panjab University<br />
-            SSGRC, Bajwara, Una<br />
-            road, Hoishiarpur, 146021,<br />
-            Punjab, India</span
-          ><br />
-          <br />
-          <div class="num">Ph No. : 7068247779</div>
-          <a href="https://mail.google.com/mail/u/0/#inbox"
-            >E-mail : yatulearn@gmail.com</a
-          >
+        <div class="copyright">
+            © 2024 YATU Learn. All Rights Reserved.
         </div>
-      </div>
     </div>
-    <div class="course_flex">
-      <div class="courses">
-        <p>Courses:</p>
-        <div class="courses_link">
-          <a href="yatu_learn_wd.html">Web Dev</a>
-          <a href="yatu_learn_dsa.html">DSA</a>
-          <a href="yatu_learn_aiml.html">AI ML</a>
-          <a href="yatu_learn_cs.html">Cyber Security</a>
-          <a href="yatu_learn_os.html">Operating System</a>
-          <a href="yatu_learn_cn.html">Networking</a>
-        </div>
-      </div>
-    </div>
-    <div class="horizontal_line"></div>
-    <div class="copyright">
-      <p>© 2024 YATU Learn. All Rights Reserved.</p>
-    </div>
-  </footer>
+</footer>
 </html>
