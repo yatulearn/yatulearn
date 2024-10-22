@@ -1,0 +1,405 @@
+
+  /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Navigation Styles */
+nav {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
+nav.scrolled {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+}
+nav .main_logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .main_logo .logo a img {
+  margin-left: 30px;
+}
+
+/* Hamburger Menu */
+.checkbtn {
+  font-size: 30px;
+  color: gray;
+  line-height: 80px;
+  display: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.checkbtn:hover {
+  font-size: 35px;
+}
+
+#check {
+  display: none;
+}
+
+/* Navigation Links */
+nav ul {
+  width: 36%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+
+h1, h2, h3, h4 {
+  color: #2c3e50;
+}
+
+a {
+  color: #3498db;
+}
+
+nav ul {
+  padding-left: 20px;
+}
+
+nav .btn {
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 0.7em;
+  background-color: rgb(234, 35, 74);
+  cursor: pointer;
+  width: 8%;
+  padding: 1em 2em;
+  margin-right: 50px;
+}
+
+nav .btn a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav .btn:hover {
+  color: rgb(234, 35, 74);
+  background-color: #4B4B4B;
+}
+
+nav ul a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(140, 140, 140);
+}
+
+nav ul a:hover {
+  color: black;
+}
+
+/* Specific Link Styles */
+nav li a.Courses {
+  color: #F63232;
+}
+
+/* Dropdown Menu */
+.dropdown1qp {
+  display: inline-block;
+}
+
+.qp:hover {
+  color: black;
+}
+
+.dropdown-content1qp {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 430px;
+  height: 350px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown1qp:hover .dropdown-content1qp {
+  display: block;
+}
+
+.dropdown-content1qp h2 {
+  margin: 15px;
+}
+
+.dropdown-content1qp .links {
+  margin-left: 10px;
+}
+
+.dropdown-content1qp .links a {
+  font-size: 1em;
+  color: blue;
+  margin: 5px;
+}
+
+.dropdown-content1qp .links a:hover {
+  color: darkblue;
+}
+
+/* Back to Top Button */
+#backToTop {
+  display: none; 
+}
+
+  /* privacy */
+  .privacy {
+    padding: 20px;
+    margin-top: 80px; 
+    margin-left: 80px; 
+    margin-right: auto; 
+}
+
+/* footer */
+  footer {
+    width: 100vw;
+    background-color: #121212;
+    bottom: 0; 
+}
+
+.flex_align {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+}
+
+.box1 {
+    margin-top: 40px;
+    width: 100%;
+    letter-spacing: 0.01cm;
+    display: flex;
+    justify-content: space-evenly;
+}
+  .policy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .policy a:hover {
+    color: #ffffff;
+  }
+  .vertical_line {
+    border-left: none;
+    border: 0.5px solid #4b4a4a;
+    height: 180px;
+    width: 0.009px;
+  }
+  .same p {
+    color: #ffffff;
+  }
+  .same a {
+    text-decoration: none;
+    color: #d6d3d3d0;
+  }
+  .same>a:hover {
+    color: #ffffff;
+  }
+  .media {
+    margin-top: 60px;
+  }
+  .icon_flex {
+    height: 50px;
+    width: 120%;
+    font-size: 21px;
+    color: #d6d3d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon_flex>a>i {
+    font-size: 21px;
+    color: #d6d3d3;
+  }
+  .icon_flex>a>i:hover {
+    font-size: 25px;
+    color: #ffffff;
+    transition: 0.2s;
+  }
+  .email_adress>span {
+    color: #ffffff;
+    line-height: 23px;
+    letter-spacing: 0.01cm;
+  }
+  .num {
+    color: #ffffff;
+  }
+
+  .horizontal_line {
+    margin-top: 20px;
+    border: 0.1px solid #4b4a4a;
+    width: 100%;
+}
+
+  .course_flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .courses {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .courses p {
+    margin: 5px;
+    color: #ffffff;
+  }
+  .courses_link {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+  }
+  .courses_link a {
+    color: #d6d3d3d0;
+    text-decoration: none;
+  }
+  .courses_link a:hover {
+    color: #ffffff;
+  }
+  .copyright {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .copyright p{
+    font-size: medium;
+  }
+
+  /* Responsive Styles */
+/* For screens up to 1400px */
+@media screen and (max-width: 1400px) {
+  nav ul {
+      width: 50%; 
+  }
+}
+
+/* For screens up to 960px */
+@media screen and (max-width: 960px) {
+  nav ul {
+      flex-direction: column; 
+      width: 100%;
+  }
+
+  .checkbtn {
+      display: block; 
+  }
+
+  nav .btn {
+      width: 100%;
+      margin-right: 0; 
+      margin-bottom: 10px; 
+  }
+
+  .courses {
+      width: 90%; 
+  }
+}
+
+/* For screens up to 880px */
+@media screen and (max-width: 880px) {
+  body {
+      padding: 10px; 
+  }
+
+  p {
+      font-size: 16px; 
+  }
+}
+
+/* For screens up to 730px */
+@media screen and (max-width: 730px) {
+  nav {
+      padding: 5px;
+  }
+
+  .policy {
+      align-items: flex-start;
+  }
+}
+
+/* For screens up to 660px */
+@media screen and (max-width: 660px) {
+  .icon_flex {
+      flex-direction: column; 
+  }
+
+  .courses_link {
+      flex-direction: column; 
+      align-items: center;
+  }
+}
+
+/* For screens up to 580px */
+@media screen and (max-width: 580px) {
+  .privacy {
+      margin-left: 0; 
+      margin-top: 40px; 
+  }
+
+  nav .main_logo .logo a img {
+      width: 80%;
+  }
+}
+
+/* For screens up to 768px (optional for broader use) */
+@media (max-width: 768px) {
+  footer {
+      padding: 20px 10px;
+  }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+  nav .btn {
+      width: 100%; 
+  }
+
+  .copyright {
+      flex-direction: column; 
+  }
+
+  .icon_flex {
+      justify-content: center; 
+  }
+}
+
+/* For screens up to 640px */
+@media (max-width: 640px) {
+  .courses_link a {
+      font-size: 14px; 
+  }
+}
+
+  
