@@ -1,0 +1,171 @@
+/* yatu_learn_blockchain.css */
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+  }
+  
+  h6 {
+    color: #777;
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+  
+  p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  .content-box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-box .p {
+    margin: 15px 0;
+  }
+  
+  main img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Navigation Bar Styling */
+  .main-nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .main_logo .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .main-nav ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .main-nav ul a:hover {
+    background-color: #555;
+  }
+  
+  .main-nav .btn {
+    background-color: #04c;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+  .main-nav .btn a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .checkbtn {
+    display: none;
+  }
+  
+  /* Back to Top Button */
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #04c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  #backToTop:hover {
+    background-color: #033a7b;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .main-nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .main-nav input:checked ~ ul {
+      display: block;
+    }
+  
+    .checkbtn {
+      display: block;
+      color: #fff;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  
+    .content-box {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    p {
+      font-size: 0.95em;
+    }
+  }
+  
