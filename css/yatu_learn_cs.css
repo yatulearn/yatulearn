@@ -637,3 +637,48 @@ footer {
   line-height: 1.6; /* Improved line spacing */
   margin: 10px 0; /* Space between paragraphs */
 }
+
+
+.media .icon_flex .fa-linkedin {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-linkedin:hover {
+  color: #0072b1 !important;
+  transform: scale(1.1) !important;
+}
+
+/* for instagram */
+
+.media .icon_flex .fa-instagram {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-instagram:hover {
+  color: #e1306c !important;
+  transform: scale(1.1) !important;
+}
+
+/* for youtube */
+.media .icon_flex .fa-youtube {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-youtube:hover {
+  color: #ff0000 !important;
+  transform: scale(1.1) !important;
+}
+
+/* for twitter */
+.media .icon_flex .fa-x-twitter- {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-x-twitter:hover {
+  color: #1da1f2 !important;
+  transform: scale(1.1) !important;
+}
