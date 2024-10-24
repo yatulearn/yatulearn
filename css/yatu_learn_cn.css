@@ -1,5 +1,5 @@
 * {
-  -webkit-tap-highlight-color:transparent;
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   font-family: tahoma;
@@ -81,7 +81,6 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
-
 }
 
 nav .btn {
@@ -107,13 +106,13 @@ nav .btn a {
 
 nav .btn:hover {
   color: rgb(234, 35, 74);
-  background-color: #4B4B4B;
+  background-color: #4b4b4b;
 }
 
 nav ul a {
   font-size: 20px;
   text-decoration: none;
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 
 nav ul a:hover {
@@ -128,11 +127,11 @@ nav ul a:hover {
 }
 
 .change_btn {
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 
 nav li a.Courses {
-  color: #F63232;
+  color: #f63232;
 }
 
 .dropdown1qp {
@@ -183,7 +182,6 @@ nav li a.Courses {
 h1 {
   margin-top: 100px;
   text-align: center;
-
 }
 
 h2 {
@@ -232,7 +230,6 @@ footer {
   justify-content: space-evenly;
 }
 
-
 .header {
   display: flex;
   flex-direction: column;
@@ -252,7 +249,6 @@ footer {
   border: 0.5px solid #4b4a4a;
   height: 180px;
   width: 0.009px;
-
 }
 
 .same p {
@@ -264,7 +260,7 @@ footer {
   color: #d6d3d3d0;
 }
 
-.same>a:hover {
+.same > a:hover {
   color: #ffffff;
 }
 
@@ -282,23 +278,21 @@ footer {
   align-items: center;
 }
 
-.icon_flex>a>i {
+.icon_flex > a > i {
   font-size: 21px;
   color: #d6d3d3;
 }
 
-.icon_flex>a>i:hover {
+.icon_flex > a > i:hover {
   font-size: 25px;
   color: #ffffff;
   transition: 0.2s;
 }
 
-.email_adress>span {
-  
+.email_adress > span {
   color: #ffffff;
   line-height: 23px;
   letter-spacing: 0.01cm;
-
 }
 
 .num {
@@ -325,7 +319,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .courses p {
@@ -355,10 +348,9 @@ footer {
   align-items: center;
   justify-content: center;
   color: white;
-
 }
 
-.copyright p{
+.copyright p {
   font-size: medium;
 }
 
@@ -369,24 +361,21 @@ footer {
 }
 
 .change_btn {
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 
 .change_btn:hover {
   color: #121212;
 }
 @media screen and (max-width: 1400px) {
-
   nav .btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media screen and (max-width: 960px) {
-
   nav ul a {
     font-size: 16px;
   }
@@ -404,11 +393,9 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
-
 }
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 880px) {
   /* .card-client{
     width: 14rem;
     height: 20rem;
@@ -424,42 +411,43 @@ footer {
     font-size: 15px;
   } */
 
-  .courses_link{
-   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  }
-
-  .same p{
-    font-size: 15px;
-  }
-
-  .same a{
-    font-size: 13.5px;
-  }
-
-  .email_adress>span{
-    font-size: 13.5px;
-  }
-
-  .num{
-    font-size: 15px;
-  }
-  .icon_flex{
+  .courses_link {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
   }
-  .icon_flex>a>i{
+
+  .same p {
+    font-size: 15px;
+  }
+
+  .same a {
+    font-size: 13.5px;
+  }
+
+  .email_adress > span {
+    font-size: 13.5px;
+  }
+
+  .num {
+    font-size: 15px;
+  }
+  .icon_flex {
+    width: 100%;
+  }
+  .icon_flex > a > i {
     font-size: 17px;
   }
-  .icon_flex>a>i:hover{
+  .icon_flex > a > i:hover {
     font-size: 21px;
   }
 }
 
 @media screen and (max-width: 730px) {
   .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
-  }.checkbtn {
+    display: none;
+  }
+  .checkbtn {
     display: block;
     margin: 5px 0;
     line-height: 30px;
@@ -484,7 +472,7 @@ footer {
     color: #121212;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
@@ -521,42 +509,42 @@ footer {
     flex-direction: column;
   } */
 
-  .address{
+  .address {
     display: flex;
     flex-direction: column;
   }
-  .common{
+  .common {
     margin: 20px;
   }
-  .common>h2{
+  .common > h2 {
     text-align: center;
     margin-top: 7px;
   }
-  .common h3{
+  .common h3 {
     text-align: center;
   }
-  .common>p{
+  .common > p {
     text-align: center;
   }
-  .common .span{
+  .common .span {
     text-align: center;
   }
-  .common>h4{
+  .common > h4 {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 660px){
+@media screen and (max-width: 660px) {
   .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
+    display: none;
   }
-  .box1{
+  .box1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .header{
+  .header {
     text-align: center;
   }
   .policy {
@@ -564,44 +552,44 @@ footer {
     margin-top: 20px;
   }
 
-  .media{
+  .media {
     text-align: center;
     margin-top: 20px;
     text-align: center;
   }
-  .icon_flex{
+  .icon_flex {
     width: 130%;
   }
-  .icon_flex>a>i{
+  .icon_flex > a > i {
     font-size: 17px;
   }
-  .icon_flex>a>i:hover{
+  .icon_flex > a > i:hover {
     font-size: 21px;
   }
 
-  .vertical_line{
+  .vertical_line {
     display: none;
   }
 
-  .email_adress{
+  .email_adress {
     text-align: center;
   }
 
-  .course_flex{
+  .course_flex {
     margin-top: 20px;
   }
-  .courses p{
+  .courses p {
     text-align: center;
   }
-  .courses_link{
+  .courses_link {
     text-align: center;
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 580px) {
-.dropdown1qp:hover .dropdown-content1qp {
-      display: none;
+  .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
   }
   nav .btn {
     height: 30px;
@@ -617,7 +605,7 @@ footer {
     position: absolute;
     left: 10px;
   }
-  main img{
+  main img {
     width: 90%;
     height: auto;
   }
@@ -636,4 +624,48 @@ footer {
 .p {
   line-height: 1.6; /* Improved line spacing */
   margin: 10px 0; /* Space between paragraphs */
+}
+
+.media .icon_flex .fa-linkedin {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-linkedin:hover {
+  color: #0072b1 !important;
+  transform: scale(1.1) !important;
+}
+
+/* for instagram */
+
+.media .icon_flex .fa-instagram {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-instagram:hover {
+  color: #e1306c !important;
+  transform: scale(1.1) !important;
+}
+
+/* for youtube */
+.media .icon_flex .fa-youtube {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-youtube:hover {
+  color: #ff0000 !important;
+  transform: scale(1.1) !important;
+}
+
+/* for twitter */
+.media .icon_flex .fa-x-twitter- {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-x-twitter:hover {
+  color: #1da1f2 !important;
+  transform: scale(1.1) !important;
 }
