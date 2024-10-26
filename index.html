@@ -5,6 +5,7 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -115,6 +116,7 @@
       </a>
     </main>
     <section style="margin: 80px 0">
+      <h2 class="popular">Popular Materials</h2>
       <div class="block1">
         <div
           class="card common"
@@ -199,7 +201,9 @@
         </div>
       </div>
     </section>
+    <h2 class="popular">Popular Roadmap</h2>
     <div class="roadmap">
+      
       <div class="roadmap_btns">
         <button class="btn_web" onclick="setActive(this)">
           Web Development
@@ -251,6 +255,7 @@
           width="350px"
         />
       </div>
+      
       <div class="roadmap_btns_right">
         <button class="btn_ai" onclick="setActive(this)">AI ML</button>
         <button class="btn_os" onclick="setActive(this)">
@@ -261,7 +266,13 @@
         </button>
       </div>
     </div>
-    <button id="backToTop" style="display: none;">Back to Top</button>
+    <button id="backToTop" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+      </svg>
+    </button>
+  
+  
     <script src="js/yatu_learn_script.js" crossorigin=""></script>
   </body>
   <footer>
