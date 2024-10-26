@@ -13,6 +13,26 @@
       referrerpolicy="no-referrer"
     />
     <title>Notes</title>
+    <style>
+      /* Scroll to Top Button Styles */
+      .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: rgb(234, 35, 74);
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 15px;
+          font-size: 16px;
+          cursor: pointer;
+          display: none; /* Hidden by default */
+          z-index: 1000; /* Ensure it is on top */
+      }
+      .scroll-to-top:hover {
+          background-color: rgb(234, 35, 74);
+      }
+  </style>
     <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
   <script>
@@ -38,7 +58,6 @@
 </script>
 
   <body>
-    <button id="backToTop" style="display: none;">Back to Top</button>
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
@@ -258,6 +277,10 @@
     <script src="../js/yatu_learn_script.js" crossorigin=""></script>
     <script src="../js/B2T.js"></script>
   </body>
+
+  <!-- Scroll to Top Button -->
+<button class="scroll-to-top" id="scrollToTopBtn">↑</button>
+
   <footer>
     <div class="flex_align">
       <div class="box1">
@@ -336,4 +359,22 @@
       <p>© 2024 YATU Learn. All Rights Reserved.</p>
     </div>
   </footer>
+  <script>
+    // Scroll to Top Button Functionality
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Show or hide the button based on scroll position
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // Smooth scroll to top when the button is clicked
+    scrollToTopBtn.onclick = function () {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
 </html>
