@@ -132,14 +132,12 @@ nav .main_logo .logo a img {
 nav ul {
   width: 36%;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  margin-left: 350px;
+  gap: 40px;
   align-items: center;
   white-space: nowrap;
 }
-
-
-
-
 
 nav .btn {
   --hover-shadows: none;
@@ -201,7 +199,7 @@ nav li a.Courses {
 }
 
 .qp:hover {
-  color: #121212;
+  color: #929191;
 }
 
 .dropdown-content1qp {
@@ -280,6 +278,8 @@ nav li a.Courses {
 }
 
 .cardqp {
+  height: 301px;
+  width: 550px;
   background-color: lightgreen;
 }
 
@@ -302,8 +302,10 @@ nav li a.Courses {
 
 .block1 {
   display: flex;
+  flex-direction: row;
+  gap: 50px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .block2 {
   display: flex;
@@ -315,7 +317,6 @@ nav li a.Courses {
 }
 .common {
   position: relative;
-  margin: 60px 1%;
   width: 450px;
   height: 241px;
   display: flex;
@@ -1081,29 +1082,28 @@ body {
   animation-fill-mode: forwards;
 }
 /* ///// */
-/* Hero section container with background image */
-.hero-container {
-  /* position: relative; */
+/* Hero section container with background image *//*
+/* .hero-container {
+  /* position: relative; *//*
   width: 100%;
-  height: 745px; /* Adjust height to fit your needs */
-  background-image: url("home banner.png"); /* Replace with the actual path to your image */
-  background-size: cover; /* Make sure the background covers the entire section */
-  background-position: center; /* Center the background image */
+  height: 745px; /* Adjust height to fit your needs *//*
+  background-image: url("home banner.png"); /* Replace with the actual path to your image *//*
+  background-size: cover; /* Make sure the background covers the entire section *//*
+  background-position: center; /* Center the background image *//*
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; /* Text color */
+  color: white; /* Text color *//*
   text-align: center;
-  overflow: hidden; /* To prevent any content overflow */
+  overflow: hidden; /* To prevent any content overflow *//*
 }
 
-/* Content inside the hero section */
+/* Content inside the hero section *//*
 .hero-content {
   margin-top: 4px;
-  z-index: 0; /* Bring the content above the background image */
+  z-index: 0; 
 }
-
-/* Explore button styles */
+/* Explore button styles *//*
 .explore-button {
   display: inline-block;
   padding: 22px 50px;
@@ -1124,16 +1124,16 @@ body {
   color: #fff;
 }
 
-/* Optional hero text styling */
+/* Optional hero text styling *//*
 .hero-container h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
-/* Make sure the background image covers smaller screen sizes too */
+/* Make sure the background image covers smaller screen sizes too *//*
 @media (max-width: 768px) {
   .hero-container {
-    height: 400px; /* Adjust height for smaller screens */
+    height: 400px; /* Adjust height for smaller screens *//*
   }
 
   .hero-container h1 {
@@ -1141,7 +1141,7 @@ body {
   }
 }
 
-/* //// */
+/* //// *//*
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -1781,20 +1781,6 @@ footer {
 }
 
 @media screen and (max-width: 880px) {
-  /* .card-client{
-    width: 14rem;
-    height: 20rem;
-  }
-
-  .user-picture{
-    width: 12rem;
-    height: 12rem;
-  }
-
-  .name-client{
-    margin-top: 10px;
-    font-size: 15px;
-  } */
 
   .courses_link {
     display: flex;
@@ -1829,9 +1815,6 @@ footer {
 }
 
 @media screen and (max-width: 810px) {
-  /* .dropdown1qp:hover .dropdown-content1qp {
-    display: none; 
-  }*/
   .roadmap {
     display: flex;
     flex-direction: column;
@@ -1887,9 +1870,6 @@ footer {
 }
 
 @media screen and (max-width: 730px) {
-  /* .dropdown1qp:hover .dropdown-content1qp {
-    display: none;
-  } */
   .checkbtn {
     display: block;
     margin: 5px 0;
@@ -1921,7 +1901,6 @@ footer {
     left: 0;
     padding-top: 110px;
     padding-bottom: 200px;
-    /* padding: 100px 12rem; */
   }
 
   .dropdown-content1qp {
@@ -1948,7 +1927,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
+}
   /* .images a img{
     height: auto;
     width: 100%;
@@ -1959,7 +1938,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  } */
+  } *//*
 
   .address {
     display: flex;
@@ -1987,9 +1966,6 @@ footer {
 }
 
 @media screen and (max-width: 660px) {
-  /* .dropdown1qp:hover .dropdown-content1qp {
-    display: none;
-  } */
   .box1 {
     display: flex;
     flex-direction: column;
@@ -2043,9 +2019,6 @@ footer {
   }
 }
 @media screen and (max-width: 580px) {
-  /* .dropdown1qp:hover .dropdown-content1qp {
-    display: none;
-  } */
   nav .btn {
     height: 30px;
     font-size: 10px;
@@ -2090,8 +2063,6 @@ footer {
     font-size: 10px;
   }
 }
-
-/* Style for the dropdown content container */
 .dropdown-content1qp {
   background-color: #f0f0f0;
   border-radius: 10px;
@@ -2139,8 +2110,6 @@ footer {
   background-color: #77b9ff;
   color: white;
 }
-
-/* For screens smaller than 768px (tablets and phones) */
 @media (max-width: 768px) {
   .dropdown-content1qp {
     padding: 15px;
@@ -2155,7 +2124,6 @@ footer {
   }
 }
 
-/* For screens smaller than 480px (small phones) */
 @media (max-width: 480px) {
   .dropdown-content1qp {
     padding: 4px;
@@ -2176,9 +2144,7 @@ footer {
   }
 }
 
-for linkedin
 .media .icon_flex .fa-linkedin{
-  /* Add the transition effect */
   transition: transform 0.3s ease!important;
 }
 
@@ -2187,10 +2153,10 @@ for linkedin
   transform: scale(1.1) !important;;
 } 
 
-/* for instagram */
+/* for instagram *//*
 
 .media .icon_flex .fa-instagram{
-  /* Add the transition effect */
+  /* Add the transition effect *//*
   transition: transform 0.3s ease!important;
 }
 
@@ -2199,9 +2165,9 @@ for linkedin
   transform: scale(1.1) !important;;
 }
 
-/* for youtube */
+/* for youtube *//*
 .media .icon_flex .fa-youtube{
-  /* Add the transition effect */
+  /* Add the transition effect *//*
   transition: transform 0.3s ease!important;
 }
 
@@ -2210,9 +2176,8 @@ for linkedin
   transform: scale(1.1) !important;;
 }
 
-/* for twitter */
+/* for twitter *//*
 .media .icon_flex .fa-x-twitter-{
-  /* Add the transition effect */
   transition: transform 0.3s ease!important;
 }
 
@@ -2229,7 +2194,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+} */
 
 #backToTop {
     position: fixed;
@@ -2249,3 +2214,8 @@ body {
 #backToTop:hover {
     background-color: #0056b3;
 }
+
+.popular{
+  margin-left: 45%;
+}
+
