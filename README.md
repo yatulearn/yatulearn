@@ -4,13 +4,45 @@
   <img src="assets/images/YATU%20Learn%20-%20YL%20icon%20Black%20(2).png" alt="YATU Learn Logo" width="200">
 </p>
 
-<p align="center">
-  <a href="https://yatulearn-i5od1dgx4-saurabhsithkars-projects.vercel.app/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fyatulearn-i5od1dgx4-saurabhsithkars-projects.vercel.app%2F&style=for-the-badge" alt="Website Status"></a>
-  <a href="https://github.com/Saurabh-Sithkar/yatulearn/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Saurabh-Sithkar/yatulearn?style=for-the-badge" alt="License"></a>
-  <a href="https://github.com/Saurabh-Sithkar/yatulearn/stargazers"><img src="https://img.shields.io/github/stars/Saurabh-Sithkar/yatulearn?style=for-the-badge" alt="Stars"></a>
-  <a href="https://github.com/Saurabh-Sithkar/yatulearn/network/members"><img src="https://img.shields.io/github/forks/Saurabh-Sithkar/yatulearn?style=for-the-badge" alt="Forks"></a>
-  <a href="https://github.com/Saurabh-Sithkar/yatulearn/issues"><img src="https://img.shields.io/github/issues/Saurabh-Sithkar/yatulearn?style=for-the-badge" alt="Issues"></a>
-</p>
+<div align="center">
+
+# YatuLearn 📘🖌️
+
+<img  src="https://readme-typing-svg.herokuapp.com?color=45ffaa&center=true&vCenter=true&size=40&width=900&height=80&lines=Welcome+to+Yatu+Learn!"/>
+</div>
+
+<div align = "center">
+<br>
+
+<table align="center">
+    <thead align="center">
+        <tr border: 1px;>
+            <td><b>🌟 Stars</b></td>
+            <td><b>🍴 Forks</b></td>
+            <td><b>🐛 Issues</b></td>
+            <td><b>🔔 Open PRs</b></td>
+            <td><b>🔕 Close PRs</b></td>
+            <td><b>🛠️ Languages</b></td>
+            <td><b>👥 Contributors</b></td>
+        </tr>
+     </thead>
+    <tbody>
+         <tr>
+            <td><img alt="Stars" src="https://img.shields.io/github/stars/yatulearn/yatulearn?style=flat&logo=github"/></td>
+            <td><img alt="Forks" src="https://img.shields.io/github/forks/yatulearn/yatulearn?style=flat&logo=github"/></td>
+            <td><img alt="Issues" src="https://img.shields.io/github/issues/yatulearn/yatulearn?style=flat&logo=github"/></td>
+            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/yatulearn/yatulearn?style=flat&logo=github"/></td>
+           <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/yatulearn/yatulearn?style=flat&color=critical&logo=github"/></td>
+           <td><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/yatulearn/yatulearn?style=flat&color=green&logo=github"></td>
+         <td><img alt="GitHub Contributors count" src="https://img.shields.io/github/contributors/yatulearn/yatulearn?style=flat&color=blue&logo=github"/></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<br>
+
+<!--Line-->
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"> 
 
 <p align="center">
   <strong>Empowering learners with cutting-edge resources and innovative technology.</strong>
