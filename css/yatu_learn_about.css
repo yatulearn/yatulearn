@@ -352,8 +352,8 @@ nav li a.Courses {
   background-color: #ffffff;
 }
 .address {
-  
-  margin-top: 30px;
+  margin-top: 50px;
+  padding-top: 50px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -368,7 +368,6 @@ nav li a.Courses {
   margin: auto;
   background-color: black;
   color: white;
-  border: 2px solid black;
   border-radius: 30px;
   font-size: 25px;
   display: flex;
@@ -418,7 +417,7 @@ nav li a.Courses {
   color: black;
 }
 .common>h4>a {
-  color: blue;
+  color: black;
   font-weight: 300;
   font-size: 1em;
 }
@@ -771,9 +770,8 @@ footer {
   background: #f8f9fa; 
   width: 300px; 
   padding: 20px;
-  border: 2px solid #007bff; 
   border-radius: 10px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
   margin: 15px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -788,7 +786,7 @@ footer {
   width: 50px;
   height: 50px;
   margin: auto;
-  background-color: #007bff; 
+  background-color: #000; 
   color: white;
   border: none;
   border-radius: 50%;
@@ -801,7 +799,7 @@ footer {
 .common > h1 {
   margin-top: 10px;
   font-size: 22px;
-  color: #007bff; 
+  color: #000; 
 }
 
 .common > h2 {
@@ -817,7 +815,7 @@ footer {
 }
 
 .common a {
-  color: #007bff; 
+  color: #000; 
   text-decoration: none; 
 }
 
@@ -974,4 +972,72 @@ footer {
     max-width: 100%;
     margin-bottom: 20px;
   }
+}
+
+.accordion {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion__header {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.accordion__header:hover {
+    background-color: #1a242f;
+}
+
+.accordion__content {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.accordion__icon {
+    transition: transform 0.3s;
+}
+
+.accordion.active .accordion__content {
+    display: block;
+}
+
+.accordion.active .accordion__icon {
+    transform: rotate(45deg);
+}
+
+.accordion__content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease; 
+    opacity: 0;
+    max-height: 0;
+}
+
+.accordion.active .accordion__content {
+    opacity: 1;
+}
+
+.accordion.active .accordion__content {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .accordion__title {
+        font-size: 24px;
+    }
+
+    .accordion__question {
+        font-size: 16px;
+    }
+
+    .accordion__answer {
+        font-size: 14px;
+    }
 }

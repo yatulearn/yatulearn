@@ -2333,7 +2333,7 @@ body {
 #backToTop {
     position: fixed;
     bottom: 20px;
-    right: 20px; 
+    right: 80px; 
     background-color: #007bff; 
     color: white; 
     border: none; 
