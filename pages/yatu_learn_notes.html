@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/yatu_learn_notes.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/B2T.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,6 +15,65 @@
     <title>Notes</title>
     <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
   </head>
+  <style>
+    .chatbot-container {
+        position: fixed;
+        bottom: 20px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+
+    .chatbot-button {
+        background-color: #007bff; /* Change to your preferred color */
+        border: none;
+        border-radius: 50%;
+        padding: 5px; /* Smaller padding */
+        cursor: pointer;
+        position: relative;
+        width: 50px; /* Adjusted size */
+        height: 50px; /* Adjusted size */
+    }
+
+    .chatbot-button img {
+        width: 30px; /* Adjusted image size */
+        height: 30px; /* Adjusted image size */
+    }
+
+    .tooltip-text {
+        display: none; /* Hide by default */
+        position: absolute;
+        bottom: 100%; /* Position above the button */
+        right: 50%;
+        transform: translateX(50%);
+        background-color: #333; /* Background color for tooltip */
+        color: #fff; /* Tooltip text color */
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    .chatbot-button:hover .tooltip-text {
+        display: block; /* Show on hover */
+    }
+    #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 80px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+  </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.getElementById('search');
@@ -37,6 +97,7 @@
 </script>
 
   <body>
+    <button id="backToTop" style="display: none;">Back to Top</button>
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
@@ -254,7 +315,19 @@
       </div>
   
     <script src="../js/yatu_learn_script.js" crossorigin=""></script>
+    <script src="../js/B2T.js"></script>
   </body>
+  <a href="chatbot.html">
+    <div class="fixed bottom-0 right-2 chatbot-container">
+      <button class="chatbot-button group">
+        <img class="h-20" src="chatbot.gif" alt="chatbot" />
+        <span class="tooltip-text">
+          Welcome to Yatulearn<br />
+          How can I help You?
+        </span>
+      </button>
+    </div>
+  </a>
   <footer>
     <div class="flex_align">
       <div class="box1">
