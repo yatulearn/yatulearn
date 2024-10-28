@@ -2286,6 +2286,7 @@ body {
 }
 
 #backToTop {
+
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -2298,6 +2299,8 @@ body {
   z-index: 1000;
   display: none;
   transition: opacity 0.3s, visibility 0.3s;
+  
+
 }
 
 #backToTop:hover {
