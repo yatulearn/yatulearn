@@ -2230,3 +2230,21 @@ body {
     margin: 0;
     padding: 0;
 }
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 80px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
