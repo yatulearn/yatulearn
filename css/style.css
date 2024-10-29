@@ -136,6 +136,24 @@ nav ul {
   align-items: center;
   white-space: nowrap;
 }
+.btn-login-signup {
+  background-color: white;
+  color: white;
+  padding: 10px 25px; 
+  border-radius: 50px; 
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px; 
+  text-decoration: none; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  margin-right: 20px; 
+  display: inline-block; 
+}
+
+.btn-login-signup:hover {
+  background-color: black;
+  color: #fff;
+}
 
 
 
@@ -166,7 +184,36 @@ nav .btn:hover {
   color: rgb(234, 35, 74);
   background-color: #4b4b4b;
 }
+nav .btn-1 {
+  --hover-shadows: none;
+  border: 2px solid black;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: normal;
+  border-radius: 0.7em;
+  background-color: #153a7a;
+  cursor: pointer;
+  width: 10%;
+  padding: 1em 2em;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
 
+nav .btn-1 a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav .btn-1:hover {
+  color: #153a7a;
+  background-color: #4b4b4b;
+}
 nav ul a {
   font-size: 20px;
   text-decoration: none;
@@ -1035,6 +1082,10 @@ footer {
     position: absolute;
     left: 10px;
   }
+  .login-signup-btn {
+    padding: 20px 20px; /* Adjust padding for smaller screens */
+    font-size: 12px; /* Smaller font size for smaller screens */
+}
 }
 
 @media screen and (max-width: 470px) {
@@ -1064,6 +1115,7 @@ footer {
   .roadmap_btns_right button {
     font-size: 10px;
   }
+  
 }
 * {
   -webkit-tap-highlight-color: transparent;
@@ -1138,7 +1190,16 @@ body {
   .hero-container h1 {
     font-size: 2rem;
   }
+  nav .btn-1 {
+    width: 20%; /* Further adjust width for tablet screens */
+    padding: 0.7em 1.2em;
+  }
+
+  nav .btn-1 a {
+    font-size: 12px; /* Maintain smaller font size for readability */
+  }
 }
+
 
 /* //// */
 @keyframes fadeInAnimation {
@@ -2152,6 +2213,14 @@ footer {
   .dropdown-content1qp h2 {
     font-size: 18px;
   }
+  nav .btn-1 {
+    width: 20%; /* Further adjust width for tablet screens */
+    padding: 0.7em 1.2em;
+  }
+
+  nav .btn-1 a {
+    font-size: 12px; /* Maintain smaller font size for readability */
+  }
 }
 
 /* For screens smaller than 480px (small phones) */
@@ -2172,6 +2241,14 @@ footer {
 
   .dropdown-content1qp .links a {
     padding: 2px;
+  }
+  nav .btn-1 {
+    width: 30%; /* More width adjustment for mobile screens */
+    padding: 0.6em 1em;
+  }
+
+  nav .btn-1 a {
+    font-size: 10px; /* Smaller font size for compact view */
   }
 }
 
