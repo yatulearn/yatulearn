@@ -56,6 +56,201 @@ body {
   color: #fff;
 }
 
+
+/*---------------navbar hover section now visible-----------------------------------*/
+.btn-home {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background-color: #212121;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 70px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, 
+              box-shadow 0.3s ease, transform 0.2s ease;
+  --hover-shadows: 8px 8px 16px #121212, -8px -8px 16px #303030;
+}
+
+.btn-home:hover {
+  background-color: #ffffff;
+  color: #121212;
+  box-shadow: var(--hover-shadows);
+  transform: scale(1.05);
+}
+
+.btn-home:active {
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: var(--hover-shadows), 0px 0px 30px 5px rgba(255, 255, 255, 0.2);
+  transform: scale(0.95);
+}
+
+.qp span{
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background-color: #212121;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 70px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, 
+              box-shadow 0.3s ease, transform 0.2s ease;
+  --hover-shadows: 8px 8px 16px #121212, -8px -8px 16px #303030;
+}
+
+.qp span:hover {
+  background-color: #ffffff;
+  color: #121212;
+  box-shadow: var(--hover-shadows);
+  transform: scale(1.05);
+}
+
+.qp span:active {
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: var(--hover-shadows), 0px 0px 30px 5px rgba(255, 255, 255, 0.2);
+  transform: scale(0.95);
+}
+.btn-notes {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background-color: #212121;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 70px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, 
+              box-shadow 0.3s ease, transform 0.2s ease;
+  --hover-shadows: 8px 8px 16px #121212, -8px -8px 16px #303030;
+}
+
+.btn-notes:hover {
+  background-color: #ffffff;
+  color: #121212;
+  box-shadow: var(--hover-shadows);
+  transform: scale(1.05);
+}
+
+.btn-notes:active {
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: var(--hover-shadows), 0px 0px 30px 5px rgba(255, 255, 255, 0.2);
+  transform: scale(0.95);
+}
+.btn-about {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background-color: #212121;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 70px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, 
+              box-shadow 0.3s ease, transform 0.2s ease;
+  --hover-shadows: 8px 8px 16px #121212, -8px -8px 16px #303030;
+}
+
+.btn-about:hover {
+  background-color: #ffffff;
+  color: #121212;
+  box-shadow: var(--hover-shadows);
+  transform: scale(1.05);
+}
+
+.btn-about:active {
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: var(--hover-shadows), 0px 0px 30px 5px rgba(255, 255, 255, 0.2);
+  transform: scale(0.95);
+}
+
+/* for responsive ness*/
+.btn-home, .btn-notes, .btn-about, .qp span {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background-color: #212121;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 70px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, 
+              box-shadow 0.3s ease, transform 0.2s ease;
+  --hover-shadows: 8px 8px 16px #121212, -8px -8px 16px #303030;
+}
+
+.btn-home:hover, .btn-notes:hover, .btn-about:hover, .qp span:hover {
+  background-color: #ffffff;
+  color: #121212;
+  box-shadow: var(--hover-shadows);
+  transform: scale(1.05);
+}
+
+.btn-home:active, .btn-notes:active, .btn-about:active, .qp span:active {
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: var(--hover-shadows), 0px 0px 30px 5px rgba(255, 255, 255, 0.2);
+  transform: scale(0.95);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .btn-home, .btn-notes, .btn-about, .qp span {
+    padding: 8px 20px;  /* Adjust padding for medium screens */
+    font-size: 10px;    /* Smaller font size for better fit */
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-home, .btn-notes, .btn-about, .qp span {
+    padding: 6px 15px;  /* Further adjust padding for small screens */
+    font-size: 9px;     /* Smaller font size for better fit */
+    margin-top: 15px;   /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-home, .btn-notes, .btn-about, .qp span {
+    padding: 5px 10px;  /* Minimal padding for very small screens */
+    font-size: 8px;     /* Smallest font size for very small screens */
+    border-radius: 50px; /* More rounded buttons */
+    margin-top: 10px;   /* Further adjust margin for very small screens */
+  }
+}
+
+
+
+
+
 /* Optional hero text styling */
 .hero-container h1 {
   font-size: 3rem;
@@ -152,7 +347,7 @@ nav .btn {
   cursor: pointer;
   width: 8%;
   padding: 1em 2em;
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
 nav .btn a {
@@ -242,7 +437,7 @@ nav li a.Courses {
 }
 
 
-//Home page image 
+
 
 .imag img {
   display: flex;
