@@ -11,6 +11,7 @@ body {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  overflow: hidden;
 }
 /* ///// */
 /* Hero section container with background image */
@@ -36,25 +37,7 @@ body {
 }
 
 /* Explore button styles */
-.explore-button {
-  display: inline-block;
-  padding: 22px 50px;
 
-  background-color: #fff;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 70px;
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 30px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.explore-button:hover {
-  background-color: #000;
-  color: #fff;
-}
 
 /* Optional hero text styling */
 .hero-container h1 {
@@ -74,6 +57,85 @@ i.fa-solid.fa-xmark{
 
   .hero-container h1 {
     font-size: 2rem;
+  }
+}
+/* Styling for the banner section */
+.imag {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.imag img {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  cursor: default;
+}
+
+.explore-btn {
+  margin-top: 40px; /* Adds space below the text */
+  background-color: #ff9800;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  float: left;
+  margin-right: 20px;
+}
+
+.explore-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Centering the explore button */
+.imag .explore-btn {
+  position: absolute;
+  top: 50%; /* Vertically centers the button */
+  left: 25%; /* Move the button 25% from the left edge */
+  transform: translateY(-50%);
+  padding: 15px 30px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.imag .explore-btn:hover {
+  background-color: #ff8533;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .imag img {
+    max-height: 60vh; /* Adjust for tablets */
+  }
+
+  .imag .explore-btn {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imag img {
+    max-height: 50vh; /* Adjust for mobile devices */
+  }
+
+  .imag .explore-btn {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
 
@@ -242,7 +304,7 @@ nav li a.Courses {
 }
 
 
-//Home page image 
+
 
 .imag img {
   display: flex;
@@ -254,17 +316,18 @@ nav li a.Courses {
   animation: fadeIn 1s forwards;
   transition: transform 0.3s;
 }
-      
+
 @keyframes fadeIn {
   to {
-      opacity: 1;
-      transform: scale(1);
-     }
+    opacity: 1;
+    transform: scale(1);
+  }
 }
-      
+
 .imag img:hover {
-   transform: scale(1.05);
+  transform: scale(1.05);
 }
+
 
 
 .card {
@@ -476,6 +539,8 @@ footer {
   margin-top: 50px;
   width: 100%;
   background-color: #121212;
+  position: relative;
+  z-index: 10;
 }
 
 .flex_align {
@@ -1102,26 +1167,10 @@ body {
   z-index: 0; /* Bring the content above the background image */
 }
 
-/* Explore button styles */
-.explore-button {
-  display: inline-block;
-  padding: 22px 50px;
 
-  background-color: #fff;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-radius: 70px;
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 30px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-.explore-button:hover {
-  background-color: #000;
-  color: #fff;
-}
+
+
 
 /* Optional hero text styling */
 .hero-container h1 {
@@ -1300,12 +1349,9 @@ nav li a.Courses {
   align-items: center;
 }
 
-.imag img {
-  display: flex;
-  height: auto;
-  width: 100%;
-  cursor: default;
-}
+
+
+
 
 /* .images {
   /* width: 100%;
@@ -2090,6 +2136,28 @@ footer {
   }
 }
 
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: none; /* Hidden by default */
+  border: none;
+  outline: none;
+  background-color: #007BFF; /* Button color */
+  color: white; /* Text color */
+  font-size: 24px; /* Increased font size */
+  border-radius: 8px; /* Slightly larger radius for rounded corners */
+  padding: 15px; /* Increased padding for a larger button */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it appears above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+}
+
+.scrollToTopBtn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Optional: Slightly enlarge on hover */
+}
+
 /* Style for the dropdown content container */
 .dropdown-content1qp {
   background-color: #f0f0f0;
@@ -2139,7 +2207,7 @@ footer {
   color: white;
 }
 
-/* For screens smaller than 768px (tablets and phones) */
+/* Responsive styling */
 @media (max-width: 768px) {
   .dropdown-content1qp {
     padding: 15px;
@@ -2154,7 +2222,6 @@ footer {
   }
 }
 
-/* For screens smaller than 480px (small phones) */
 @media (max-width: 480px) {
   .dropdown-content1qp {
     padding: 4px;
@@ -2175,78 +2242,73 @@ footer {
   }
 }
 
-for linkedin
-.media .icon_flex .fa-linkedin{
-  /* Add the transition effect */
-  transition: transform 0.3s ease!important;
+/* Social media icon styling */
+.media .icon_flex .fa-linkedin {
+  transition: transform 0.3s ease !important;
 }
 
 .media .icon_flex .fa-linkedin:hover {
-  color: #0072b1!important;
-  transform: scale(1.1) !important;;
-} 
+  color: #0072b1 !important;
+  transform: scale(1.1) !important;
+}
 
-/* for instagram */
-
-.media .icon_flex .fa-instagram{
-  /* Add the transition effect */
-  transition: transform 0.3s ease!important;
+.media .icon_flex .fa-instagram {
+  transition: transform 0.3s ease !important;
 }
 
 .media .icon_flex .fa-instagram:hover {
-  color: #E1306C!important;
-  transform: scale(1.1) !important;;
+  color: #E1306C !important;
+  transform: scale(1.1) !important;
 }
 
-/* for youtube */
-.media .icon_flex .fa-youtube{
-  /* Add the transition effect */
-  transition: transform 0.3s ease!important;
+.media .icon_flex .fa-youtube {
+  transition: transform 0.3s ease !important;
 }
 
 .media .icon_flex .fa-youtube:hover {
-  color: #FF0000!important;
-  transform: scale(1.1) !important;;
+  color: #FF0000 !important;
+  transform: scale(1.1) !important;
 }
 
-/* for twitter */
-.media .icon_flex .fa-x-twitter-{
-  /* Add the transition effect */
-  transition: transform 0.3s ease!important;
+.media .icon_flex .fa-x-twitter {
+  transition: transform 0.3s ease !important;
 }
 
-.media .icon_flex .fa-x-twittere:hover {
-  color: #FF0000!important;
-  transform: scale(1.1) !important;;
+.media .icon_flex .fa-x-twitter:hover {
+  color: #FF0000 !important;
+  transform: scale(1.1) !important;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 80px; 
-    background-color: #007bff; 
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px 15px;
-    cursor: pointer;
-    z-index: 1000;
-    display: none;
-    transition: opacity 0.3s, visibility 0.3s;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  transition: opacity 0.3s, visibility 0.3s;
+  
+
 }
 
 #backToTop:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Add this to your existing CSS */

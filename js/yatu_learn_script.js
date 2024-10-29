@@ -135,3 +135,19 @@ btncn.addEventListener("click", function(){
     btnos.classList.add("occur");
     btncn.classList.add("btn_web");
 })
+
+window.onscroll = function() {
+    const button = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block"; // Show the button
+    } else {
+        button.style.display = "none"; // Hide the button
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll effect
+    });
+}
