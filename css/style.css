@@ -29,6 +29,7 @@ body {
   color: white; /* Text color */
   text-align: center;
   overflow: hidden; /* To prevent any content overflow */
+  overflow-y: hidden;
 }
 
 /* Content inside the hero section */
