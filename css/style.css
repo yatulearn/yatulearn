@@ -6,6 +6,11 @@
   box-sizing: border-box;
   overflow-x:hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 body {
   background-image: url(skyblue_theme.jpeg.jpg);
@@ -247,7 +252,6 @@ nav li a.Courses {
 }
 
 /* Home page image  */
-
 .imag img {
   display: flex;
   height: auto;
@@ -2363,22 +2367,25 @@ body {
 }
 
 .back-to-top {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
   position: fixed;
-  margin-right: 55px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #333;
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-  transition: background-color 0.3s;
+
+    bottom: 20px;
+    right: 72px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 8px 8px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.3s, visibility 0.3s;
+
+ 
 }
 
 .back-to-top:hover {
-  background-color: #555;
+  background-color: #0056b3;
 }
