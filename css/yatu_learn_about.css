@@ -770,7 +770,7 @@ footer {
   background: #f8f9fa; 
   width: 300px; 
   padding: 20px;
-  border-radius: 10px; 
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
   margin: 15px; 
@@ -786,7 +786,7 @@ footer {
   width: 50px;
   height: 50px;
   margin: auto;
-  background-color: #000; 
+  background-color: #000000; 
   color: white;
   border: none;
   border-radius: 50%;
@@ -799,8 +799,7 @@ footer {
 .common > h1 {
   margin-top: 10px;
   font-size: 22px;
-  color: #000; 
-}
+  color: #000000; 
 
 .common > h2 {
   margin: 10px 0;
