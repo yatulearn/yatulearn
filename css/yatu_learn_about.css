@@ -352,7 +352,8 @@ nav li a.Courses {
   background-color: #ffffff;
 }
 .address {
-  margin-top: 30px;
+  margin-top: 50px;
+  padding-top: 50px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -367,7 +368,6 @@ nav li a.Courses {
   margin: auto;
   background-color: black;
   color: white;
-  border: 2px solid black;
   border-radius: 30px;
   font-size: 25px;
   display: flex;
@@ -416,8 +416,10 @@ nav li a.Courses {
   font-size: 1em;
   color: black;
 }
-.common > h4 > a {
-  color: blue;
+
+.common>h4>a {
+  color: black;
+
   font-weight: 300;
   font-size: 1em;
 }
@@ -770,8 +772,8 @@ footer {
   width: 300px;
   padding: 20px;
   border: 2px solid #007bff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
   margin: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -786,7 +788,7 @@ footer {
   width: 50px;
   height: 50px;
   margin: auto;
-  background-color: #007bff;
+  background-color: #000; 
   color: white;
   border: none;
   border-radius: 50%;
@@ -799,7 +801,7 @@ footer {
 .common > h1 {
   margin-top: 10px;
   font-size: 22px;
-  color: #007bff;
+  color: #000; 
 }
 
 .common > h2 {
@@ -815,8 +817,8 @@ footer {
 }
 
 .common a {
-  color: #007bff;
-  text-decoration: none;
+  color: #000; 
+  text-decoration: none; 
 }
 
 .common a:hover {
@@ -865,7 +867,7 @@ footer {
     font-size: 10px;
   }
 }
-<<<<<<< HEAD
+
 .media .icon_flex .fa-linkedin {
   /* Add the transition effect */
   transition: transform 0.3s ease !important;
@@ -909,7 +911,6 @@ footer {
   color: #1da1f2 !important;
   transform: scale(1.1) !important;
 }
-=======
 
 .slogan{
   text-align: center; 
@@ -1086,4 +1087,3 @@ footer {
         font-size: 14px;
     }
 }
->>>>>>> 266952393a16080cdb68847d3b57ca2d435aab8d

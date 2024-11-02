@@ -12,9 +12,67 @@
   <title>About</title>
   <link rel="icon" href="../assets/images/YATU Learn - YL icon Black (2).png" type="image/x-icon">
 </head>
+<style>
+  .chatbot-container {
+      position: fixed;
+      bottom: 20px; /* Adjust as needed */
+      right: 20px; /* Adjust as needed */
+      z-index: 1000; /* Ensure it appears above other elements */
+  }
+
+  .chatbot-button {
+      background-color: #007bff; /* Change to your preferred color */
+      border: none;
+      border-radius: 50%;
+      padding: 5px; /* Smaller padding */
+      cursor: pointer;
+      position: relative;
+      width: 50px; /* Adjusted size */
+      height: 50px; /* Adjusted size */
+  }
+
+  .chatbot-button img {
+      width: 30px; /* Adjusted image size */
+      height: 30px; /* Adjusted image size */
+  }
+
+  .tooltip-text {
+      display: none; /* Hide by default */
+      position: absolute;
+      bottom: 100%; /* Position above the button */
+      right: 50%;
+      transform: translateX(50%);
+      background-color: #333; /* Background color for tooltip */
+      color: #fff; /* Tooltip text color */
+      padding: 5px;
+      border-radius: 5px;
+      white-space: nowrap; /* Prevent text from wrapping */
+  }
+
+  .chatbot-button:hover .tooltip-text {
+      display: block; /* Show on hover */
+  }
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 80px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+</style>
 
 <body>
-  <button id="backToTop" style="display: none;">Back to Top</button>
   <nav class="main-nav">
     <div class="main_logo">
       <div class="logo">
@@ -159,8 +217,8 @@
   <div class="card-client-flex">
     <div class="card-client card-client1">
       <div class="user-picture">
-        <img src="../assets/images/62D2F394-247B-4348-AD63-587858A61FC6_1_105_c.jpeg.jpg" alt="img" height="140%"
-          width="150%" />
+        <img src="../assets/images/62D2F394-247B-4348-AD63-587858A61FC6_1_105_c.jpeg.jpg" alt="img" height="110%"
+          width="140%" />
       </div>
       <p class="name-client">
         Aman Azad
@@ -203,8 +261,8 @@
     </div>
     <div class="card-client card-client2">
       <div class="user-picture">
-        <img src="../assets/images/WhatsApp Image 2024-02-09 at 13.24.47_c94e512e.jpg" alt="img" height="200%"
-          width="150%" />
+        <img src="../assets/images/yashu.jpg" alt="img" height="150%"
+          width="100%" />
       </div>
       <p class="name-client">
         Yash Chichad
@@ -252,6 +310,7 @@
   <script src="../js/yatu_learn_script.js" crossorigin=""></script>
   <div class="border_address">
     <div class="border" id="contact"></div>
+    <h1 class="founder">Contact Us</h1>
     <div class="address">
       <div class="contact_address card common">
         <i class="fa-solid fa-location-dot"></i>
@@ -285,6 +344,17 @@
   </div>
 
   </div>
+  <a href="chatbot.html">
+    <div class="fixed bottom-0 right-2 chatbot-container">
+      <button class="chatbot-button group">
+        <img class="h-20" src="chatbot.gif" alt="chatbot" />
+        <span class="tooltip-text">
+          Welcome to Yatulearn<br />
+          How can I help You?
+        </span>
+      </button>
+    </div>
+  </a>
   <section class="faq" id="faq" style="max-width: 900px; margin: 40px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
       <h1 class="accordion__title" style="text-align: center; color: #2c3e50; font-size: 28px; margin-bottom: 20px;">Frequently Asked Questions</h1>
       <div class="accordion__wrapper">
@@ -386,8 +456,7 @@
             Punjab, India</span><br />
           <br />
           <div class="num">Ph No. : 7068247779</div>
-          <a href="https://mail.google.com/mail/u/0/#inbox"
-            >E-mail : yatulearn@gmail.com</a
+          <a href="https://mail.google.com/mail/u/0/#inbox" style="color:grey;">E-mail : yatulearn@gmail.com</a
           >
         </br>
         <a
