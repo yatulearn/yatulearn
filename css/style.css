@@ -200,43 +200,43 @@ nav li a.Courses {
 }
 
 .dropdown1qp {
-  display: inline-block;
+    display: inline-block;
 }
 
 .qp:hover {
-  color: #121212;
+    color: #121212;
 }
 
 .dropdown-content1qp {
-  display: none;
-  position: absolute;
-  background-color: white;
-  width: 430px;
-  height: 350px;
-  padding: 12px 16px;
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 430px;
+    height: 350px;
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 .dropdown1qp:hover .dropdown-content1qp {
-  display: block;
+    display: block;
 }
 
 .dropdown-content1qp h2 {
-  margin: 15px;
+    margin: 15px;
 }
 
 .dropdown-content1qp .links {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .dropdown-content1qp .links a {
-  font-size: 1em;
-  color: blue;
-  margin: 5px;
+    font-size: 1em;
+    color: blue;
+    margin: 5px;
 }
 
 .dropdown-content1qp .links a:hover {
-  color: darkblue;
+    color: darkblue;
 }
 
 .cyber {
