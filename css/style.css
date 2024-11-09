@@ -59,19 +59,13 @@ body {
   color: #fff;
 }
 
-.head_foot {
-  /* font-family: "Cookie", "serif" !important ; */
-
-  text-decoration: underline;
-}
-
 /* Optional hero text styling */
 .hero-container h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
-i.fa-solid.fa-xmark {
+i.fa-solid.fa-xmark{
   display: none;
 }
 
@@ -150,6 +144,10 @@ nav ul {
   white-space: nowrap;
 }
 
+
+
+
+
 nav .btn {
   --hover-shadows: none;
   border: none;
@@ -211,43 +209,43 @@ nav li a.Courses {
 }
 
 .dropdown1qp {
-  display: inline-block;
+    display: inline-block;
 }
 
 .qp:hover {
-  color: #121212;
+    color: #121212;
 }
 
 .dropdown-content1qp {
-  display: none;
-  position: absolute;
-  background-color: white;
-  width: 430px;
-  height: 350px;
-  padding: 12px 16px;
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 430px;
+    height: 350px;
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 .dropdown1qp:hover .dropdown-content1qp {
-  display: block;
+    display: block;
 }
 
 .dropdown-content1qp h2 {
-  margin: 15px;
+    margin: 15px;
 }
 
 .dropdown-content1qp .links {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .dropdown-content1qp .links a {
-  font-size: 1em;
-  color: blue;
-  margin: 5px;
+    font-size: 1em;
+    color: blue;
+    margin: 5px;
 }
 
 .dropdown-content1qp .links a:hover {
-  color: darkblue;
+    color: darkblue;
 }
 
 .cyber {
@@ -255,29 +253,32 @@ nav li a.Courses {
   align-items: center;
 }
 
-/* Home page image  */
-
 .imag img {
   display: flex;
   height: auto;
   width: 100%;
-  cursor: pointer;
-  opacity: 0;
-  transform: scale(0.95);
-  animation: fadeIn 1s forwards;
-  transition: transform 0.3s;
+  cursor: default;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+/* .images {
+  /* width: 100%;
+  height: 600px; */
+/* background-image: url(main\ banner\ front.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+} */
 
-.imag img:hover {
-  transform: scale(1.05);
-}
+/* .images a button {
+  font-weight: 600;
+  font-size: 17px;
+  width: 130px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* From Uiverse.io by Pravins01 */
 
 .card {
   background-color: lightcoral;
@@ -484,18 +485,6 @@ button:active {
   z-index: 1;
 }
 
-.roadmap_imgs .img7 {
-  display: none;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-.roadmap_imgs .img8 {
-  display: none;
-  border-radius: 20px;
-  z-index: 1;
-}
-
 footer {
   margin-top: 50px;
   width: 100%;
@@ -539,16 +528,11 @@ footer {
 
 .same p {
   color: #ffffff;
-  font-family: cursive;
-  text-decoration: underline;
 }
 
 .same a {
   text-decoration: none;
   color: #d6d3d3d0;
-}
-.same p:hover {
-  text-decoration: none;
 }
 
 .same > a:hover {
@@ -581,18 +565,18 @@ footer {
 }
 
 .email_adress > span {
-  color: #9c9b9b !important;
+  color: #ffffff;
   line-height: 23px;
   letter-spacing: 0.01cm;
 }
 
 .num {
-  color: #fff;
+  color: #ffffff;
 }
 
 .horizontal_line {
   margin-top: 20px;
-  border: 0.1px solid #4b4a4a !important;
+  border: 0.1px solid #4b4a4a;
   border-top: none;
   height: 0.000009px;
   width: 100%;
@@ -701,18 +685,18 @@ footer {
     color: #121212;
   }
 
-  #check:checked ~ ul {
-    left: 0;
+  #check:checked ~ ul{
+    left: 0;    
   }
 
-  #check:checked,
-  .fa-solid.fa-bars {
+  #check:checked ,.fa-solid.fa-bars{
     z-index: 110;
     position: relative;
     left: 0.8rem;
+    
   }
 
-  i.fa-solid.fa-xmark {
+  i.fa-solid.fa-xmark{
     /* display: block; */
     font-size: 2rem;
     z-index: 100;
@@ -893,14 +877,6 @@ footer {
     width: 90%;
   }
   .img6 {
-    margin-left: 20px;
-    width: 90%;
-  }
-  .img7 {
-    margin-left: 20px;
-    width: 90%;
-  }
-  .img8 {
     margin-left: 20px;
     width: 90%;
   }
@@ -1540,16 +1516,6 @@ button:active {
   border-radius: 20px;
   z-index: 1;
 }
-.roadmap_imgs .img7 {
-  display: none;
-  border-radius: 20px;
-  z-index: 1;
-}
-.roadmap_imgs .img8 {
-  display: none;
-  border-radius: 20px;
-  z-index: 1;
-}
 
 footer {
   margin-top: 50px;
@@ -1930,14 +1896,6 @@ footer {
     margin-left: 20px;
     width: 90%;
   }
-  .img7 {
-    margin-left: 20px;
-    width: 90%;
-  }
-  .img8 {
-    margin-left: 20px;
-    width: 90%;
-  }
 }
 
 @media screen and (max-width: 730px) {
@@ -2072,6 +2030,9 @@ footer {
   .icon_flex > a > i:hover {
     font-size: 21px;
   }
+  
+  
+  
 
   .vertical_line {
     display: none;
@@ -2227,60 +2188,81 @@ footer {
   }
 }
 
-for linkedin .media .icon_flex .fa-linkedin {
+for linkedin
+.media .icon_flex .fa-linkedin{
   /* Add the transition effect */
-  transition: transform 0.3s ease !important;
+  transition: transform 0.3s ease!important;
 }
 
 .media .icon_flex .fa-linkedin:hover {
-  color: #0072b1 !important;
-  transform: scale(1.1) !important;
-}
+  color: #0072b1!important;
+  transform: scale(1.1) !important;;
+} 
 
 /* for instagram */
 
-.media .icon_flex .fa-instagram {
+.media .icon_flex .fa-instagram{
   /* Add the transition effect */
-  transition: transform 0.3s ease !important;
+  transition: transform 0.3s ease!important;
 }
 
 .media .icon_flex .fa-instagram:hover {
-  color: #e1306c !important;
-  transform: scale(1.1) !important;
+  color: #E1306C!important;
+  transform: scale(1.1) !important;;
 }
 
 /* for youtube */
-.media .icon_flex .fa-youtube {
+.media .icon_flex .fa-youtube{
   /* Add the transition effect */
-  transition: transform 0.3s ease !important;
+  transition: transform 0.3s ease!important;
 }
 
 .media .icon_flex .fa-youtube:hover {
-  color: #ff0000 !important;
-  transform: scale(1.1) !important;
+  color: #FF0000!important;
+  transform: scale(1.1) !important;;
 }
 
 /* for twitter */
-.media .icon_flex .fa-x-twitter- {
+.media .icon_flex .fa-x-twitter-{
   /* Add the transition effect */
-  transition: transform 0.3s ease !important;
+  transition: transform 0.3s ease!important;
 }
 
 .media .icon_flex .fa-x-twitter:hover {
   color: #1da1f2 !important;
   transform: scale(1.1) !important;
-}
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+  
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 80px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+/* Add this to your existing CSS */
 .popup {
   display: none;
   position: fixed;
@@ -2311,8 +2293,7 @@ body {
   transition: color 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #000;
 }
 
@@ -2360,7 +2341,7 @@ body {
 }
 
 #rateUsForm button {
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -2380,17 +2361,16 @@ body {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
   padding: 15px 20px;
   border-radius: 5px;
   z-index: 1001;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .back-to-top {
   position: fixed;
-  margin-right: 55px;
   bottom: 20px;
   right: 20px;
   background-color: #333;
