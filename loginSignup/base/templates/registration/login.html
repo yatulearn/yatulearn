@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class ="background-image">
+  <H3> WELCOME TO YATU_LEARN</H3>
+</div>
+
+<div class="shadow-wrap">
+    <div class="form-wrap">
+        
+        <h3>Login</h3>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Submit</button>
+        </form>
+        <a class="signup-link" href="{% url "base:authView" %}">Signup</a>
+    </div>
+</div>
+{% endblock content %}
