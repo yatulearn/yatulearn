@@ -1,5 +1,5 @@
 * {
-  -webkit-tap-highlight-color:transparent;
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   font-family: tahoma;
@@ -95,7 +95,7 @@ nav .btn a {
 }
 nav .btn:hover {
   color: rgb(234, 35, 74);
-  background-color: #4B4B4B;
+  background-color: #4b4b4b;
 }
 nav ul a {
   font-size: 20px;
@@ -112,13 +112,13 @@ nav ul a:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.347);
 }
 .change_btn {
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 .change_btn:hover {
   color: #121212;
 }
 nav li a.Courses {
-  color: #F63232;
+  color: #f63232;
 }
 .dropdown1qp {
   display: inline-block;
@@ -177,10 +177,10 @@ nav li a.Courses {
   max-width: 1600px;
 }
 .about_learn_container h1 {
-  font-size: 2.8em; 
+  font-size: 2.8em;
   color: #2c3e50;
   text-align: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -193,31 +193,31 @@ nav li a.Courses {
 .about_learn .section {
   padding: 20px;
   background-color: #fff;
-  border-radius: 8px; 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); 
-  transition: transform 0.3s; 
-  display: flex; 
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  display: flex;
   flex-direction: column;
 }
 .about_learn .section:hover {
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
 }
 .about_learn h6 {
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 1.6em;
-  color: #3498db; 
-  margin-bottom: 10px; 
-  border-bottom: 2px solid #3498db; 
-  padding-bottom: 5px; 
+  color: #3498db;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
 }
 .about_learn p {
-  margin: 0; 
+  margin: 0;
   letter-spacing: 0.02em;
-  line-height: 1.6em; 
-  color: #555; 
+  line-height: 1.6em;
+  color: #555;
 }
 .about_learn em {
-  font-style: italic; 
+  font-style: italic;
   color: #e67e22;
 }
 /* From Uiverse.io by abrahamcalsin */
@@ -230,10 +230,10 @@ nav li a.Courses {
   width: 100%;
   text-align: center;
   margin-top: 50px;
-    font-size: 2.8em; 
+  font-size: 2.8em;
   color: #2c3e50;
   text-align: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -362,7 +362,7 @@ nav li a.Courses {
   line-height: 1.3em;
   font-size: 1em;
 }
-.common>i {
+.common > i {
   width: 40px;
   height: 40px;
   margin: auto;
@@ -375,54 +375,56 @@ nav li a.Courses {
   justify-content: center;
   align-items: center;
 }
-.common>h1 {
+.common > h1 {
   margin-top: 10px;
   text-align: center;
   font-size: 20px;
   letter-spacing: -0.01cm;
 }
-.common>h2 {
+.common > h2 {
   margin-top: 20px;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.019cm;
 }
-.common>span {
+.common > span {
   width: 100%;
   font-weight: 600;
 }
-.common>p>a {
+.common > p > a {
   color: rgba(14, 14, 14, 0.852);
   text-decoration: none;
   font-size: 0.9em;
 }
-.common>p>a:hover {
+.common > p > a:hover {
   color: black;
 }
-.common>h3 {
+.common > h3 {
   font-weight: 300;
   font-size: 17px;
 }
-.common>h3>a {
+.common > h3 > a {
   text-decoration: none;
   color: rgba(14, 14, 14, 0.87);
   font-weight: 300;
   font-size: 0.9em;
 }
-.common>h3>a:hover {
+.common > h3 > a:hover {
   color: black;
 }
-.common>h4 {
+.common > h4 {
   font-weight: 300;
   font-size: 1em;
   color: black;
 }
+
 .common>h4>a {
-  color: blue;
+  color: black;
+
   font-weight: 300;
   font-size: 1em;
 }
-.common>h4>a:hover {
+.common > h4 > a:hover {
   color: black;
 }
 footer {
@@ -467,7 +469,7 @@ footer {
   text-decoration: none;
   color: #d6d3d3d0;
 }
-.same>a:hover {
+.same > a:hover {
   color: #ffffff;
 }
 .media {
@@ -482,17 +484,16 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.icon_flex>a>i {
+.icon_flex > a > i {
   font-size: 21px;
   color: #d6d3d3;
 }
-.icon_flex>a>i:hover {
+.icon_flex > a > i:hover {
   font-size: 25px;
   color: #ffffff;
   transition: 0.2s;
 }
-.email_adress>span {
-  
+.email_adress > span {
   color: #ffffff;
   line-height: 23px;
   letter-spacing: 0.01cm;
@@ -543,7 +544,7 @@ footer {
   justify-content: center;
   color: white;
 }
-.copyright p{
+.copyright p {
   font-size: medium;
 }
 @media screen and (max-width: 1400px) {
@@ -570,49 +571,49 @@ footer {
     align-items: center;
   }
 }
-@media screen and (max-width: 880px){
-  .card-client{
+@media screen and (max-width: 880px) {
+  .card-client {
     width: 14rem;
     height: 20rem;
   }
-  .user-picture{
+  .user-picture {
     width: 12rem;
     height: 12rem;
   }
-  .name-client{
+  .name-client {
     margin-top: 10px;
     font-size: 15px;
   }
-  .courses_link{
-   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  }
-  .same p{
-    font-size: 15px;
-  }
-  .same a{
-    font-size: 13.5px;
-  }
-  .email_adress>span{
-    font-size: 13.5px;
-  }
-  .num{
-    font-size: 15px;
-  }
-  .icon_flex{
+  .courses_link {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
   }
-  .icon_flex>a>i{
+  .same p {
+    font-size: 15px;
+  }
+  .same a {
+    font-size: 13.5px;
+  }
+  .email_adress > span {
+    font-size: 13.5px;
+  }
+  .num {
+    font-size: 15px;
+  }
+  .icon_flex {
+    width: 100%;
+  }
+  .icon_flex > a > i {
     font-size: 17px;
   }
-  .icon_flex>a>i:hover{
+  .icon_flex > a > i:hover {
     font-size: 21px;
   }
 }
 @media screen and (max-width: 730px) {
- .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
+  .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
   }
   .checkbtn {
     display: block;
@@ -635,7 +636,7 @@ footer {
   nav ul a:hover {
     color: #121212;
   }
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
   .dropdown-content1qp {
@@ -665,81 +666,81 @@ footer {
     align-items: center;
     flex-direction: column;
   }
-  .address{
+  .address {
     display: flex;
     flex-direction: column;
   }
-  .common{
+  .common {
     margin: 20px;
   }
-  .common>h2{
+  .common > h2 {
     text-align: center;
     margin-top: 7px;
   }
-  .common h3{
+  .common h3 {
     text-align: center;
   }
-  .common>p{
+  .common > p {
     text-align: center;
   }
-  .common .span{
+  .common .span {
     text-align: center;
   }
-  .common>h4{
+  .common > h4 {
     text-align: center;
   }
 }
-@media screen and (max-width: 660px){
+@media screen and (max-width: 660px) {
   .dropdown1qp:hover .dropdown-content1qp {
-      display: none;
+    display: none;
   }
-  .box1{
+  .box1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .header{
+  .header {
     text-align: center;
   }
   .policy {
     text-align: center;
     margin-top: 20px;
   }
-  .media{
+  .media {
     text-align: center;
     margin-top: 20px;
     text-align: center;
   }
-  .icon_flex{
+  .icon_flex {
     width: 130%;
   }
-  .icon_flex>a>i{
+  .icon_flex > a > i {
     font-size: 17px;
   }
-  .icon_flex>a>i:hover{
+  .icon_flex > a > i:hover {
     font-size: 21px;
   }
-  .vertical_line{
+  .vertical_line {
     display: none;
   }
-  .email_adress{
+  .email_adress {
     text-align: center;
   }
-  .course_flex{
+  .course_flex {
     margin-top: 20px;
   }
-  .courses p{
+  .courses p {
     text-align: center;
   }
-  .courses_link{
+  .courses_link {
     text-align: center;
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 580px) {
-.dropdown1qp:hover .dropdown-content1qp {
-      display: none;
+  .dropdown1qp:hover .dropdown-content1qp {
+    display: none;
   }
   nav .btn {
     height: 30px;
@@ -768,20 +769,20 @@ footer {
 }
 
 .card {
-  background: #f8f9fa; 
-  width: 300px; 
+  background: #f8f9fa;
+  width: 300px;
   padding: 20px;
-  border: 2px solid #007bff; 
+  border: 2px solid #007bff;
   border-radius: 10px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  margin: 15px; 
+  margin: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .common > i {
@@ -822,7 +823,7 @@ footer {
 }
 
 .common a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -851,7 +852,7 @@ footer {
   }
 
   .card {
-    width: 100%; 
+    width: 100%;
   }
 
   .common > h1 {
@@ -866,6 +867,50 @@ footer {
   .common > h3 {
     font-size: 10px;
   }
+}
+
+.media .icon_flex .fa-linkedin {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-linkedin:hover {
+  color: #0072b1 !important;
+  transform: scale(1.1) !important;
+}
+
+/* for instagram */
+
+.media .icon_flex .fa-instagram {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-instagram:hover {
+  color: #e1306c !important;
+  transform: scale(1.1) !important;
+}
+
+/* for youtube */
+.media .icon_flex .fa-youtube {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-youtube:hover {
+  color: #ff0000 !important;
+  transform: scale(1.1) !important;
+}
+
+/* for twitter */
+.media .icon_flex .fa-x-twitter- {
+  /* Add the transition effect */
+  transition: transform 0.3s ease !important;
+}
+
+.media .icon_flex .fa-x-twitter:hover {
+  color: #1da1f2 !important;
+  transform: scale(1.1) !important;
 }
 
 .slogan{
