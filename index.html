@@ -70,10 +70,47 @@
       .chatbot-button:hover .tooltip-text {
           display: block; /* Show on hover */
       }
+      #backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 80px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #007bff;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}
     </style>
   </head>
   <body>
-    <button id="backToTop" style="display: none;">Back to Top</button>
+    <button id="backToTop" style="display: none;">↑</button>
     <nav class="main-nav">
       <div class="main_logo">
         <div class="logo">
