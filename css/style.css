@@ -2371,8 +2371,9 @@ body {
   height: 40px;
   border-radius: 50%;
   border: none;
+  padding: 4px;
   overflow: hidden;
-  font-size: 12px;
+  font-size: 20px;
   cursor: pointer;
   display: none;
   transition: background-color 0.3s;
