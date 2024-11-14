@@ -2363,7 +2363,7 @@ body {
 
 .back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
   background-color: #333;
   color: white;
@@ -2371,7 +2371,8 @@ body {
   height: 40px;
   border-radius: 50%;
   border: none;
-  font-size: 20px;
+  overflow: hidden;
+  font-size: 12px;
   cursor: pointer;
   display: none;
   transition: background-color 0.3s;
