@@ -2095,7 +2095,7 @@ footer {
 }
 
 /* Style for the dropdown content container */
-.dropdown-content1qp {
+/* .dropdown-content1qp {
   background-color: #f0f0f0;
   border-radius: 10px;
   padding: 10px;
@@ -2141,7 +2141,7 @@ footer {
 .dropdown-content1qp .links a:hover {
   background-color: #77b9ff;
   color: white;
-}
+} */
 
 /* For screens smaller than 768px (tablets and phones) */
 @media (max-width: 768px) {
