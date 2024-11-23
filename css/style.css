@@ -680,7 +680,7 @@ footer {
     left: 0;    
   }
 
-  #check:checked ,.fa-solid.fa-bars{
+/*   #check:checked ,.fa-solid.fa-bars{
     z-index: 110;
     position: relative;
     left: 0.8rem;
@@ -689,9 +689,9 @@ footer {
 
   i.fa-solid.fa-xmark{
     /* display: block; */
-    font-size: 2rem;
+/*     font-size: 2rem;
     z-index: 100;
-  }
+  } */ 
 
   .dropdown-content1qp {
     position: absolute;
