@@ -874,9 +874,9 @@ footer {
 }
 
 @media screen and (max-width: 730px) {
-  /* .dropdown1qp:hover .dropdown-content1qp {
+  .dropdown1qp:hover .dropdown-content1qp {
     display: none;
-  } */
+  }
   .checkbtn {
     display: block;
     margin: 5px 0;
