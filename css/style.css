@@ -826,7 +826,7 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    /* flex-direction: row; */
+    flex-direction: row;
   }
   .roadmap_btns button {
     width: 33%;
@@ -844,7 +844,7 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    /* flex-direction: row; */
+    flex-direction: row;
   }
 
   .img1 {
