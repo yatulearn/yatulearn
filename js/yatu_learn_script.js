@@ -135,3 +135,52 @@ btncn.addEventListener("click", function(){
     btnos.classList.add("occur");
     btncn.classList.add("btn_web");
 })
+
+async function registerUser(event) {
+    event.preventDefault();
+    const username = document.getElementById("reg-username").value;
+    const email = document.getElementById("reg-email").value;
+    const password = document.getElementById("reg-password").value;
+  
+    try {
+      const response = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, email, password })
+      });
+      const data = await response.json();
+      if (data.success) {
+        alert('Registration successful!');
+      } else {
+        alert('Registration failed: ' + data.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
+  async function loginUser(event) {
+    event.preventDefault();
+    const email = document.getElementById("login-email").value;
+    const password = document.getElementById("login-password").value;
+  
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+      const data = await response.json();
+      if (data.success) {
+        alert('Login successful!');
+        localStorage.setItem('token', data.token);
+        window.location.href = "/dashboard"; // Redirect user after login
+      } else {
+        alert('Login failed: ' + data.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
+  
