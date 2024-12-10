@@ -1215,7 +1215,12 @@ for linkedin
 }
 
 #backToTop:hover {
+
+    background-color: #007bff;
+  background-color: #0056b3;
+
     background-color: #0056b3;
+
 }
 
 /* Add this to your existing CSS */
