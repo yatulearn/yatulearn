@@ -1,15 +1,4 @@
 // submit form
-
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyD4y3-S3JCpA57XFI5-PMqTmKWwP-VgDcD6vwWMjPNdjhPbRJ1EPxQgxF3RhBsZH1RDw/exec'
-const form = document.forms['submit-to-google-sheet']
-
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(response => console.log('Success!', response))
-    .catch(error => console.error('Error!', error.message))
-})
-
 const input = document.querySelector("input");
 const foorm = document.querySelector("form");
 function start() {
@@ -26,3 +15,14 @@ function start() {
     foorm.appendChild(aTag);
   }
 }
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyD4y3-S3JCpA57XFI5-PMqTmKWwP-VgDcD6vwWMjPNdjhPbRJ1EPxQgxF3RhBsZH1RDw/exec'
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+})
+
+
