@@ -4,7 +4,7 @@ const foorm = document.querySelector("form");
 function start() {
   if (input.value == "") {
     var aTag = document.createElement('a');
-    aTag.setAttribute('href', "yatu_learn_qp.html");
+    aTag.setAttribute('href', "pages/yatu_learn_qp.html");
     aTag.innerText = "Question paper";
     aTag.innerText.style.display = "none";
     foorm.appendChild(aTag);
