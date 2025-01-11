@@ -10,7 +10,7 @@ function start() {
     foorm.appendChild(aTag);
   } else {
     var aTag = document.createElement('a');
-    aTag.setAttribute('href', "yatu_learn_qp.html");
+    aTag.setAttribute('href', "pages/yatu_learn_qp.html");
     aTag.innerText = "Question paper";
     foorm.appendChild(aTag);
   }
