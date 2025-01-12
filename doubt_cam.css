@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: aquamarine;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    margin-top: 50px;
+}
+.camera_box{
+    margin-top: 50px;
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    border: 1px solid crimson;
+}
+
+button{
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: crimson;
+    width: 60px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer
+}
