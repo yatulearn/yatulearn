@@ -979,6 +979,25 @@ footer {
         </div>
     </div>
     <script src="yatu_learn_script.js" crossorigin=""></script>
+    <script>
+        // Function to handle scroll up action
+function scrollToTop(event) {
+  event.preventDefault();
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+}
+
+// Add event listeners for scroll up links
+const scrollUpLinks = ['scrollUpLink', 'scrollUpLin'];
+scrollUpLinks.forEach(id => {
+  const link = document.getElementById(id);
+  if (link) {
+      link.addEventListener('click', scrollToTop);
+  }
+});
+    </script>
 </body>
 
 <footer>
