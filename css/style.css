@@ -252,7 +252,7 @@ nav li a.Courses {
 }
 
 .border-add-section{
-  /* border: 2px solid blue; */
+  margin-top:10px;
   padding: 20px;
   width: 86%;
   margin: auto;
