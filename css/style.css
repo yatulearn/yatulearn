@@ -304,7 +304,9 @@ nav li a.Courses {
 }
 
 @media screen and (max-width: 820px) { 
-  
+  .add-section{
+    display:block;
+  }
   .add-section h1{
     font-size: 25px;
   }
