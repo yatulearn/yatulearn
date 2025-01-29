@@ -182,6 +182,16 @@ nav li a.Courses {
     margin-left: 50px;
 }
 
+#pumeet h1{
+  background-color: gold;
+  width: 20%;
+  padding: 6px;
+}
+.pulink a {
+  
+  margin-left: 50px;
+}
+
 .branches {
     width: 100%;
     margin-top: 20px;
