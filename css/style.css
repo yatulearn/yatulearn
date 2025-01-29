@@ -269,6 +269,7 @@ nav li a.Courses {
   justify-content: space-evenly;
   align-items: center;
   height: 250px;
+  overflow-y:hidden;
 }
 
 .add-section h1{
