@@ -1399,7 +1399,7 @@ for linkedin
 
 .back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
   background-color: #333;
   color: white;
@@ -1407,6 +1407,8 @@ for linkedin
   height: 40px;
   border-radius: 50%;
   border: none;
+  padding: 4px;
+  overflow: hidden;
   font-size: 20px;
   cursor: pointer;
   display: none;
