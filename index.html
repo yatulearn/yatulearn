@@ -70,6 +70,39 @@
       .chatbot-button:hover .tooltip-text {
           display: block; /* Show on hover */
       }
+
+      #faqBtn {
+          background-color: #007bff; /* Button color */
+          color: white; /* Text color */
+          border: none; /* Remove border */
+          border-radius: 5px; /* Rounded corners */
+          padding: 5px 15px; /* Adjust padding for rectangle shape */
+          cursor: pointer; /* Pointer cursor */
+          font-size: 14px; /* Font size */
+          transition: background-color 0.3s; /* Smooth transition */
+          display: inline-block; /* Ensure it behaves like a block */
+      }
+
+      #faqBtn:hover {
+          background-color: #0056b3; /* Darker shade on hover */
+      }
+
+      #backBtn {
+          background-color: #007bff; /* Button color */
+          color: white; /* Text color */
+          border: none; /* Remove border */
+          border-radius: 5px; /* Rounded corners */
+          padding: 5px 15px; /* Adjust padding for rectangle shape */
+          cursor: pointer; /* Pointer cursor */
+          font-size: 14px; /* Font size */
+          transition: background-color 0.3s; /* Smooth transition */
+          display: inline-block; /* Ensure it behaves like a block */
+          margin-top: 10px; /* Space above the button */
+      }
+
+      #backBtn:hover {
+          background-color: #0056b3; /* Darker shade on hover */
+      }
     </style>
   </head>
   <body>
@@ -333,6 +366,8 @@
   </div>
 </a>
 <footer>
+    <!-- Move the FAQ button here -->
+    <button id="faqBtn" class="back-to-top" style="margin: 70px 0;">FAQ</button>
     <div class="flex_align">
       <div class="box1">
         <div class="logo">
@@ -352,7 +387,28 @@
           <a href="pages/yatu_learn_about.html">About</a>
           <a href="#" id="rateUsBtn">Rate Us</a>
         </div>
-                <!-- Modify the existing Rate Us Popup -->
+                <!-- Add this before the existing Rate Us Popup -->
+        <div id="faqPopup" class="popup">
+          <div class="popup-content">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-content">
+              <p><strong>Q1:</strong> What is YATU Learn?</p>
+              <p><strong>A:</strong> YATU Learn is an educational platform that offers various resources for students.</p>
+              <p><strong>Q2:</strong> How can I contact support?</p>
+              <p><strong>A:</strong> You can contact support via email at yatulearn@gmail.com.</p>
+              <p><strong>Q3:</strong> Are the resources free?</p>
+              <p><strong>A:</strong> Yes, all resources on YATU Learn are free to access.</p>
+              <p><strong>Q4:</strong> How often is the content updated?</p>
+              <p><strong>A:</strong> We strive to update our content regularly to ensure it remains relevant and useful.</p>
+              <p><strong>Q5:</strong> Can I provide feedback on the resources?</p>
+              <p><strong>A:</strong> Absolutely! We welcome feedback to improve our platform.</p>
+            </div>
+            <button id="backBtn">Back</button>
+          </div>
+        </div>
+
+
+        <!-- Modify the existing Rate Us Popup -->
         <div id="rateUsPopup" class="popup">
           <div class="popup-content">
             <span class="close">&times;</span>
@@ -375,6 +431,31 @@
             </form>
           </div>
         </div>
+
+        <!-- JavaScript to Handle FAQ Popup -->
+        <script>
+          // Get elements
+          const faqBtn = document.getElementById('faqBtn');
+          const faqPopup = document.getElementById('faqPopup');
+          const backBtn = document.getElementById('backBtn');
+
+          // Show FAQ popup when "FAQ" is clicked
+          faqBtn.onclick = function () {
+            faqPopup.style.display = 'block';
+          }
+
+          // Close FAQ popup when "Back" is clicked
+          backBtn.onclick = function () {
+            faqPopup.style.display = 'none';
+          }
+
+          // Close FAQ popup when clicking outside the popup content
+          window.onclick = function (event) {
+            if (event.target == faqPopup) {
+              faqPopup.style.display = 'none';
+            }
+          }
+        </script>
 
         <!-- Add this after the rate us form -->
         <div id="thankYouMessage" class="thank-you-message">
