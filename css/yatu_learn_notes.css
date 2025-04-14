@@ -197,6 +197,47 @@ h1 {
   font-size: 2em;
 }
 
+
+.layer1 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.one h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.layer2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.layer3 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.layer4 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.layer5 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.layer6 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
 span {
   color: transparent;
 }
